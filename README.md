@@ -7,6 +7,7 @@ through any static web server (GitHub Pages in production).
 - `src/profile.js` - profile storage (localStorage key `rqr.profile`).
 - `assets/portraits/` - pre-rendered portrait PNGs (regenerate: `python tools/portrait_server.py` then open `/tools/portraits.html`).
 - `lobby.html` + `src/lobby/` - the 3D lobby: `world.js` venue layout, `kits.js` kit loader, `player.js` local/remote avatars, `net.js` PeerJS rooms, `main.js` glue + HUD.
+- `src/shooter/` - the Shooter minigame (runs inside lobby.html on the lobby's PeerJS connections): `arena.js` seeded night-rooftop arena with 3D box collision, `game.js` host-authoritative rounds/health/scores + shooter-side hit judgement + card picks, `avatar.js` armed characters with name/health tags, `bullets.js` instanced bullets and particles, `cards.js` upgrade cards and stats, `sfx.js` synthesized sounds. Host picks "Shooter" in the lobby; everyone switches scenes without reconnecting. Rounds: last one standing (75 s limit), first to 3 round wins; everyone who did not win a round picks one of three upgrade cards (ROUNDS style). Alone = practice mode with target dummies. Controls: WASD, Space jump, Shift dash, click shoot (pointer lock), R reload, Esc frees the mouse.
 - `assets/env/` - one GLB per asset pack (kit) + catalog JSON, built by `tools/blender_kit_export.py` from the Unity packs; `tools/kitsheet.html` previews a kit.
 - `viewer.html` - character viewer: 21 Quaternius characters, all animations, part toggles, recolor.
 - `src/characters.js` - shared loader (characters, animation packs, playback).

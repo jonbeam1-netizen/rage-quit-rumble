@@ -9,6 +9,7 @@ import { loadKits } from './kits.js';
 import { World, KITS } from './world.js';
 import { LocalPlayer, RemotePlayer } from './player.js';
 import { Net } from './net.js';
+import { ShooterGame } from '../shooter/game.js';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -16,7 +17,7 @@ const profile = loadProfile();
 if (!profile) location.replace('index.html');
 
 const MINIGAMES = [
-  ['Shooter', 'STRAFTAT meets ROUNDS. Phase 3.'],
+  ['Shooter', 'Rooftop rounds with upgrade cards. Ready to play!', true],
   ['Mini golf', 'Phase 5.'],
   ['Kart race', 'Later.'],
   ['Anti-grav racer', 'Later.'],
@@ -36,7 +37,8 @@ renderer.info.autoReset = false;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 400);
 const composer = new EffectComposer(renderer);
-composer.addPass(new RenderPass(scene, camera));
+const renderPass = new RenderPass(scene, camera);
+composer.addPass(renderPass);
 const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.45, 0.45, 0.95);
 composer.addPass(bloom);
 composer.addPass(new OutputPass());
@@ -48,21 +50,22 @@ function resize() {
 }
 addEventListener('resize', resize); resize();
 
-// ---------------------------------------------------------------- camera orbit
+// ---------------------------------------------------------------- camera orbit (lobby)
 const cam = { yaw: Math.PI, pitch: 0.32, dist: 6.5, dragging: false, lx: 0, ly: 0 };
-canvas.addEventListener('pointerdown', (e) => { cam.dragging = true; cam.lx = e.clientX; cam.ly = e.clientY; canvas.setPointerCapture(e.pointerId); });
-canvas.addEventListener('pointerup', (e) => { cam.dragging = false; canvas.releasePointerCapture(e.pointerId); });
+canvas.addEventListener('pointerdown', (e) => { if (game) return; cam.dragging = true; cam.lx = e.clientX; cam.ly = e.clientY; canvas.setPointerCapture(e.pointerId); });
+canvas.addEventListener('pointerup', (e) => { cam.dragging = false; try { canvas.releasePointerCapture(e.pointerId); } catch { /* not captured */ } });
 canvas.addEventListener('pointermove', (e) => {
-  if (!cam.dragging) return;
+  if (!cam.dragging || game) return;
   cam.yaw -= (e.clientX - cam.lx) * 0.006; cam.pitch = THREE.MathUtils.clamp(cam.pitch + (e.clientY - cam.ly) * 0.004, -0.1, 1.2);
   cam.lx = e.clientX; cam.ly = e.clientY;
 });
-canvas.addEventListener('wheel', (e) => { cam.dist = THREE.MathUtils.clamp(cam.dist + Math.sign(e.deltaY) * 0.6, 2.5, 12); }, { passive: true });
+canvas.addEventListener('wheel', (e) => { if (game) return; cam.dist = THREE.MathUtils.clamp(cam.dist + Math.sign(e.deltaY) * 0.6, 2.5, 12); }, { passive: true });
 canvas.addEventListener('contextmenu', (e) => e.preventDefault());
 
 // ---------------------------------------------------------------- state
 let world, me, manifest;
-const players = new Map(); // id -> RemotePlayer
+let game = null;                 // active minigame (ShooterGame) or null while in the lobby
+const players = new Map();       // id -> RemotePlayer (lobby avatars)
 const net = new Net();
 const status = (t) => { $('loading').style.display = t ? 'grid' : 'none'; $('loadtext').textContent = t || ''; };
 const toast = (text, ms = 3500) => { const el = document.createElement('div'); el.className = 'toast'; el.textContent = text; $('toasts').appendChild(el); setTimeout(() => el.remove(), ms); };
@@ -72,7 +75,7 @@ function playerList() {
   for (const [id, p] of players) rows.push([id, p.profile, net.isHost ? `${net.pings.get(id) ?? '…'} ms` : '']);
   $('players').innerHTML = rows.map(([id, p, meta]) => `<div class="pl"><span class="dot" style="background:${colorHex(p.color)}"></span><span class="pn">${esc(p.name)}</span><span class="pm">${meta}</span></div>`).join('');
   $('count').textContent = `${rows.length}/8`;
-  if (net.isHost) screen();
+  if (net.isHost && !game) screen();
 }
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -95,6 +98,33 @@ function removeRemote(id) {
   if (!rp) return;
   toast(`${rp.profile.name} left`);
   rp.dispose(); players.delete(id); playerList();
+  game?.onLeave(id);
+}
+
+// ---------------------------------------------------------------- minigame switching
+function roster() { const m = new Map(); for (const [id, p] of players) m.set(id, p.profile); return m; }
+function startGame({ seed, info = null }) {
+  if (game) endGame('lobby', null, false);
+  $('hud').style.display = 'none';
+  game = new ShooterGame({ net, manifest, profile, camera, canvas, roster: roster(), seed, info, toast, onExit: (reason, newSeed) => endGame(reason, newSeed) });
+  renderPass.scene = game.scene;
+  me.keys.clear();
+  window.rqr.game = game;
+}
+function endGame(reason, seed, restore = true) {
+  if (!game) return;
+  game.dispose(); game = null; window.rqr.game = null;
+  renderPass.scene = scene;
+  if (reason === 'rematch') { startGame({ seed }); return; }
+  if (!restore) return;
+  $('hud').style.display = 'block';
+  me.group.position.copy(world.spawn).add(new THREE.Vector3((Math.random() - 0.5) * 4, 0, (Math.random() - 0.5) * 4));
+  me.vel.set(0, 0, 0); me.setAnim('Idle', true);
+  for (const p of players.values()) p.buffer.length = 0;
+  cam.yaw = Math.PI; cam.pitch = 0.32; cam.dist = 6.5;
+  picked = -1;
+  if (net.isHost) screen();
+  toast('Back in the lobby');
 }
 
 // ---------------------------------------------------------------- network wiring
@@ -103,14 +133,17 @@ function wireHost() {
     const rp = addRemote(id, prof);
     const list = [{ id: net.id, profile, s: me.state() }];
     for (const [pid, p] of players) if (pid !== id) list.push({ id: pid, profile: p.profile, s: p.buffer.at(-1) ? { p: p.buffer.at(-1).p.toArray(), r: p.buffer.at(-1).r, a: p.buffer.at(-1).a } : null });
-    net.sendTo(id, { t: 'welcome', id, code: net.code, players: list, screen: screenData() });
+    net.sendTo(id, { t: 'welcome', id, code: net.code, players: list, screen: screenData(), game: game ? { game: 'shooter', seed: game.seed, info: game.joinInfo() } : null });
     net.broadcast({ t: 'join', player: { id, profile: prof } }, id);
     rp.push({ p: world.spawn.toArray(), r: 0, a: 'Idle' }, performance.now());
+    game?.onJoin(id, prof);
   });
   net.on('leave', (id) => removeRemote(id));
-  net.on('state', (id, s) => players.get(id)?.push(s, performance.now()));
-  net.on('emote', (id, e) => players.get(id)?.emote(e));
+  net.on('state', (id, s) => { if (game) game.onState(id, s); else players.get(id)?.push(s, performance.now()); });
+  net.on('emote', (id, e) => { if (!game) players.get(id)?.emote(e); });
+  net.on('message', (id, msg) => { if (msg.t === 'g') game?.onMessage(id, msg); });
   setInterval(() => {
+    if (game) { game.hostTick(); return; }
     const snap = { t: 'S', players: { [net.id]: me.state() } };
     for (const [id, p] of players) { const b = p.buffer.at(-1); if (b) snap.players[id] = { p: b.p.toArray(), r: b.r, a: b.a }; }
     net.broadcast(snap);
@@ -122,16 +155,29 @@ function wireClient() {
   net.on('welcome', (msg) => {
     for (const p of msg.players) { if (p.id === net.id) continue; const rp = addRemote(p.id, p.profile); if (p.s) rp.push(p.s, performance.now()); }
     world.drawHostScreen(msg.screen);
+    if (msg.game) startGame({ seed: msg.game.seed, info: msg.game.info });
   });
-  net.on('join', (id, prof) => addRemote(id, prof));
+  net.on('join', (id, prof) => { addRemote(id, prof); game?.onJoin(id, prof); });
   net.on('leave', (id) => removeRemote(id));
-  net.on('snapshot', (msg) => { const now = performance.now(); for (const [id, s] of Object.entries(msg.players)) { if (id === net.id) continue; (players.get(id) || null)?.push(s, now); } });
-  net.on('emote', (id, e) => players.get(id)?.emote(e));
+  net.on('snapshot', (msg) => {
+    if (game) { game.onSnapshot(msg); return; }
+    const now = performance.now();
+    for (const [id, s] of Object.entries(msg.players)) { if (id === net.id) continue; players.get(id)?.push(s, now); }
+  });
+  net.on('emote', (id, e) => { if (!game) players.get(id)?.emote(e); });
   net.on('toast', (text) => toast(text));
-  net.on('message', (msg) => { if (msg.t === 'screen') world.drawHostScreen(msg.d); });
+  net.on('message', (msg) => {
+    if (msg.t === 'screen') world.drawHostScreen(msg.d);
+    else if (msg.t === 'game') startGame({ seed: msg.seed });
+    else if (msg.t === 'G') game?.onMessage(null, msg);
+  });
   net.on('disconnected', () => { toast('Host left. Back to the picker…', 4000); setTimeout(() => location.replace('index.html'), 2500); });
   net.on('error', (e) => toast(e.message || String(e), 5000));
-  setInterval(() => { net.send({ t: 's', ...me.state() }); if (me.pendingEmote) { net.send({ t: 'e', e: me.pendingEmote }); me.pendingEmote = null; } }, 50);
+  setInterval(() => {
+    if (game) { net.send(game.localState()); return; }
+    net.send({ t: 's', ...me.state() });
+    if (me.pendingEmote) { net.send({ t: 'e', e: me.pendingEmote }); me.pendingEmote = null; }
+  }, 50);
   setInterval(playerList, 1000);
 }
 
@@ -145,11 +191,17 @@ function hud() {
   $('leave').onclick = () => { net.destroy(); location.href = 'index.html'; };
   if (net.isHost) {
     $('hostpanel').style.display = 'block';
-    $('games').innerHTML = MINIGAMES.map(([n, d], i) => `<button data-i="${i}"><b>${n}</b><small>${d}</small></button>`).join('');
+    $('games').innerHTML = MINIGAMES.map(([n, d, ready], i) => `<button data-i="${i}" class="${ready ? 'ready' : ''}"><b>${n}</b><small>${d}</small></button>`).join('');
     $('games').onclick = (e) => {
       const b = e.target.closest('button'); if (!b) return;
       picked = +b.dataset.i;
-      const text = `Host picked ${MINIGAMES[picked][0]}. ${MINIGAMES[picked][1]}`;
+      if (MINIGAMES[picked][2]) {
+        const seed = (Math.random() * 4294967295) >>> 0;
+        net.broadcast({ t: 'game', game: 'shooter', seed });
+        startGame({ seed });
+        return;
+      }
+      const text = `${MINIGAMES[picked][0]} isn't built yet. ${MINIGAMES[picked][1]}`;
       toast(text); net.broadcast({ t: 'toast', text }); screen();
     };
   }
@@ -167,6 +219,7 @@ function hud() {
   status('Entering the lobby…');
   me = new LocalPlayer(scene, manifest, profile, world, camera);
   await me.ready;
+  window.rqr = { me, cam, world, net, players, camera, game: null }; // debug handle
   if (params.get('room')) {
     status(`Joining room ${params.get('room').toUpperCase()}…`);
     wireClient();
@@ -180,8 +233,8 @@ function hud() {
   }
   playerList();
   hud();
+  if (game) $('hud').style.display = 'none';
   status('');
-  window.rqr = { me, cam, world, net, players, camera }; // debug handle
   toast(net.isHost ? `Room ${net.code} is open. Copy the invite link for your friends.` : `Joined room ${net.code}`, 5000);
 })().catch((err) => { console.error(err); status('Error: ' + (err.message || err)); });
 
@@ -192,7 +245,9 @@ let fpsT = 0, frames = 0;
 renderer.setAnimationLoop(() => {
   const dt = Math.min(0.05, clock.getDelta());
   const now = performance.now();
-  if (me) {
+  if (game) {
+    game.update(dt, now);
+  } else if (me) {
     me.update(dt);
     for (const p of players.values()) p.update(dt, now);
     const target = me.group.position.clone().add(new THREE.Vector3(0, 1.5, 0));

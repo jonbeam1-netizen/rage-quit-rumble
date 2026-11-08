@@ -31,28 +31,91 @@
   #hostpanel h2 { font-size:11px; text-transform:uppercase; letter-spacing:.8px; color:var(--muted); margin:0 0 6px; }
   #games button { display:flex; flex-direction:column; align-items:flex-start; width:100%; margin:4px 0; text-align:left; gap:2px; }
   #games small { color:var(--muted); }
+  #games button.ready { border-color:var(--accent); }
   #help { bottom:12px; left:12px; color:var(--muted); font-size:12px; }
   #help b { color:var(--text); }
   #settings { bottom:12px; right:12px; display:flex; flex-direction:column; gap:6px; font-size:12px; color:var(--muted); }
   #settings label { display:flex; align-items:center; gap:8px; }
   #settings input[type=range] { width:120px; }
-  #fps { position:absolute; top:74px; left:12px; color:var(--muted); font-size:11px; }
-  #toasts { position:absolute; top:70px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; gap:6px; align-items:center; }
+  #fps { position:fixed; top:74px; left:12px; color:var(--muted); font-size:11px; pointer-events:none; z-index:3; }
+  #toasts { position:fixed; top:70px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; gap:6px; align-items:center; pointer-events:none; z-index:4; }
   .toast { background:#000a; border:1px solid var(--line); border-radius:8px; padding:8px 14px; font-size:14px; animation: fade .3s ease-out; }
   @keyframes fade { from { opacity:0; transform:translateY(-6px); } }
+
+  /* ---------------- shooter HUD ---------------- */
+  #ghud { position:fixed; inset:0; pointer-events:none; display:none; z-index:2; }
+  .gpanel { position:absolute; background:#0a0b12b8; border:1px solid var(--line); border-radius:10px; padding:8px 12px; backdrop-filter: blur(6px); }
+  #xhair { position:absolute; left:50%; top:50%; width:22px; height:22px; transform:translate(-50%,-50%); display:none; }
+  #xhair i { position:absolute; background:#fff; box-shadow:0 0 3px #000; }
+  #xhair i:nth-child(1) { left:10px; top:0; width:2px; height:7px; } #xhair i:nth-child(2) { left:10px; bottom:0; width:2px; height:7px; }
+  #xhair i:nth-child(3) { top:10px; left:0; width:7px; height:2px; } #xhair i:nth-child(4) { top:10px; right:0; width:7px; height:2px; }
+  #gmark { position:absolute; left:50%; top:50%; width:34px; height:34px; transform:translate(-50%,-50%) rotate(45deg); opacity:0; }
+  #gmark::before, #gmark::after { content:''; position:absolute; background:#fff; }
+  #gmark::before { left:16px; top:0; width:2px; height:34px; } #gmark::after { top:16px; left:0; width:34px; height:2px; }
+  @keyframes gmark { 0% { opacity:1; transform:translate(-50%,-50%) rotate(45deg) scale(1.3); } 100% { opacity:0; transform:translate(-50%,-50%) rotate(45deg) scale(0.9); } }
+  #gvig { position:absolute; inset:0; box-shadow: inset 0 0 160px 40px rgba(255,40,40,0.0); opacity:0; }
+  @keyframes gvig { 0% { opacity:1; box-shadow: inset 0 0 160px 60px rgba(255,40,40,0.55); } 100% { opacity:0; box-shadow: inset 0 0 160px 40px rgba(255,40,40,0); } }
+  #gtop { top:12px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:4px; min-width:260px; }
+  #ground { font-weight:700; letter-spacing:.5px; display:flex; gap:10px; }
+  #gtimer { color:var(--accent); font-variant-numeric: tabular-nums; }
+  #gtopbtns { display:none; gap:6px; pointer-events:auto; } #gtopbtns button { padding:3px 8px; font-size:12px; }
+  #gscores { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; }
+  .gs { display:flex; align-items:center; gap:6px; background:#ffffff10; border-radius:8px; padding:3px 8px; font-size:12px; }
+  .gs.dead { opacity:.45; } .gs.me { outline:1px solid var(--line); }
+  .gs .w { color:#ffd23d; letter-spacing:1px; font-size:11px; } .gs .k { color:var(--muted); }
+  .gs .k::before { content:'⚔ '; }
+  #gfeed { position:absolute; top:12px; right:12px; display:flex; flex-direction:column; gap:4px; align-items:flex-end; }
+  #gfeed div { background:#0a0b12b8; border:1px solid var(--line); border-radius:8px; padding:4px 10px; font-size:13px; animation: fade .25s ease-out; }
+  #gstatus { bottom:12px; left:12px; width:300px; display:flex; flex-direction:column; gap:6px; }
+  #ghp { position:relative; height:18px; background:#ffffff14; border-radius:6px; overflow:hidden; }
+  #ghpbar { position:absolute; inset:0; width:100%; background:#6fe36a; transition: width .15s ease-out; }
+  #ghpv { position:absolute; inset:0; display:grid; place-items:center; font-size:12px; font-weight:700; text-shadow:0 1px 2px #000; }
+  #gammo { display:flex; gap:3px; align-items:center; flex-wrap:wrap; min-height:14px; }
+  #gammo i { width:7px; height:14px; background:#ffffff22; border-radius:2px; } #gammo i.on { background:#ffd23d; }
+  #gammo span { color:var(--muted); font-size:12px; margin-left:6px; }
+  #greloadwrap { height:4px; background:#ffffff14; border-radius:2px; overflow:hidden; opacity:0; } #greload { height:100%; background:#ffd23d; width:0; }
+  #gdashwrap { height:4px; background:#ffffff14; border-radius:2px; overflow:hidden; } #gdash { height:100%; background:#3dd6ff; width:100%; transition: width .1s linear; }
+  #gcards { display:flex; gap:4px; flex-wrap:wrap; }
+  #gcards span { background:#ffffff12; border-radius:6px; padding:2px 7px; font-size:12px; }
+  #gmsg { position:absolute; left:50%; top:34%; transform:translateX(-50%); font:900 56px Impact, "Arial Black", system-ui; letter-spacing:2px; text-shadow:0 3px 14px #000, 0 0 30px #0008; white-space:nowrap; animation: gpop .25s ease-out; }
+  @keyframes gpop { from { transform:translateX(-50%) scale(1.5); opacity:0; } }
+  #gsub { position:absolute; left:50%; top:calc(34% + 70px); transform:translateX(-50%); font-size:16px; color:#dfe3ea; text-shadow:0 2px 8px #000; white-space:nowrap; }
+  #ghelp { position:absolute; bottom:12px; left:50%; transform:translateX(-50%); color:var(--muted); font-size:12px; background:#0a0b1288; padding:4px 10px; border-radius:8px; }
+  .overlay { position:absolute; inset:0; display:none; place-items:center; background:#06070cbb; pointer-events:auto; }
+  .overlay .box { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px 26px; text-align:center; max-width:720px; }
+  .overlay h2 { margin:0 0 10px; font-size:26px; }
+  .overlay p { color:var(--muted); margin:8px 0; }
+  .overlay label { display:flex; gap:10px; align-items:center; justify-content:center; color:var(--muted); font-size:13px; margin:12px 0; }
+  #gpickcards { display:flex; gap:14px; justify-content:center; margin:14px 0 6px; }
+  .gcard { width:200px; min-height:200px; background:linear-gradient(#2a2e3a,#181b23); border:2px solid var(--line); border-radius:14px; padding:16px 12px; display:flex; flex-direction:column; align-items:center; gap:8px; transition: transform .12s, border-color .12s; }
+  .gcard:hover { transform:translateY(-6px) scale(1.03); border-color:var(--accent); }
+  .gcard .ic { font-size:44px; } .gcard .nm { font-weight:800; font-size:17px; } .gcard .ds { color:var(--muted); font-size:13px; }
+  #gwait { top:72px; left:50%; transform:translateX(-50%); font-size:13px; color:var(--muted); display:none; }
+  #gwait span { color:var(--text); }
+  #grestable { display:flex; flex-direction:column; gap:6px; margin:10px 0 16px; text-align:left; }
+  .rr { display:grid; grid-template-columns: 24px 14px 1fr 90px 70px 110px; gap:10px; align-items:center; background:#ffffff0c; border-radius:8px; padding:6px 10px; }
+  .rr .pl { color:var(--muted); font-weight:700; } .rr .w { color:#ffd23d; } .rr .k { color:var(--muted); } .rr .c { font-size:15px; letter-spacing:2px; }
+  #gresbtns { display:flex; gap:10px; justify-content:center; }
+  #gresbtns button { padding:10px 18px; font-size:15px; }
 </style>
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
   "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
-  "./src/characters.js": "./src/characters.js?v=202611080355",
-  "./src/profile.js": "./src/profile.js?v=202611080355",
-  "./src/nametag.js": "./src/nametag.js?v=202611080355",
-  "./src/lobby/main.js": "./src/lobby/main.js?v=202611080355",
-  "./src/lobby/world.js": "./src/lobby/world.js?v=202611080355",
-  "./src/lobby/kits.js": "./src/lobby/kits.js?v=202611080355",
-  "./src/lobby/player.js": "./src/lobby/player.js?v=202611080355",
-  "./src/lobby/net.js": "./src/lobby/net.js?v=202611080355"
+  "./src/characters.js": "./src/characters.js?v=202611081357",
+  "./src/profile.js": "./src/profile.js?v=202611081357",
+  "./src/nametag.js": "./src/nametag.js?v=202611081357",
+  "./src/lobby/main.js": "./src/lobby/main.js?v=202611081357",
+  "./src/lobby/world.js": "./src/lobby/world.js?v=202611081357",
+  "./src/lobby/kits.js": "./src/lobby/kits.js?v=202611081357",
+  "./src/lobby/player.js": "./src/lobby/player.js?v=202611081357",
+  "./src/lobby/net.js": "./src/lobby/net.js?v=202611081357",
+  "./src/shooter/game.js": "./src/shooter/game.js?v=202611081357",
+  "./src/shooter/arena.js": "./src/shooter/arena.js?v=202611081357",
+  "./src/shooter/avatar.js": "./src/shooter/avatar.js?v=202611081357",
+  "./src/shooter/bullets.js": "./src/shooter/bullets.js?v=202611081357",
+  "./src/shooter/cards.js": "./src/shooter/cards.js?v=202611081357",
+  "./src/shooter/sfx.js": "./src/shooter/sfx.js?v=202611081357"
 } }
 </script>
 <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
@@ -60,10 +123,10 @@
 <body>
 <canvas id="c"></canvas>
 <div id="loading"><div class="box"><h1>Rage Quit <span>Rumble</span></h1><p id="loadtext">Loading…</p></div></div>
+<div id="fps"></div>
+<div id="toasts"></div>
 <div id="hud">
   <div id="room" class="panel"><div><div class="lbl">Room</div><b id="code">----</b></div><button id="copy" class="primary">Copy invite link</button><button id="leave">Leave</button></div>
-  <div id="fps"></div>
-  <div id="toasts"></div>
   <div id="list" class="panel"><h2>Players <span id="count"></span></h2><div id="players"></div></div>
   <div id="hostpanel" class="panel"><h2>Pick a minigame</h2><div id="games"></div></div>
   <div id="help" class="panel"><b>WASD</b> move · <b>Shift</b> walk · <b>drag</b> look · <b>wheel</b> zoom · <b>1</b> wave · <b>2</b> punch · <b>3</b> kick · <b>4</b> interact · <b>5</b> roll</div>
@@ -72,6 +135,36 @@
     <label><input id="bloomtoggle" type="checkbox" checked> Neon glow</label>
   </div>
 </div>
-<script type="module" src="src/lobby/main.js?v=202611080355"></script>
+<div id="ghud">
+  <div id="xhair"><i></i><i></i><i></i><i></i></div>
+  <div id="gmark"></div>
+  <div id="gvig"></div>
+  <div id="gtop" class="gpanel"><div id="ground"><span id="groundtext">Round 1</span><span id="gtimer"></span></div><div id="gscores"></div><div id="gtopbtns"><button id="gback2">Back to lobby</button><button id="gquit2">Leave game</button></div></div>
+  <div id="gfeed"></div>
+  <div id="gstatus" class="gpanel">
+    <div id="ghp"><div id="ghpbar"></div><div id="ghpv">100 / 100</div></div>
+    <div id="gammo"></div>
+    <div id="greloadwrap"><div id="greload"></div></div>
+    <div id="gdashwrap" title="Dash"><div id="gdash"></div></div>
+    <div id="gcards"></div>
+  </div>
+  <div id="gmsg"></div><div id="gsub"></div>
+  <div id="gwait" class="gpanel">Waiting for picks: <span></span></div>
+  <div id="ghelp"><b>WASD</b> move · <b>Space</b> jump · <b>Shift</b> dash · <b>click</b> shoot · <b>R</b> reload · <b>Esc</b> mouse</div>
+  <div id="glock" class="overlay"><div class="box">
+    <h2 id="glocktitle">Click to aim</h2>
+    <p>WASD move · Space jump · Shift dash · Click shoot · R reload · Esc frees the mouse</p>
+    <label>Mouse sensitivity <input id="gsens" type="range" min="0.3" max="3" step="0.1" value="1"></label>
+    <button id="gback">Back to lobby</button><button id="gquit">Leave game</button>
+  </div></div>
+  <div id="gpick" class="overlay"><div class="box"><h2>Pick an upgrade</h2><div id="gpickcards"></div><p id="gpicktime"></p></div></div>
+  <div id="gresults" class="overlay"><div class="box">
+    <h2 id="greswin"></h2>
+    <div id="grestable"></div>
+    <div id="gresbtns"><button id="grematch" class="primary">Rematch</button><button id="globby">Back to lobby</button></div>
+    <p id="greswait">Host is deciding…</p>
+  </div></div>
+</div>
+<script type="module" src="src/lobby/main.js?v=202611081357"></script>
 </body>
 </html>

@@ -36,7 +36,8 @@ export async function loadKits(names, onProgress) {
 export function get(kit, piece, opts = {}) {
   const k = kits.get(kit);
   if (!k) throw new Error(`kit ${kit} not loaded`);
-  const src = k.byName.get(piece);
+  // GLTFLoader sanitizes node names (spaces -> _, [].:/ removed); catalog names are the originals.
+  const src = k.byName.get(piece) || k.byName.get(piece.replace(/\s/g, '_').replace(/[\[\]\.:\/]/g, ''));
   if (!src) { console.warn(`piece ${kit}/${piece} missing`); return new THREE.Group(); }
   const obj = src.clone(true);
   // Reset transform the source had inside its kit scene.

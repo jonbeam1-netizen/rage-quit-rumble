@@ -54,6 +54,7 @@ export class Net {
       case 'e': this.emit('emote', id, msg.e); this.broadcast({ t: 'E', id, e: msg.e }, id); break;
       case 'p': this.conns.get(id)?.send({ t: 'P', ts: msg.ts }); break;
       case 'pingreport': this.pings.set(id, msg.ping); break;
+      default: this.emit('message', id, msg);
     }
   }
   broadcast(msg, exceptId = null) {
