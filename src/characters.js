@@ -5,6 +5,10 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+// Hand-held props baked into some characters (Suit, Swat, SciFi carry a Pistol; Medieval a
+// Sword). Hidden by default so everyone starts empty-handed; games show them when equipping.
+export const WEAPON_PROPS = new Set(['Pistol', 'Sword']);
+
 const loader = new GLTFLoader();
 const gltfCache = new Map();
 
@@ -32,7 +36,10 @@ export async function loadCharacter(info) {
   root.traverse((o) => {
     // Parts are the named glTF nodes (Adventurer_Head, Pistol, ...). GLTFLoader turns a
     // multi-material node into a Group with child meshes, so match on the node name.
-    if (partNames.has(o.name)) parts[o.name] = o;
+    if (partNames.has(o.name)) {
+      parts[o.name] = o;
+      if (WEAPON_PROPS.has(o.name)) o.visible = false;
+    }
     if (o.isMesh) {
       o.castShadow = true;
       o.receiveShadow = true;
