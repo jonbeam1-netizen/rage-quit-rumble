@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RQR portrait renderer</title>
+<style>
+  body { margin:0; background:#222; color:#ddd; font:14px system-ui; padding:16px; }
+  #grid { display:flex; flex-wrap:wrap; gap:8px; }
+  #grid img { width:128px; height:128px; background:linear-gradient(#2a2e38,#171a21); border-radius:8px; }
+  canvas { display:none; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="log">Rendering portraits…</div>
+<div id="grid"></div>
+<script type="module">
+import * as THREE from 'three';
+import { loadManifest, loadCharacter } from '../src/characters.js';
+
+const SIZE = 256;
+const SAVE_URL = 'http://localhost:8090/save/';
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setSize(SIZE, SIZE);
+renderer.setPixelRatio(1);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xcfe0ff, 0x4a3a30, 1.0));
+const key = new THREE.DirectionalLight(0xffffff, 2.4); key.position.set(1.5, 2.5, 2.5); scene.add(key);
+const rim = new THREE.DirectionalLight(0xff9a6c, 1.2); rim.position.set(-2, 2, -2); scene.add(rim);
+const camera = new THREE.PerspectiveCamera(28, 1, 0.05, 50);
+
+const manifest = await loadManifest('../assets/characters/manifest.json');
+const log = document.getElementById('log');
+let done = 0;
+for (const info of manifest.characters) {
+  info.file = '../' + info.file;
+  const ch = await loadCharacter(info);
+  scene.add(ch.root);
+  // Pose: first frame of Idle, then find the head bone to frame chest-up.
+  const idle = ch.clips.find((c) => c.name === 'Idle');
+  if (idle) { const a = ch.mixer.clipAction(idle); a.play(); ch.mixer.update(0.3); }
+  ch.root.updateMatrixWorld(true);
+  let head = null;
+  ch.root.traverse((o) => { if (o.isBone && o.name === 'Head') head = o; });
+  const hp = new THREE.Vector3();
+  if (head) head.getWorldPosition(hp); else hp.set(0, 1.5, 0);
+  const target = new THREE.Vector3(0, hp.y - 0.12, 0);
+  camera.position.set(0.55, hp.y + 0.05, 1.45);
+  camera.lookAt(target);
+  ch.root.rotation.y = -0.25;
+  renderer.render(scene, camera);
+  const blob = await new Promise((r) => renderer.domElement.toBlob(r, 'image/png'));
+  const img = document.createElement('img');
+  img.src = URL.createObjectURL(blob);
+  img.title = info.id;
+  document.getElementById('grid').appendChild(img);
+  const name = info.id.replace('/', '_');
+  try {
+    const res = await fetch(SAVE_URL + name, { method: 'POST', body: blob });
+    if (!res.ok) throw new Error(res.status);
+    done++;
+  } catch (e) { console.error('save failed', name, e); }
+  scene.remove(ch.root);
+}
+log.textContent = `Done: ${done}/${manifest.characters.length} saved`;
+document.title = 'portraits done ' + done;
+</script>
+</body>
+</html>
