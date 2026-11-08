@@ -1,0 +1,2165 @@
+{
+ "pack": "rpg",
+ "pieces": [
+  {
+   "name": "rpgpp_lt_awning_standing_01a",
+   "file": "rpgpp_lt_awning_standing_01a.fbx",
+   "children": [],
+   "size": [
+    4.239,
+    5.417,
+    3.906
+   ],
+   "min": [
+    -2.083,
+    -1.0,
+    -1.947
+   ],
+   "max": [
+    2.157,
+    4.417,
+    1.959
+   ],
+   "tris": 964,
+   "materials": [
+    "rpgpp_lt_mat_a"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_awning_standing_01b",
+   "file": "rpgpp_lt_awning_standing_01b.fbx",
+   "children": [],
+   "size": [
+    4.239,
+    5.417,
+    3.906
+   ],
+   "min": [
+    -2.083,
+    -1.0,
+    -1.947
+   ],
+   "max": [
+    2.157,
+    4.417,
+    1.959
+   ],
+   "tris": 964,
+   "materials": [
+    "rpgpp_lt_mat_a.001"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_01_corner_a",
+   "file": "rpgpp_lt_fence_wood_01_corner_a.fbx",
+   "children": [],
+   "size": [
+    3.03,
+    1.278,
+    3.22
+   ],
+   "min": [
+    -0.265,
+    -0.0,
+    -2.915
+   ],
+   "max": [
+    2.765,
+    1.278,
+    0.305
+   ],
+   "tris": 302,
+   "materials": [
+    "rpgpp_lt_mat_a.002"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_01a",
+   "file": "rpgpp_lt_fence_wood_01a.fbx",
+   "children": [],
+   "size": [
+    3.023,
+    1.278,
+    0.301
+   ],
+   "min": [
+    -1.498,
+    0.0,
+    0.005
+   ],
+   "max": [
+    1.525,
+    1.278,
+    0.305
+   ],
+   "tris": 154,
+   "materials": [
+    "rpgpp_lt_mat_a.003"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_01b",
+   "file": "rpgpp_lt_fence_wood_01b.fbx",
+   "children": [],
+   "size": [
+    3.023,
+    1.278,
+    0.301
+   ],
+   "min": [
+    -1.498,
+    0.0,
+    0.005
+   ],
+   "max": [
+    1.525,
+    1.278,
+    0.305
+   ],
+   "tris": 126,
+   "materials": [
+    "rpgpp_lt_mat_a.004"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_02a",
+   "file": "rpgpp_lt_fence_wood_02a.fbx",
+   "children": [],
+   "size": [
+    2.166,
+    2.173,
+    0.334
+   ],
+   "min": [
+    -0.002,
+    -0.0,
+    -0.328
+   ],
+   "max": [
+    2.164,
+    2.173,
+    0.005
+   ],
+   "tris": 314,
+   "materials": [
+    "rpgpp_lt_mat_a.005"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_02b",
+   "file": "rpgpp_lt_fence_wood_02b.fbx",
+   "children": [],
+   "size": [
+    1.985,
+    2.173,
+    0.304
+   ],
+   "min": [
+    -0.057,
+    -0.003,
+    -0.328
+   ],
+   "max": [
+    1.928,
+    2.169,
+    -0.024
+   ],
+   "tris": 250,
+   "materials": [
+    "rpgpp_lt_mat_a.006"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_fence_wood_02c",
+   "file": "rpgpp_lt_fence_wood_02c.fbx",
+   "children": [],
+   "size": [
+    1.979,
+    2.173,
+    0.304
+   ],
+   "min": [
+    -0.057,
+    -0.0,
+    -0.185
+   ],
+   "max": [
+    1.922,
+    2.173,
+    0.119
+   ],
+   "tris": 268,
+   "materials": [
+    "rpgpp_lt_mat_a.007"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_shed_wood_01",
+   "file": "rpgpp_lt_shed_wood_01.fbx",
+   "children": [],
+   "size": [
+    3.519,
+    4.059,
+    3.463
+   ],
+   "min": [
+    -1.689,
+    0.034,
+    -2.639
+   ],
+   "max": [
+    1.831,
+    4.094,
+    0.824
+   ],
+   "tris": 862,
+   "materials": [
+    "rpgpp_lt_mat_a.008"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_shed_wood_02",
+   "file": "rpgpp_lt_shed_wood_02.fbx",
+   "children": [],
+   "size": [
+    2.655,
+    2.717,
+    2.754
+   ],
+   "min": [
+    -1.385,
+    -0.025,
+    -2.518
+   ],
+   "max": [
+    1.27,
+    2.692,
+    0.236
+   ],
+   "tris": 2002,
+   "materials": [
+    "rpgpp_lt_mat_a.009"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bush_01",
+   "file": "rpgpp_lt_bush_01.fbx",
+   "children": [],
+   "size": [
+    2.654,
+    2.688,
+    1.971
+   ],
+   "min": [
+    -1.361,
+    -0.005,
+    -0.988
+   ],
+   "max": [
+    1.293,
+    2.683,
+    0.983
+   ],
+   "tris": 186,
+   "materials": [
+    "rpgpp_ne_mat_a"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bush_02",
+   "file": "rpgpp_lt_bush_02.fbx",
+   "children": [],
+   "size": [
+    2.264,
+    2.704,
+    1.585
+   ],
+   "min": [
+    -0.814,
+    -0.002,
+    -0.732
+   ],
+   "max": [
+    1.449,
+    2.702,
+    0.852
+   ],
+   "tris": 189,
+   "materials": [
+    "rpgpp_ne_mat_a.001"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_cloud_01",
+   "file": "rpgpp_lt_cloud_01.fbx",
+   "children": [],
+   "size": [
+    26.87,
+    20.094,
+    42.762
+   ],
+   "min": [
+    -13.621,
+    -9.228,
+    -21.856
+   ],
+   "max": [
+    13.249,
+    10.866,
+    20.906
+   ],
+   "tris": 512,
+   "materials": [
+    "rpgpp_st_mat_a.033"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_cloud_02",
+   "file": "rpgpp_lt_cloud_02.fbx",
+   "children": [],
+   "size": [
+    18.0,
+    12.582,
+    41.954
+   ],
+   "min": [
+    -9.082,
+    -5.756,
+    -22.623
+   ],
+   "max": [
+    8.918,
+    6.826,
+    19.331
+   ],
+   "tris": 292,
+   "materials": [
+    "rpgpp_st_mat_a.034"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_flower_01",
+   "file": "rpgpp_lt_flower_01.fbx",
+   "children": [],
+   "size": [
+    1.211,
+    1.044,
+    1.116
+   ],
+   "min": [
+    -0.678,
+    -0.0,
+    -0.551
+   ],
+   "max": [
+    0.533,
+    1.043,
+    0.564
+   ],
+   "tris": 440,
+   "materials": [
+    "rpgpp_st_mat_a.035"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_flower_02",
+   "file": "rpgpp_lt_flower_02.fbx",
+   "children": [],
+   "size": [
+    1.112,
+    0.942,
+    1.021
+   ],
+   "min": [
+    -0.609,
+    -0.001,
+    -0.544
+   ],
+   "max": [
+    0.503,
+    0.941,
+    0.478
+   ],
+   "tris": 348,
+   "materials": [
+    "rpgpp_st_mat_a.001"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_flower_03",
+   "file": "rpgpp_lt_flower_03.fbx",
+   "children": [],
+   "size": [
+    0.796,
+    0.87,
+    0.776
+   ],
+   "min": [
+    -0.288,
+    -0.003,
+    -0.535
+   ],
+   "max": [
+    0.509,
+    0.868,
+    0.241
+   ],
+   "tris": 222,
+   "materials": [
+    "rpgpp_ne_mat_a.002"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_grass_small_01a",
+   "file": "rpgpp_lt_grass_small_01a.fbx",
+   "children": [],
+   "size": [
+    0.941,
+    1.079,
+    1.116
+   ],
+   "min": [
+    -0.426,
+    -0.0,
+    -0.704
+   ],
+   "max": [
+    0.515,
+    1.079,
+    0.412
+   ],
+   "tris": 108,
+   "materials": [
+    "rpgpp_st_mat_a.029"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_grass_small_01b",
+   "file": "rpgpp_lt_grass_small_01b.fbx",
+   "children": [],
+   "size": [
+    1.475,
+    1.176,
+    1.337
+   ],
+   "min": [
+    -0.707,
+    -0.0,
+    -0.595
+   ],
+   "max": [
+    0.768,
+    1.176,
+    0.742
+   ],
+   "tris": 180,
+   "materials": [
+    "rpgpp_st_mat_a.002"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_hill_small_01",
+   "file": "rpgpp_lt_hill_small_01.fbx",
+   "children": [],
+   "size": [
+    99.816,
+    26.248,
+    86.615
+   ],
+   "min": [
+    -50.002,
+    -0.176,
+    -41.993
+   ],
+   "max": [
+    49.815,
+    26.073,
+    44.622
+   ],
+   "tris": 190,
+   "materials": [
+    "rpgpp_st_mat_a.030"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_hill_small_02",
+   "file": "rpgpp_lt_hill_small_02.fbx",
+   "children": [],
+   "size": [
+    113.455,
+    26.856,
+    113.086
+   ],
+   "min": [
+    -56.86,
+    -0.005,
+    -56.554
+   ],
+   "max": [
+    56.595,
+    26.852,
+    56.533
+   ],
+   "tris": 284,
+   "materials": [
+    "rpgpp_st_mat_a.003"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_mountain_01",
+   "file": "rpgpp_lt_mountain_01.fbx",
+   "children": [],
+   "size": [
+    166.255,
+    78.354,
+    166.252
+   ],
+   "min": [
+    -83.128,
+    0.174,
+    -83.126
+   ],
+   "max": [
+    83.127,
+    78.528,
+    83.126
+   ],
+   "tris": 623,
+   "materials": [
+    "rpgpp_st_mat_a.031"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_plant_01",
+   "file": "rpgpp_lt_plant_01.fbx",
+   "children": [],
+   "size": [
+    1.214,
+    0.284,
+    1.098
+   ],
+   "min": [
+    -0.635,
+    -0.001,
+    -0.499
+   ],
+   "max": [
+    0.579,
+    0.283,
+    0.598
+   ],
+   "tris": 328,
+   "materials": [
+    "rpgpp_st_mat_a.032"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_plant_02",
+   "file": "rpgpp_lt_plant_02.fbx",
+   "children": [],
+   "size": [
+    1.083,
+    0.427,
+    1.17
+   ],
+   "min": [
+    -0.445,
+    -0.001,
+    -0.648
+   ],
+   "max": [
+    0.638,
+    0.427,
+    0.522
+   ],
+   "tris": 198,
+   "materials": [
+    "rpgpp_st_mat_a.004"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rock_01",
+   "file": "rpgpp_lt_rock_01.fbx",
+   "children": [],
+   "size": [
+    2.617,
+    2.013,
+    2.152
+   ],
+   "min": [
+    -1.451,
+    -0.885,
+    -1.038
+   ],
+   "max": [
+    1.167,
+    1.127,
+    1.114
+   ],
+   "tris": 100,
+   "materials": [
+    "rpgpp_ne_mat_a.003"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rock_02",
+   "file": "rpgpp_lt_rock_02.fbx",
+   "children": [],
+   "size": [
+    2.364,
+    2.209,
+    1.949
+   ],
+   "min": [
+    -1.287,
+    -0.854,
+    -0.857
+   ],
+   "max": [
+    1.077,
+    1.355,
+    1.092
+   ],
+   "tris": 80,
+   "materials": [
+    "rpgpp_ne_mat_a.004"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rock_03",
+   "file": "rpgpp_lt_rock_03.fbx",
+   "children": [],
+   "size": [
+    3.022,
+    1.624,
+    2.738
+   ],
+   "min": [
+    -1.545,
+    -0.826,
+    -1.487
+   ],
+   "max": [
+    1.477,
+    0.798,
+    1.251
+   ],
+   "tris": 110,
+   "materials": [
+    "rpgpp_ne_mat_a.005"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rock_small_01",
+   "file": "rpgpp_lt_rock_small_01.fbx",
+   "children": [],
+   "size": [
+    0.914,
+    0.299,
+    0.886
+   ],
+   "min": [
+    -0.401,
+    -0.168,
+    -0.41
+   ],
+   "max": [
+    0.513,
+    0.131,
+    0.477
+   ],
+   "tris": 40,
+   "materials": [
+    "rpgpp_ne_mat_a.006"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rock_small_02",
+   "file": "rpgpp_lt_rock_small_02.fbx",
+   "children": [],
+   "size": [
+    0.654,
+    0.31,
+    0.688
+   ],
+   "min": [
+    -0.336,
+    -0.146,
+    -0.374
+   ],
+   "max": [
+    0.318,
+    0.164,
+    0.314
+   ],
+   "tris": 46,
+   "materials": [
+    "rpgpp_ne_mat_a.007"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rocks_tiny_01",
+   "file": "rpgpp_lt_rocks_tiny_01.fbx",
+   "children": [],
+   "size": [
+    2.467,
+    0.145,
+    2.76
+   ],
+   "min": [
+    -1.247,
+    -0.0,
+    -1.369
+   ],
+   "max": [
+    1.22,
+    0.145,
+    1.391
+   ],
+   "tris": 186,
+   "materials": [
+    "rpgpp_ne_mat_a.008"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_sky_01",
+   "file": "rpgpp_lt_sky_01.fbx",
+   "children": [],
+   "size": [
+    97.715,
+    35.095,
+    98.282
+   ],
+   "min": [
+    -49.103,
+    -0.0,
+    -48.777
+   ],
+   "max": [
+    48.612,
+    35.095,
+    49.505
+   ],
+   "tris": 154,
+   "materials": [
+    "rpgpp_st_mat_a.036"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_terrain_grass_01",
+   "file": "rpgpp_lt_terrain_grass_01.fbx",
+   "children": [],
+   "size": [
+    19.41,
+    0.464,
+    20.883
+   ],
+   "min": [
+    -9.762,
+    -0.002,
+    -10.216
+   ],
+   "max": [
+    9.648,
+    0.462,
+    10.667
+   ],
+   "tris": 416,
+   "materials": [
+    "rpgpp_st_mat_a.038"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_terrain_grass_02",
+   "file": "rpgpp_lt_terrain_grass_02.fbx",
+   "children": [],
+   "size": [
+    18.931,
+    0.452,
+    19.436
+   ],
+   "min": [
+    -9.439,
+    0.006,
+    -9.782
+   ],
+   "max": [
+    9.493,
+    0.458,
+    9.654
+   ],
+   "tris": 571,
+   "materials": [
+    "rpgpp_st_mat_a.005"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_terrain_path_01a",
+   "file": "rpgpp_lt_terrain_path_01a.fbx",
+   "children": [],
+   "size": [
+    10.874,
+    0.474,
+    4.354
+   ],
+   "min": [
+    -5.414,
+    -0.361,
+    -2.104
+   ],
+   "max": [
+    5.46,
+    0.113,
+    2.25
+   ],
+   "tris": 117,
+   "materials": [
+    "rpgpp_st_mat_a.043"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_terrain_path_01b",
+   "file": "rpgpp_lt_terrain_path_01b.fbx",
+   "children": [],
+   "size": [
+    10.892,
+    0.443,
+    4.129
+   ],
+   "min": [
+    -5.329,
+    -0.356,
+    -2.089
+   ],
+   "max": [
+    5.562,
+    0.087,
+    2.04
+   ],
+   "tris": 123,
+   "materials": [
+    "rpgpp_st_mat_a.042"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_terrain_sand_01",
+   "file": "rpgpp_lt_terrain_sand_01.fbx",
+   "children": [],
+   "size": [
+    11.024,
+    0.505,
+    11.38
+   ],
+   "min": [
+    -5.338,
+    -0.128,
+    -5.216
+   ],
+   "max": [
+    5.686,
+    0.376,
+    6.163
+   ],
+   "tris": 220,
+   "materials": [
+    "rpgpp_st_mat_a.037"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_tree_01",
+   "file": "rpgpp_lt_tree_01.fbx",
+   "children": [],
+   "size": [
+    3.163,
+    7.444,
+    2.813
+   ],
+   "min": [
+    -1.914,
+    -0.0,
+    -1.812
+   ],
+   "max": [
+    1.249,
+    7.444,
+    1.002
+   ],
+   "tris": 238,
+   "materials": [
+    "rpgpp_st_mat_a.039"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_tree_02",
+   "file": "rpgpp_lt_tree_02.fbx",
+   "children": [],
+   "size": [
+    6.248,
+    7.892,
+    2.77
+   ],
+   "min": [
+    -3.844,
+    -0.0,
+    -1.22
+   ],
+   "max": [
+    2.404,
+    7.892,
+    1.551
+   ],
+   "tris": 479,
+   "materials": [
+    "rpgpp_st_mat_a.006"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_tree_pine_01",
+   "file": "rpgpp_lt_tree_pine_01.fbx",
+   "children": [],
+   "size": [
+    3.109,
+    8.134,
+    3.591
+   ],
+   "min": [
+    -1.561,
+    -0.0,
+    -2.149
+   ],
+   "max": [
+    1.548,
+    8.134,
+    1.443
+   ],
+   "tris": 216,
+   "materials": [
+    "rpgpp_st_mat_a.040"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_banner_01a",
+   "file": "rpgpp_lt_banner_01a.fbx",
+   "children": [],
+   "size": [
+    0.967,
+    1.352,
+    0.11
+   ],
+   "min": [
+    -0.488,
+    -0.041,
+    -0.056
+   ],
+   "max": [
+    0.48,
+    1.312,
+    0.054
+   ],
+   "tris": 358,
+   "materials": [
+    "rpgpp_st_mat_a.027"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_banner_01b",
+   "file": "rpgpp_lt_banner_01b.fbx",
+   "children": [],
+   "size": [
+    0.967,
+    1.663,
+    0.11
+   ],
+   "min": [
+    -0.478,
+    -0.033,
+    -0.056
+   ],
+   "max": [
+    0.489,
+    1.63,
+    0.054
+   ],
+   "tris": 242,
+   "materials": [
+    "rpgpp_st_mat_a.007"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_barrel_01",
+   "file": "rpgpp_lt_barrel_01.fbx",
+   "children": [],
+   "size": [
+    0.852,
+    1.158,
+    0.861
+   ],
+   "min": [
+    -0.432,
+    -0.007,
+    -0.43
+   ],
+   "max": [
+    0.42,
+    1.151,
+    0.431
+   ],
+   "tris": 682,
+   "materials": [
+    "rpgpp_st_mat_a.008"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_barrel_02",
+   "file": "rpgpp_lt_barrel_02.fbx",
+   "children": [],
+   "size": [
+    0.945,
+    0.947,
+    0.96
+   ],
+   "min": [
+    -0.482,
+    0.003,
+    -0.482
+   ],
+   "max": [
+    0.463,
+    0.95,
+    0.478
+   ],
+   "tris": 642,
+   "materials": [
+    "rpgpp_lt_mat_a.010"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_basket_01",
+   "file": "rpgpp_lt_basket_01.fbx",
+   "children": [],
+   "size": [
+    0.841,
+    0.65,
+    0.841
+   ],
+   "min": [
+    -0.42,
+    -0.0,
+    -0.42
+   ],
+   "max": [
+    0.42,
+    0.65,
+    0.42
+   ],
+   "tris": 206,
+   "materials": [
+    "rpgpp_lt_mat_a.011"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_basket_02",
+   "file": "rpgpp_lt_basket_02.fbx",
+   "children": [],
+   "size": [
+    0.615,
+    0.911,
+    0.615
+   ],
+   "min": [
+    -0.307,
+    -0.0,
+    -0.307
+   ],
+   "max": [
+    0.307,
+    0.911,
+    0.307
+   ],
+   "tris": 168,
+   "materials": [
+    "rpgpp_lt_mat_a.012"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bathtub_wood_01",
+   "file": "rpgpp_lt_bathtub_wood_01.fbx",
+   "children": [],
+   "size": [
+    1.526,
+    0.528,
+    1.525
+   ],
+   "min": [
+    -0.763,
+    0.002,
+    -0.763
+   ],
+   "max": [
+    0.763,
+    0.53,
+    0.763
+   ],
+   "tris": 432,
+   "materials": [
+    "rpgpp_st_mat_a.009"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bench_wood_01",
+   "file": "rpgpp_lt_bench_wood_01.fbx",
+   "children": [],
+   "size": [
+    1.755,
+    0.508,
+    0.389
+   ],
+   "min": [
+    -0.883,
+    0.0,
+    -0.201
+   ],
+   "max": [
+    0.873,
+    0.508,
+    0.189
+   ],
+   "tris": 80,
+   "materials": [
+    "rpgpp_st_mat_a.010"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bench_wood_02",
+   "file": "rpgpp_lt_bench_wood_02.fbx",
+   "children": [],
+   "size": [
+    1.561,
+    0.435,
+    0.419
+   ],
+   "min": [
+    -0.81,
+    -0.0,
+    -0.214
+   ],
+   "max": [
+    0.751,
+    0.435,
+    0.205
+   ],
+   "tris": 168,
+   "materials": [
+    "rpgpp_lt_mat_a.013"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bench_wood_03",
+   "file": "rpgpp_lt_bench_wood_03.fbx",
+   "children": [],
+   "size": [
+    1.755,
+    0.941,
+    0.434
+   ],
+   "min": [
+    -0.883,
+    -0.041,
+    -0.201
+   ],
+   "max": [
+    0.873,
+    0.899,
+    0.234
+   ],
+   "tris": 262,
+   "materials": [
+    "rpgpp_lt_mat_a.014"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bird_house_01",
+   "file": "rpgpp_lt_bird_house_01.fbx",
+   "children": [],
+   "size": [
+    0.745,
+    2.563,
+    0.661
+   ],
+   "min": [
+    -0.373,
+    0.0,
+    -0.324
+   ],
+   "max": [
+    0.372,
+    2.564,
+    0.337
+   ],
+   "tris": 292,
+   "materials": [
+    "rpgpp_st_mat_a.011"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bowl_metal_01",
+   "file": "rpgpp_lt_bowl_metal_01.fbx",
+   "children": [],
+   "size": [
+    0.87,
+    0.675,
+    0.866
+   ],
+   "min": [
+    -0.436,
+    -0.0,
+    -0.433
+   ],
+   "max": [
+    0.435,
+    0.675,
+    0.433
+   ],
+   "tris": 512,
+   "materials": [
+    "rpgpp_st_mat_a.012"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_box_wood_01",
+   "file": "rpgpp_lt_box_wood_01.fbx",
+   "children": [],
+   "size": [
+    0.924,
+    0.814,
+    1.172
+   ],
+   "min": [
+    -0.459,
+    -0.41,
+    -0.585
+   ],
+   "max": [
+    0.465,
+    0.404,
+    0.587
+   ],
+   "tris": 497,
+   "materials": [
+    "rpgpp_st_mat_a.013"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_broom_01",
+   "file": "rpgpp_lt_broom_01.fbx",
+   "children": [],
+   "size": [
+    1.464,
+    0.114,
+    0.43
+   ],
+   "min": [
+    -0.0,
+    -0.05,
+    -0.218
+   ],
+   "max": [
+    1.464,
+    0.064,
+    0.212
+   ],
+   "tris": 320,
+   "materials": [
+    "rpgpp_st_mat_a.014"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_bucket_01",
+   "file": "rpgpp_lt_bucket_01.fbx",
+   "children": [],
+   "size": [
+    0.562,
+    0.719,
+    0.623
+   ],
+   "min": [
+    -0.283,
+    -0.002,
+    -0.302
+   ],
+   "max": [
+    0.279,
+    0.717,
+    0.321
+   ],
+   "tris": 824,
+   "materials": [
+    "rpgpp_st_mat_a.015"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_chair_01a",
+   "file": "rpgpp_lt_chair_01a.fbx",
+   "children": [],
+   "size": [
+    0.581,
+    1.144,
+    0.631
+   ],
+   "min": [
+    -0.265,
+    -0.0,
+    -0.593
+   ],
+   "max": [
+    0.316,
+    1.144,
+    0.037
+   ],
+   "tris": 278,
+   "materials": [
+    "rpgpp_st_mat_a.016"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_chair_01b",
+   "file": "rpgpp_lt_chair_01b.fbx",
+   "children": [],
+   "size": [
+    0.581,
+    1.144,
+    0.631
+   ],
+   "min": [
+    -0.265,
+    -0.0,
+    -0.593
+   ],
+   "max": [
+    0.316,
+    1.144,
+    0.037
+   ],
+   "tris": 240,
+   "materials": [
+    "rpgpp_st_mat_a.017"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_crate_01",
+   "file": "rpgpp_lt_crate_01.fbx",
+   "children": [],
+   "size": [
+    0.611,
+    0.386,
+    1.237
+   ],
+   "min": [
+    -0.303,
+    -0.0,
+    -0.619
+   ],
+   "max": [
+    0.308,
+    0.386,
+    0.618
+   ],
+   "tris": 262,
+   "materials": [
+    "rpgpp_lt_mat_a.015"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_crate_02",
+   "file": "rpgpp_lt_crate_02.fbx",
+   "children": [],
+   "size": [
+    0.698,
+    0.449,
+    0.758
+   ],
+   "min": [
+    -0.348,
+    -0.002,
+    -0.399
+   ],
+   "max": [
+    0.351,
+    0.448,
+    0.359
+   ],
+   "tris": 394,
+   "materials": [
+    "rpgpp_lt_mat_a.016"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_crate_03",
+   "file": "rpgpp_lt_crate_03.fbx",
+   "children": [],
+   "size": [
+    0.991,
+    0.485,
+    0.588
+   ],
+   "min": [
+    -0.496,
+    0.001,
+    -0.295
+   ],
+   "max": [
+    0.495,
+    0.485,
+    0.293
+   ],
+   "tris": 414,
+   "materials": [
+    "rpgpp_lt_mat_a.017"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_hanger_clothes_01",
+   "file": "rpgpp_lt_hanger_clothes_01.fbx",
+   "children": [],
+   "size": [
+    3.676,
+    2.847,
+    1.752
+   ],
+   "min": [
+    -1.791,
+    -0.0,
+    -1.074
+   ],
+   "max": [
+    1.885,
+    2.847,
+    0.677
+   ],
+   "tris": 843,
+   "materials": [
+    "rpgpp_st_mat_a.018"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_hanger_wood_01",
+   "file": "rpgpp_lt_hanger_wood_01.fbx",
+   "children": [],
+   "size": [
+    2.643,
+    2.165,
+    0.423
+   ],
+   "min": [
+    -1.316,
+    -0.0,
+    -0.179
+   ],
+   "max": [
+    1.327,
+    2.165,
+    0.244
+   ],
+   "tris": 264,
+   "materials": [
+    "rpgpp_st_mat_a.019"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_hanger_wood_02",
+   "file": "rpgpp_lt_hanger_wood_02.fbx",
+   "children": [],
+   "size": [
+    2.227,
+    1.517,
+    0.727
+   ],
+   "min": [
+    -1.097,
+    -0.038,
+    -0.427
+   ],
+   "max": [
+    1.129,
+    1.478,
+    0.3
+   ],
+   "tris": 506,
+   "materials": [
+    "rpgpp_lt_mat_a.018"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_jug_01",
+   "file": "rpgpp_lt_jug_01.fbx",
+   "children": [],
+   "size": [
+    0.292,
+    0.538,
+    0.228
+   ],
+   "min": [
+    -0.114,
+    -0.0,
+    -0.114
+   ],
+   "max": [
+    0.178,
+    0.538,
+    0.114
+   ],
+   "tris": 422,
+   "materials": [
+    "rpgpp_st_mat_a.020"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_ladder_01",
+   "file": "rpgpp_lt_ladder_01.fbx",
+   "children": [],
+   "size": [
+    0.711,
+    2.99,
+    0.6
+   ],
+   "min": [
+    -0.351,
+    -0.009,
+    -0.523
+   ],
+   "max": [
+    0.36,
+    2.981,
+    0.077
+   ],
+   "tris": 260,
+   "materials": [
+    "rpgpp_st_mat_a.021"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_log_wood_01",
+   "file": "rpgpp_lt_log_wood_01.fbx",
+   "children": [],
+   "size": [
+    2.293,
+    1.182,
+    1.748
+   ],
+   "min": [
+    -1.199,
+    -0.513,
+    -0.854
+   ],
+   "max": [
+    1.095,
+    0.669,
+    0.895
+   ],
+   "tris": 932,
+   "materials": [
+    "rpgpp_st_mat_a.022"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_log_wood_02a",
+   "file": "rpgpp_lt_log_wood_02a.fbx",
+   "children": [],
+   "size": [
+    3.211,
+    0.956,
+    0.86
+   ],
+   "min": [
+    -1.558,
+    -0.0,
+    -0.442
+   ],
+   "max": [
+    1.653,
+    0.956,
+    0.419
+   ],
+   "tris": 1200,
+   "materials": [
+    "rpgpp_lt_mat_a.019"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_log_wood_02b",
+   "file": "rpgpp_lt_log_wood_02b.fbx",
+   "children": [],
+   "size": [
+    1.74,
+    0.905,
+    0.858
+   ],
+   "min": [
+    -0.006,
+    -0.0,
+    -0.442
+   ],
+   "max": [
+    1.734,
+    0.905,
+    0.417
+   ],
+   "tris": 624,
+   "materials": [
+    "rpgpp_lt_mat_a.020"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_package_01",
+   "file": "rpgpp_lt_package_01.fbx",
+   "children": [],
+   "size": [
+    1.105,
+    0.598,
+    0.785
+   ],
+   "min": [
+    -0.554,
+    -0.297,
+    -0.393
+   ],
+   "max": [
+    0.551,
+    0.301,
+    0.392
+   ],
+   "tris": 356,
+   "materials": [
+    "rpgpp_st_mat_a.023"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_rake_01",
+   "file": "rpgpp_lt_rake_01.fbx",
+   "children": [],
+   "size": [
+    1.662,
+    0.14,
+    0.649
+   ],
+   "min": [
+    -0.0,
+    -0.001,
+    -0.305
+   ],
+   "max": [
+    1.661,
+    0.139,
+    0.344
+   ],
+   "tris": 365,
+   "materials": [
+    "rpgpp_st_mat_a.024"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_sack_01",
+   "file": "rpgpp_lt_sack_01.fbx",
+   "children": [],
+   "size": [
+    0.815,
+    0.514,
+    1.649
+   ],
+   "min": [
+    -0.469,
+    -0.226,
+    -0.0
+   ],
+   "max": [
+    0.346,
+    0.288,
+    1.649
+   ],
+   "tris": 243,
+   "materials": [
+    "rpgpp_st_mat_a.025"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_sack_02",
+   "file": "rpgpp_lt_sack_02.fbx",
+   "children": [],
+   "size": [
+    0.816,
+    1.095,
+    0.801
+   ],
+   "min": [
+    -0.382,
+    -0.009,
+    -0.395
+   ],
+   "max": [
+    0.434,
+    1.085,
+    0.406
+   ],
+   "tris": 215,
+   "materials": [
+    "rpgpp_lt_mat_a.021"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_sack_02_set",
+   "file": "rpgpp_lt_sack_02_set.fbx",
+   "children": [],
+   "size": [
+    0.881,
+    0.956,
+    1.258
+   ],
+   "min": [
+    -0.439,
+    -0.004,
+    -0.583
+   ],
+   "max": [
+    0.443,
+    0.952,
+    0.675
+   ],
+   "tris": 645,
+   "materials": [
+    "rpgpp_lt_mat_a.022"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_sack_open_01",
+   "file": "rpgpp_lt_sack_open_01.fbx",
+   "children": [],
+   "size": [
+    0.805,
+    1.094,
+    0.767
+   ],
+   "min": [
+    -0.374,
+    -0.004,
+    -0.417
+   ],
+   "max": [
+    0.431,
+    1.091,
+    0.35
+   ],
+   "tris": 246,
+   "materials": [
+    "rpgpp_st_mat_a.026"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_shield_wall_01a",
+   "file": "rpgpp_lt_shield_wall_01a.fbx",
+   "children": [],
+   "size": [
+    1.0,
+    1.0,
+    0.123
+   ],
+   "min": [
+    -0.501,
+    -0.5,
+    -0.034
+   ],
+   "max": [
+    0.499,
+    0.5,
+    0.089
+   ],
+   "tris": 230,
+   "materials": [
+    "rpgpp_st_mat_a.028"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_shield_wall_01b",
+   "file": "rpgpp_lt_shield_wall_01b.fbx",
+   "children": [],
+   "size": [
+    1.0,
+    1.0,
+    0.123
+   ],
+   "min": [
+    -0.501,
+    -0.5,
+    -0.034
+   ],
+   "max": [
+    0.499,
+    0.5,
+    0.089
+   ],
+   "tris": 168,
+   "materials": [
+    "rpgpp_st_mat_a.041"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_stones_01",
+   "file": "rpgpp_lt_stones_01.fbx",
+   "children": [],
+   "size": [
+    1.312,
+    0.792,
+    1.836
+   ],
+   "min": [
+    -0.625,
+    -0.0,
+    -0.953
+   ],
+   "max": [
+    0.687,
+    0.792,
+    0.883
+   ],
+   "tris": 291,
+   "materials": [
+    "rpgpp_lt_mat_a.023"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_table_01",
+   "file": "rpgpp_lt_table_01.fbx",
+   "children": [],
+   "size": [
+    2.708,
+    0.954,
+    1.573
+   ],
+   "min": [
+    -1.292,
+    -0.0,
+    -0.831
+   ],
+   "max": [
+    1.416,
+    0.954,
+    0.742
+   ],
+   "tris": 500,
+   "materials": [
+    "rpgpp_st_mat_a.044"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_trough_01",
+   "file": "rpgpp_lt_trough_01.fbx",
+   "children": [],
+   "size": [
+    2.058,
+    0.479,
+    0.53
+   ],
+   "min": [
+    -0.996,
+    -0.005,
+    -0.237
+   ],
+   "max": [
+    1.062,
+    0.474,
+    0.293
+   ],
+   "tris": 248,
+   "materials": [
+    "rpgpp_st_mat_a.045"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_vase_01",
+   "file": "rpgpp_lt_vase_01.fbx",
+   "children": [],
+   "size": [
+    0.436,
+    0.831,
+    0.363
+   ],
+   "min": [
+    -0.219,
+    -0.0,
+    -0.182
+   ],
+   "max": [
+    0.218,
+    0.831,
+    0.182
+   ],
+   "tris": 416,
+   "materials": [
+    "rpgpp_st_mat_a.046"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_vase_02",
+   "file": "rpgpp_lt_vase_02.fbx",
+   "children": [],
+   "size": [
+    0.355,
+    0.491,
+    0.355
+   ],
+   "min": [
+    -0.177,
+    -0.0,
+    -0.177
+   ],
+   "max": [
+    0.177,
+    0.491,
+    0.177
+   ],
+   "tris": 388,
+   "materials": [
+    "rpgpp_st_mat_a.047"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_vase_03",
+   "file": "rpgpp_lt_vase_03.fbx",
+   "children": [],
+   "size": [
+    0.374,
+    0.499,
+    0.393
+   ],
+   "min": [
+    -0.187,
+    -0.0,
+    -0.197
+   ],
+   "max": [
+    0.187,
+    0.499,
+    0.197
+   ],
+   "tris": 140,
+   "materials": [
+    "rpgpp_lt_mat_a.024"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_wagon_01",
+   "file": "rpgpp_lt_wagon_01.fbx",
+   "children": [],
+   "size": [
+    4.109,
+    2.037,
+    2.04
+   ],
+   "min": [
+    -2.986,
+    -0.741,
+    -1.119
+   ],
+   "max": [
+    1.123,
+    1.296,
+    0.921
+   ],
+   "tris": 1558,
+   "materials": [
+    "rpgpp_st_mat_a.048"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_well_01",
+   "file": "rpgpp_lt_well_01.fbx",
+   "children": [],
+   "size": [
+    2.716,
+    3.705,
+    2.142
+   ],
+   "min": [
+    -1.198,
+    -0.008,
+    -1.095
+   ],
+   "max": [
+    1.518,
+    3.698,
+    1.047
+   ],
+   "tris": 1115,
+   "materials": [
+    "rpgpp_st_mat_a.049"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_wood_path_01a",
+   "file": "rpgpp_lt_wood_path_01a.fbx",
+   "children": [],
+   "size": [
+    4.469,
+    0.165,
+    2.886
+   ],
+   "min": [
+    -4.404,
+    -0.058,
+    -2.31
+   ],
+   "max": [
+    0.066,
+    0.107,
+    0.575
+   ],
+   "tris": 408,
+   "materials": [
+    "rpgpp_st_mat_a.050"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_wood_path_01b",
+   "file": "rpgpp_lt_wood_path_01b.fbx",
+   "children": [],
+   "size": [
+    4.469,
+    0.165,
+    2.815
+   ],
+   "min": [
+    -4.404,
+    -0.058,
+    -2.259
+   ],
+   "max": [
+    0.066,
+    0.107,
+    0.556
+   ],
+   "tris": 408,
+   "materials": [
+    "rpgpp_st_mat_a.051"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_building_01",
+   "file": "rpgpp_lt_building_01.fbx",
+   "children": [],
+   "size": [
+    8.405,
+    10.177,
+    13.363
+   ],
+   "min": [
+    -4.295,
+    -1.24,
+    -7.171
+   ],
+   "max": [
+    4.11,
+    8.937,
+    6.192
+   ],
+   "tris": 8973,
+   "materials": [
+    "rpgpp_st_mat_a"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_building_02",
+   "file": "rpgpp_lt_building_02.fbx",
+   "children": [],
+   "size": [
+    8.411,
+    6.41,
+    9.064
+   ],
+   "min": [
+    -4.055,
+    -1.0,
+    -4.804
+   ],
+   "max": [
+    4.357,
+    5.41,
+    4.26
+   ],
+   "tris": 2231,
+   "materials": [
+    "rpgpp_st_mat_a.052"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_building_03",
+   "file": "rpgpp_lt_building_03.fbx",
+   "children": [],
+   "size": [
+    11.936,
+    10.698,
+    7.742
+   ],
+   "min": [
+    -4.884,
+    -0.506,
+    -3.846
+   ],
+   "max": [
+    7.052,
+    10.192,
+    3.896
+   ],
+   "tris": 7616,
+   "materials": [
+    "rpgpp_st_mat_a.053"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_building_04",
+   "file": "rpgpp_lt_building_04.fbx",
+   "children": [],
+   "size": [
+    8.411,
+    9.65,
+    9.732
+   ],
+   "min": [
+    -4.224,
+    -1.24,
+    -4.863
+   ],
+   "max": [
+    4.188,
+    8.41,
+    4.869
+   ],
+   "tris": 7355,
+   "materials": [
+    "rpgpp_st_mat_a.054"
+   ]
+  },
+  {
+   "name": "rpgpp_lt_building_05",
+   "file": "rpgpp_lt_building_05.fbx",
+   "children": [],
+   "size": [
+    11.262,
+    9.937,
+    11.307
+   ],
+   "min": [
+    -5.455,
+    -1.0,
+    -5.703
+   ],
+   "max": [
+    5.808,
+    8.937,
+    5.604
+   ],
+   "tris": 7084,
+   "materials": [
+    "rpgpp_st_mat_a.055"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RQR Lobby</title>
+<style>
+  :root { --bg:#14161a; --panel:#1d2027e6; --panel2:#262a33; --text:#e6e8ec; --muted:#8b93a3; --accent:#ff6a3d; --line:#333845; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:#0a0b12; color:var(--text); font:14px/1.4 system-ui, Segoe UI, sans-serif; overflow:hidden; }
+  canvas#c { display:block; width:100vw; height:100vh; touch-action:none; }
+  #loading { position:fixed; inset:0; display:grid; place-items:center; background:#0a0b12; z-index:10; }
+  #loading .box { text-align:center; }
+  #loading h1 { font-size:34px; margin:0 0 10px; } #loading h1 span { color:var(--accent); }
+  #loading p { color:var(--muted); margin:0; }
+  #hud { position:fixed; inset:0; pointer-events:none; display:none; }
+  .panel { position:absolute; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 12px; pointer-events:auto; backdrop-filter: blur(6px); }
+  #room { top:12px; left:12px; display:flex; gap:10px; align-items:center; }
+  #room b { font-size:22px; letter-spacing:3px; }
+  #room .lbl { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.8px; }
+  button { font:inherit; cursor:pointer; background:var(--panel2); color:var(--text); border:1px solid var(--line); border-radius:8px; padding:7px 10px; }
+  button:hover { border-color:var(--muted); }
+  button.primary { background:var(--accent); color:#111; border:0; font-weight:700; }
+  #list { top:12px; right:12px; width:220px; }
+  #list h2 { font-size:11px; text-transform:uppercase; letter-spacing:.8px; color:var(--muted); margin:0 0 6px; display:flex; justify-content:space-between; }
+  .pl { display:flex; align-items:center; gap:8px; padding:3px 0; }
+  .dot { width:10px; height:10px; border-radius:50%; flex:none; }
+  .pn { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .pm { color:var(--muted); font-size:12px; }
+  #hostpanel { right:12px; top:200px; width:220px; display:none; }
+  #hostpanel h2 { font-size:11px; text-transform:uppercase; letter-spacing:.8px; color:var(--muted); margin:0 0 6px; }
+  #games button { display:flex; flex-direction:column; align-items:flex-start; width:100%; margin:4px 0; text-align:left; gap:2px; }
+  #games small { color:var(--muted); }
+  #help { bottom:12px; left:12px; color:var(--muted); font-size:12px; }
+  #help b { color:var(--text); }
+  #settings { bottom:12px; right:12px; display:flex; flex-direction:column; gap:6px; font-size:12px; color:var(--muted); }
+  #settings label { display:flex; align-items:center; gap:8px; }
+  #settings input[type=range] { width:120px; }
+  #fps { position:absolute; top:74px; left:12px; color:var(--muted); font-size:11px; }
+  #toasts { position:absolute; top:70px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; gap:6px; align-items:center; }
+  .toast { background:#000a; border:1px solid var(--line); border-radius:8px; padding:8px 14px; font-size:14px; animation: fade .3s ease-out; }
+  @keyframes fade { from { opacity:0; transform:translateY(-6px); } }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+  "./src/characters.js": "./src/characters.js?v=202611080355",
+  "./src/profile.js": "./src/profile.js?v=202611080355",
+  "./src/nametag.js": "./src/nametag.js?v=202611080355",
+  "./src/lobby/main.js": "./src/lobby/main.js?v=202611080355",
+  "./src/lobby/world.js": "./src/lobby/world.js?v=202611080355",
+  "./src/lobby/kits.js": "./src/lobby/kits.js?v=202611080355",
+  "./src/lobby/player.js": "./src/lobby/player.js?v=202611080355",
+  "./src/lobby/net.js": "./src/lobby/net.js?v=202611080355"
+} }
+</script>
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="loading"><div class="box"><h1>Rage Quit <span>Rumble</span></h1><p id="loadtext">Loading…</p></div></div>
+<div id="hud">
+  <div id="room" class="panel"><div><div class="lbl">Room</div><b id="code">----</b></div><button id="copy" class="primary">Copy invite link</button><button id="leave">Leave</button></div>
+  <div id="fps"></div>
+  <div id="toasts"></div>
+  <div id="list" class="panel"><h2>Players <span id="count"></span></h2><div id="players"></div></div>
+  <div id="hostpanel" class="panel"><h2>Pick a minigame</h2><div id="games"></div></div>
+  <div id="help" class="panel"><b>WASD</b> move · <b>Shift</b> walk · <b>drag</b> look · <b>wheel</b> zoom · <b>1</b> wave · <b>2</b> punch · <b>3</b> kick · <b>4</b> interact · <b>5</b> roll</div>
+  <div id="settings" class="panel">
+    <label>Lag simulator <input id="lag" type="range" min="0" max="400" step="20" value="0"><span id="lagv">off</span></label>
+    <label><input id="bloomtoggle" type="checkbox" checked> Neon glow</label>
+  </div>
+</div>
+<script type="module" src="src/lobby/main.js?v=202611080355"></script>
+</body>
+</html>

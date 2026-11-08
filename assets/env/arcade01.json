@@ -1,0 +1,191 @@
+{
+ "pack": "arcade01",
+ "pieces": [
+  {
+   "name": "ArcadeStandardFBX",
+   "file": "ArcadeStandardFBX.fbx",
+   "children": [],
+   "size": [
+    2.0,
+    2.507,
+    4.089
+   ],
+   "min": [
+    -0.994,
+    -1.041,
+    -4.107
+   ],
+   "max": [
+    1.006,
+    1.466,
+    -0.017
+   ],
+   "tris": 102,
+   "materials": [
+    "Material"
+   ]
+  },
+  {
+   "name": "ChairShort",
+   "file": "ChairShort.fbx",
+   "children": [],
+   "size": [
+    1.014,
+    1.014,
+    0.957
+   ],
+   "min": [
+    -0.498,
+    -0.479,
+    -0.988
+   ],
+   "max": [
+    0.516,
+    0.535,
+    -0.031
+   ],
+   "tris": 256,
+   "materials": []
+  },
+  {
+   "name": "ChairTallfbx",
+   "file": "ChairTallfbx.fbx",
+   "children": [],
+   "size": [
+    1.014,
+    1.014,
+    1.77
+   ],
+   "min": [
+    -0.493,
+    -0.522,
+    -1.801
+   ],
+   "max": [
+    0.521,
+    0.492,
+    -0.031
+   ],
+   "tris": 256,
+   "materials": []
+  },
+  {
+   "name": "ControlButtonFbx",
+   "file": "ControlButtonFbx.fbx",
+   "children": [],
+   "size": [
+    0.096,
+    0.096,
+    0.023
+   ],
+   "min": [
+    -0.048,
+    -0.048,
+    -0.023
+   ],
+   "max": [
+    0.048,
+    0.048,
+    0.0
+   ],
+   "tris": 40,
+   "materials": [
+    "Material.001"
+   ]
+  },
+  {
+   "name": "ControlButtonHolder",
+   "file": "ControlButtonHolder.fbx",
+   "children": [],
+   "size": [
+    0.12,
+    0.121,
+    0.03
+   ],
+   "min": [
+    -1.48,
+    1.338,
+    1.029
+   ],
+   "max": [
+    -1.36,
+    1.459,
+    1.059
+   ],
+   "tris": 48,
+   "materials": [
+    "Material.002"
+   ]
+  },
+  {
+   "name": "ControlStickBasefbx",
+   "file": "ControlStickBasefbx.fbx",
+   "children": [],
+   "size": [
+    0.257,
+    0.257,
+    0.033
+   ],
+   "min": [
+    -0.129,
+    -0.129,
+    -0.033
+   ],
+   "max": [
+    0.129,
+    0.129,
+    -0.0
+   ],
+   "tris": 54,
+   "materials": [
+    "Material.003"
+   ]
+  },
+  {
+   "name": "ControlStickfbx",
+   "file": "ControlStickfbx.fbx",
+   "children": [],
+   "size": [
+    0.139,
+    0.133,
+    0.3
+   ],
+   "min": [
+    -0.07,
+    -0.066,
+    -0.3
+   ],
+   "max": [
+    0.07,
+    0.066,
+    0.0
+   ],
+   "tris": 200,
+   "materials": [
+    "Material.004"
+   ]
+  },
+  {
+   "name": "TableTop",
+   "file": "TableTop.fbx",
+   "children": [],
+   "size": [
+    1.76,
+    2.57,
+    1.627
+   ],
+   "min": [
+    -0.841,
+    -1.285,
+    -1.65
+   ],
+   "max": [
+    0.919,
+    1.285,
+    -0.023
+   ],
+   "tris": 84,
+   "materials": []
+  }
+ ]
+}

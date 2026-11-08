@@ -1,0 +1,156 @@
+{
+ "pack": "arcadepoly",
+ "pieces": [
+  {
+   "name": "ArcadeMachineV1",
+   "file": "ArcadeMachineV1.fbx",
+   "children": [],
+   "size": [
+    0.66,
+    1.582,
+    0.661
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.006
+   ],
+   "max": [
+    0.66,
+    1.582,
+    0.655
+   ],
+   "tris": 1045,
+   "materials": [
+    "ObjectAccent",
+    "PolyPack_Main1"
+   ]
+  },
+  {
+   "name": "ArcadeMachineV2",
+   "file": "ArcadeMachineV2.fbx",
+   "children": [],
+   "size": [
+    0.66,
+    1.61,
+    0.671
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.006
+   ],
+   "max": [
+    0.66,
+    1.61,
+    0.665
+   ],
+   "tris": 1328,
+   "materials": [
+    "ObjectAccent.001",
+    "PolyPack_Main1.001"
+   ]
+  },
+  {
+   "name": "ArcadeMachineV3",
+   "file": "ArcadeMachineV3.fbx",
+   "children": [],
+   "size": [
+    0.66,
+    1.633,
+    0.751
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "max": [
+    0.66,
+    1.633,
+    0.751
+   ],
+   "tris": 858,
+   "materials": [
+    "ObjectAccent.002",
+    "PolyPack_Main1.002"
+   ]
+  },
+  {
+   "name": "ArcadeMachineV4",
+   "file": "ArcadeMachineV4.fbx",
+   "children": [],
+   "size": [
+    0.66,
+    1.597,
+    0.799
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.003
+   ],
+   "max": [
+    0.66,
+    1.597,
+    0.795
+   ],
+   "tris": 1030,
+   "materials": [
+    "ObjectAccent.003",
+    "PolyPack_Main1.003"
+   ]
+  },
+  {
+   "name": "PinballMachineV1",
+   "file": "PinballMachineV1.fbx",
+   "children": [],
+   "size": [
+    0.599,
+    1.542,
+    1.154
+   ],
+   "min": [
+    -0.067,
+    -0.001,
+    -0.0
+   ],
+   "max": [
+    0.532,
+    1.541,
+    1.154
+   ],
+   "tris": 2852,
+   "materials": [
+    "Glass",
+    "ObjectAccent.004",
+    "PolyPack_Main1.004"
+   ]
+  },
+  {
+   "name": "PinballMachineV1_WO_Glass",
+   "file": "PinballMachineV1_WO_Glass.fbx",
+   "children": [],
+   "size": [
+    0.599,
+    1.542,
+    1.154
+   ],
+   "min": [
+    -0.067,
+    -0.001,
+    -0.0
+   ],
+   "max": [
+    0.532,
+    1.541,
+    1.154
+   ],
+   "tris": 2850,
+   "materials": [
+    "ObjectAccent.005",
+    "PolyPack_Main1.005"
+   ]
+  }
+ ]
+}

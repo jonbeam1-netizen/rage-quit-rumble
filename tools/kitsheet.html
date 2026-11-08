@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RQR kit contact sheet</title>
+<style>
+  body { margin:0; background:#1a1d24; color:#ddd; font:12px system-ui; }
+  #bar { padding:8px 12px; background:#111; position:sticky; top:0; display:flex; gap:12px; align-items:center; }
+  #grid { display:grid; grid-template-columns: repeat(auto-fill, 150px); gap:6px; padding:8px; }
+  .cell { background:#262a33; border-radius:6px; overflow:hidden; }
+  .cell img { width:150px; height:120px; display:block; background:#30343d; }
+  .cell div { padding:3px 5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .cell small { color:#8b93a3; }
+  canvas { display:none; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="bar"><b id="title">kit</b><span id="status"></span></div>
+<div id="grid"></div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const kit = new URLSearchParams(location.search).get('kit') || 'arcade01';
+document.getElementById('title').textContent = kit;
+const W = 300, H = 240;
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setSize(W, H); renderer.setPixelRatio(1);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xdfe8ff, 0x403830, 1.2));
+const key = new THREE.DirectionalLight(0xffffff, 2.0); key.position.set(2, 3, 2.5); scene.add(key);
+const camera = new THREE.PerspectiveCamera(30, W / H, 0.01, 1000);
+
+const [gltf, catalog] = await Promise.all([
+  new Promise((res, rej) => new GLTFLoader().load(`../assets/env/${kit}.glb`, res, undefined, rej)),
+  fetch(`../assets/env/${kit}.json`).then((r) => r.json()),
+]);
+const root = gltf.scene;
+const byName = new Map();
+root.traverse((o) => byName.set(o.name, o));
+const grid = document.getElementById('grid');
+let n = 0;
+for (const piece of catalog.pieces) {
+  const obj = byName.get(piece.name);
+  if (!obj) continue;
+  const clone = obj.clone(true);
+  scene.add(clone);
+  clone.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(clone);
+  const size = box.getSize(new THREE.Vector3());
+  const center = box.getCenter(new THREE.Vector3());
+  const r = Math.max(size.x, size.y, size.z) || 1;
+  camera.position.set(center.x + r * 1.1, center.y + r * 0.8, center.z + r * 1.4);
+  camera.lookAt(center);
+  camera.near = r * 0.01; camera.far = r * 10; camera.updateProjectionMatrix();
+  renderer.render(scene, camera);
+  const img = document.createElement('img');
+  img.src = renderer.domElement.toDataURL('image/jpeg', 0.7);
+  const cell = document.createElement('div');
+  cell.className = 'cell';
+  cell.appendChild(img);
+  const d = document.createElement('div');
+  d.innerHTML = `${piece.name}<br><small>${size.x.toFixed(1)} × ${size.y.toFixed(1)} × ${size.z.toFixed(1)} m · ${piece.tris} tris</small>`;
+  d.title = piece.name;
+  cell.appendChild(d);
+  grid.appendChild(cell);
+  scene.remove(clone);
+  n++;
+}
+document.getElementById('status').textContent = `${n} pieces`;
+document.title = `kit ${kit} done ${n}`;
+</script>
+</body>
+</html>

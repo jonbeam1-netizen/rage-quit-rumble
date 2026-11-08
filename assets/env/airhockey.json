@@ -1,0 +1,32 @@
+{
+ "pack": "airhockey",
+ "pieces": [
+  {
+   "name": "AirHockeyTable",
+   "file": "AirHockeyTable.fbx",
+   "children": [],
+   "size": [
+    2.664,
+    2.171,
+    1.55
+   ],
+   "min": [
+    -1.332,
+    0.005,
+    -0.775
+   ],
+   "max": [
+    1.332,
+    2.176,
+    0.775
+   ],
+   "tris": 2416,
+   "materials": [
+    "Hockey Table Material",
+    "Light Ends",
+    "Light Material",
+    "Score Display Material"
+   ]
+  }
+ ]
+}

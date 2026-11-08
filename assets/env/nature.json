@@ -1,0 +1,626 @@
+{
+ "pack": "nature",
+ "pieces": [
+  {
+   "name": "Branch_01",
+   "file": "Branch_01.fbx",
+   "children": [],
+   "size": [
+    0.814,
+    0.211,
+    0.149
+   ],
+   "min": [
+    0.148,
+    -0.025,
+    3.19
+   ],
+   "max": [
+    0.962,
+    0.186,
+    3.34
+   ],
+   "tris": 66,
+   "materials": [
+    "Nature_Mat_01"
+   ]
+  },
+  {
+   "name": "Bush_01",
+   "file": "Bush_01.fbx",
+   "children": [
+    "Bush_01_LOD0",
+    "Bush_01_LOD1"
+   ],
+   "size": [
+    0.799,
+    0.829,
+    0.826
+   ],
+   "min": [
+    -0.428,
+    -0.025,
+    -0.456
+   ],
+   "max": [
+    0.371,
+    0.804,
+    0.371
+   ],
+   "tris": 124,
+   "materials": [
+    "Nature_Mat_01.001"
+   ]
+  },
+  {
+   "name": "Bush_02",
+   "file": "Bush_02.fbx",
+   "children": [
+    "Bush_02_LOD0",
+    "Bush_02_LOD1"
+   ],
+   "size": [
+    0.589,
+    0.495,
+    0.608
+   ],
+   "min": [
+    -0.29,
+    -0.016,
+    -0.31
+   ],
+   "max": [
+    0.298,
+    0.479,
+    0.298
+   ],
+   "tris": 118,
+   "materials": [
+    "Nature_Mat_01.002"
+   ]
+  },
+  {
+   "name": "Bush_03",
+   "file": "Bush_03.fbx",
+   "children": [
+    "Bush_03_LOD0",
+    "Bush_03_LOD1"
+   ],
+   "size": [
+    1.503,
+    0.532,
+    1.515
+   ],
+   "min": [
+    -0.674,
+    -0.019,
+    -0.9
+   ],
+   "max": [
+    0.829,
+    0.513,
+    0.614
+   ],
+   "tris": 979,
+   "materials": [
+    "Nature_Mat_01.003"
+   ]
+  },
+  {
+   "name": "Flowers_01",
+   "file": "Flowers_01.fbx",
+   "children": [
+    "Flowers_01_LOD0",
+    "Flowers_01_LOD1"
+   ],
+   "size": [
+    0.311,
+    0.383,
+    0.317
+   ],
+   "min": [
+    -0.129,
+    -0.01,
+    -0.186
+   ],
+   "max": [
+    0.183,
+    0.373,
+    0.131
+   ],
+   "tris": 624,
+   "materials": [
+    "Nature_Mat_01.004"
+   ]
+  },
+  {
+   "name": "Flowers_02",
+   "file": "Flowers_02.fbx",
+   "children": [
+    "Flowers_02_LOD0",
+    "Flowers_02_LOD1"
+   ],
+   "size": [
+    0.316,
+    0.362,
+    0.241
+   ],
+   "min": [
+    -0.171,
+    -0.009,
+    -0.135
+   ],
+   "max": [
+    0.146,
+    0.353,
+    0.106
+   ],
+   "tris": 870,
+   "materials": [
+    "Nature_Mat_01.005"
+   ]
+  },
+  {
+   "name": "Grass_01",
+   "file": "Grass_01.fbx",
+   "children": [
+    "Grass_01_LOD0",
+    "Grass_01_LOD1"
+   ],
+   "size": [
+    0.289,
+    0.379,
+    0.291
+   ],
+   "min": [
+    -0.171,
+    -0.008,
+    -0.147
+   ],
+   "max": [
+    0.118,
+    0.371,
+    0.145
+   ],
+   "tris": 260,
+   "materials": [
+    "Nature_Mat_01.006"
+   ]
+  },
+  {
+   "name": "Grass_02",
+   "file": "Grass_02.fbx",
+   "children": [
+    "Grass_02_LOD0",
+    "Grass_02_LOD1"
+   ],
+   "size": [
+    0.17,
+    0.197,
+    0.191
+   ],
+   "min": [
+    -0.085,
+    -0.001,
+    -0.095
+   ],
+   "max": [
+    0.086,
+    0.196,
+    0.096
+   ],
+   "tris": 118,
+   "materials": [
+    "Nature_Mat_01.007"
+   ]
+  },
+  {
+   "name": "Ground_01",
+   "file": "Ground_01.fbx",
+   "children": [],
+   "size": [
+    29.765,
+    1.324,
+    29.74
+   ],
+   "min": [
+    -14.889,
+    -0.809,
+    -14.877
+   ],
+   "max": [
+    14.876,
+    0.515,
+    14.862
+   ],
+   "tris": 440,
+   "materials": [
+    "Nature_Mat_01.008"
+   ]
+  },
+  {
+   "name": "Ground_02",
+   "file": "Ground_02.fbx",
+   "children": [],
+   "size": [
+    29.766,
+    5.573,
+    29.74
+   ],
+   "min": [
+    -40.665,
+    -0.809,
+    -14.877
+   ],
+   "max": [
+    -10.899,
+    4.764,
+    14.862
+   ],
+   "tris": 440,
+   "materials": [
+    "Nature_Mat_01.009"
+   ]
+  },
+  {
+   "name": "Ground_03",
+   "file": "Ground_03.fbx",
+   "children": [],
+   "size": [
+    30.537,
+    0.923,
+    29.896
+   ],
+   "min": [
+    -15.295,
+    -0.283,
+    -15.033
+   ],
+   "max": [
+    15.242,
+    0.639,
+    14.862
+   ],
+   "tris": 440,
+   "materials": [
+    "Nature_Mat_01.010"
+   ]
+  },
+  {
+   "name": "Mushroom_01",
+   "file": "Mushroom_01.fbx",
+   "children": [
+    "Mushroom_01_LOD0",
+    "Mushroom_01_LOD1"
+   ],
+   "size": [
+    0.228,
+    0.341,
+    0.222
+   ],
+   "min": [
+    -0.123,
+    -0.0,
+    -0.108
+   ],
+   "max": [
+    0.105,
+    0.341,
+    0.114
+   ],
+   "tris": 382,
+   "materials": [
+    "Nature_Mat_01.011"
+   ]
+  },
+  {
+   "name": "Mushroom_02",
+   "file": "Mushroom_02.fbx",
+   "children": [
+    "Mushroom_02_LOD0",
+    "Mushroom_02_LOD1"
+   ],
+   "size": [
+    0.166,
+    0.23,
+    0.17
+   ],
+   "min": [
+    -0.081,
+    -0.0,
+    -0.079
+   ],
+   "max": [
+    0.085,
+    0.23,
+    0.091
+   ],
+   "tris": 114,
+   "materials": [
+    "Nature_Mat_01.012"
+   ]
+  },
+  {
+   "name": "Rock_01",
+   "file": "Rock_01.fbx",
+   "children": [],
+   "size": [
+    0.856,
+    0.535,
+    0.873
+   ],
+   "min": [
+    -0.284,
+    -0.244,
+    1.818
+   ],
+   "max": [
+    0.571,
+    0.29,
+    2.691
+   ],
+   "tris": 28,
+   "materials": [
+    "Nature_Mat_01.013"
+   ]
+  },
+  {
+   "name": "Rock_02",
+   "file": "Rock_02.fbx",
+   "children": [],
+   "size": [
+    0.175,
+    0.094,
+    0.163
+   ],
+   "min": [
+    -2.716,
+    -0.004,
+    3.187
+   ],
+   "max": [
+    -2.541,
+    0.089,
+    3.35
+   ],
+   "tris": 26,
+   "materials": [
+    "Nature_Mat_01.014"
+   ]
+  },
+  {
+   "name": "Rock_03",
+   "file": "Rock_03.fbx",
+   "children": [],
+   "size": [
+    0.309,
+    0.15,
+    0.309
+   ],
+   "min": [
+    -2.338,
+    -0.048,
+    3.091
+   ],
+   "max": [
+    -2.029,
+    0.102,
+    3.401
+   ],
+   "tris": 20,
+   "materials": [
+    "Nature_Mat_01.015"
+   ]
+  },
+  {
+   "name": "Rock_04",
+   "file": "Rock_04.fbx",
+   "children": [],
+   "size": [
+    1.053,
+    1.126,
+    0.955
+   ],
+   "min": [
+    0.977,
+    0.004,
+    1.711
+   ],
+   "max": [
+    2.031,
+    1.129,
+    2.666
+   ],
+   "tris": 28,
+   "materials": [
+    "Nature_Mat_01.016"
+   ]
+  },
+  {
+   "name": "Rock_05",
+   "file": "Rock_05.fbx",
+   "children": [],
+   "size": [
+    2.931,
+    1.946,
+    2.193
+   ],
+   "min": [
+    -1.363,
+    -0.937,
+    -1.013
+   ],
+   "max": [
+    1.567,
+    1.009,
+    1.18
+   ],
+   "tris": 76,
+   "materials": [
+    "SimpleNature_01"
+   ]
+  },
+  {
+   "name": "Stump_01",
+   "file": "Stump_01.fbx",
+   "children": [
+    "Stump_01_LOD0",
+    "Stump_01_LOD1"
+   ],
+   "size": [
+    0.659,
+    0.813,
+    0.571
+   ],
+   "min": [
+    -0.289,
+    -0.0,
+    -0.285
+   ],
+   "max": [
+    0.37,
+    0.813,
+    0.285
+   ],
+   "tris": 170,
+   "materials": [
+    "Nature_Mat_01.017"
+   ]
+  },
+  {
+   "name": "Tree_01",
+   "file": "Tree_01.fbx",
+   "children": [
+    "Tree_01_LOD0",
+    "Tree_01_LOD1"
+   ],
+   "size": [
+    2.731,
+    5.562,
+    2.5
+   ],
+   "min": [
+    -1.3,
+    0.0,
+    -1.182
+   ],
+   "max": [
+    1.431,
+    5.562,
+    1.319
+   ],
+   "tris": 658,
+   "materials": [
+    "Nature_Mat_01.018"
+   ]
+  },
+  {
+   "name": "Tree_02",
+   "file": "Tree_02.fbx",
+   "children": [
+    "Tree_02_LOD0",
+    "Tree_02_LOD1"
+   ],
+   "size": [
+    1.7,
+    4.218,
+    1.698
+   ],
+   "min": [
+    -0.817,
+    -0.017,
+    -0.853
+   ],
+   "max": [
+    0.884,
+    4.201,
+    0.845
+   ],
+   "tris": 692,
+   "materials": [
+    "Nature_Mat_01.019"
+   ]
+  },
+  {
+   "name": "Tree_03",
+   "file": "Tree_03.fbx",
+   "children": [
+    "Tree_03_LOD0",
+    "Tree_03_LOD1"
+   ],
+   "size": [
+    3.788,
+    4.985,
+    3.181
+   ],
+   "min": [
+    -1.991,
+    0.0,
+    -1.692
+   ],
+   "max": [
+    1.797,
+    4.985,
+    1.489
+   ],
+   "tris": 504,
+   "materials": [
+    "Nature_Mat_01.020"
+   ]
+  },
+  {
+   "name": "Tree_04",
+   "file": "Tree_04.fbx",
+   "children": [
+    "Tree_04_LOD0",
+    "Tree_04_LOD1"
+   ],
+   "size": [
+    2.702,
+    6.69,
+    2.243
+   ],
+   "min": [
+    -1.137,
+    -0.007,
+    -1.1
+   ],
+   "max": [
+    1.566,
+    6.683,
+    1.143
+   ],
+   "tris": 658,
+   "materials": [
+    "Nature_Mat_01.021"
+   ]
+  },
+  {
+   "name": "Tree_05",
+   "file": "Tree_05.fbx",
+   "children": [
+    "Tree_05_LOD0",
+    "Tree_05_LOD1"
+   ],
+   "size": [
+    2.129,
+    3.672,
+    2.193
+   ],
+   "min": [
+    -1.227,
+    -0.01,
+    -1.104
+   ],
+   "max": [
+    0.902,
+    3.661,
+    1.089
+   ],
+   "tris": 332,
+   "materials": [
+    "Nature_Mat_01.022"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2465 @@
+{
+ "pack": "city",
+ "pieces": [
+  {
+   "name": "Building Sky_big_color01",
+   "file": "Building Sky_big_color01.fbx",
+   "children": [],
+   "size": [
+    13.66,
+    24.802,
+    12.296
+   ],
+   "min": [
+    -6.83,
+    -0.0,
+    -6.024
+   ],
+   "max": [
+    6.83,
+    24.802,
+    6.273
+   ],
+   "tris": 448,
+   "materials": [
+    "Building Sky_big_color01"
+   ]
+  },
+  {
+   "name": "Building Sky_small_color01",
+   "file": "Building Sky_small_color01.fbx",
+   "children": [],
+   "size": [
+    13.0,
+    16.929,
+    13.065
+   ],
+   "min": [
+    -6.5,
+    -0.0,
+    -6.057
+   ],
+   "max": [
+    6.5,
+    16.929,
+    7.008
+   ],
+   "tris": 320,
+   "materials": [
+    "Building Sky_small_color01"
+   ]
+  },
+  {
+   "name": "Building_Auto Service",
+   "file": "Building_Auto Service.fbx",
+   "children": [],
+   "size": [
+    18.272,
+    7.0,
+    8.264
+   ],
+   "min": [
+    -8.915,
+    0.0,
+    -4.083
+   ],
+   "max": [
+    9.357,
+    7.0,
+    4.181
+   ],
+   "tris": 196,
+   "materials": [
+    "Building_Auto Service"
+   ]
+  },
+  {
+   "name": "Building_Bakery",
+   "file": "Building_Bakery.fbx",
+   "children": [],
+   "size": [
+    13.59,
+    8.48,
+    11.275
+   ],
+   "min": [
+    -6.795,
+    -0.0,
+    -5.359
+   ],
+   "max": [
+    6.794,
+    8.48,
+    5.916
+   ],
+   "tris": 368,
+   "materials": [
+    "Building_Bakery"
+   ]
+  },
+  {
+   "name": "Building_Bar",
+   "file": "Building_Bar.fbx",
+   "children": [],
+   "size": [
+    7.358,
+    10.411,
+    7.407
+   ],
+   "min": [
+    -3.656,
+    -0.0,
+    -3.42
+   ],
+   "max": [
+    3.701,
+    10.411,
+    3.988
+   ],
+   "tris": 204,
+   "materials": [
+    "Building_Bar"
+   ]
+  },
+  {
+   "name": "Building_Books Shop",
+   "file": "Building_Books Shop.fbx",
+   "children": [],
+   "size": [
+    12.039,
+    8.357,
+    12.036
+   ],
+   "min": [
+    -6.522,
+    0.0,
+    -5.511
+   ],
+   "max": [
+    5.517,
+    8.357,
+    6.524
+   ],
+   "tris": 338,
+   "materials": [
+    "Building_Books Shop"
+   ]
+  },
+  {
+   "name": "Building_Chicken Shop",
+   "file": "Building_Chicken Shop.fbx",
+   "children": [],
+   "size": [
+    11.219,
+    9.758,
+    10.0
+   ],
+   "min": [
+    -5.609,
+    -0.001,
+    -4.791
+   ],
+   "max": [
+    5.609,
+    9.757,
+    5.209
+   ],
+   "tris": 216,
+   "materials": [
+    "Building_Chicken Shop"
+   ]
+  },
+  {
+   "name": "Building_Clothing",
+   "file": "Building_Clothing.fbx",
+   "children": [],
+   "size": [
+    12.126,
+    11.606,
+    12.156
+   ],
+   "min": [
+    -6.146,
+    0.0,
+    -6.043
+   ],
+   "max": [
+    5.98,
+    11.606,
+    6.112
+   ],
+   "tris": 548,
+   "materials": [
+    "Building_Clothing"
+   ]
+  },
+  {
+   "name": "Building_Coffee Shop",
+   "file": "Building_Coffee Shop.fbx",
+   "children": [],
+   "size": [
+    19.375,
+    7.002,
+    12.458
+   ],
+   "min": [
+    -9.36,
+    -0.001,
+    -6.073
+   ],
+   "max": [
+    10.015,
+    7.001,
+    6.385
+   ],
+   "tris": 324,
+   "materials": [
+    "Building_Coffee Shop"
+   ]
+  },
+  {
+   "name": "Building_Drug Store",
+   "file": "Building_Drug Store.fbx",
+   "children": [],
+   "size": [
+    11.219,
+    6.499,
+    10.572
+   ],
+   "min": [
+    -5.609,
+    -0.0,
+    -4.924
+   ],
+   "max": [
+    5.609,
+    6.499,
+    5.648
+   ],
+   "tris": 132,
+   "materials": [
+    "Building_Drug Store"
+   ]
+  },
+  {
+   "name": "Building_Factory",
+   "file": "Building_Factory.fbx",
+   "children": [],
+   "size": [
+    16.4,
+    18.97,
+    27.5
+   ],
+   "min": [
+    -8.2,
+    -0.0,
+    -14.277
+   ],
+   "max": [
+    8.2,
+    18.97,
+    13.223
+   ],
+   "tris": 688,
+   "materials": [
+    "Building_Factory"
+   ]
+  },
+  {
+   "name": "Building_Fast Food",
+   "file": "Building_Fast Food.fbx",
+   "children": [],
+   "size": [
+    11.219,
+    9.758,
+    10.353
+   ],
+   "min": [
+    -5.644,
+    -0.0,
+    -5.372
+   ],
+   "max": [
+    5.575,
+    9.758,
+    4.981
+   ],
+   "tris": 208,
+   "materials": [
+    "Building_Fast Food"
+   ]
+  },
+  {
+   "name": "Building_Fruits  Shop",
+   "file": "Building_Fruits  Shop.fbx",
+   "children": [],
+   "size": [
+    12.126,
+    11.606,
+    12.156
+   ],
+   "min": [
+    -6.198,
+    0.0,
+    -5.989
+   ],
+   "max": [
+    5.929,
+    11.606,
+    6.167
+   ],
+   "tris": 524,
+   "materials": [
+    "Building_Fruits  Shop"
+   ]
+  },
+  {
+   "name": "Building_Gas Station",
+   "file": "Building_Gas Station.fbx",
+   "children": [],
+   "size": [
+    13.0,
+    7.994,
+    25.602
+   ],
+   "min": [
+    -6.434,
+    -0.0,
+    -10.372
+   ],
+   "max": [
+    6.566,
+    7.994,
+    15.23
+   ],
+   "tris": 1028,
+   "materials": [
+    "Building_Gas Station"
+   ]
+  },
+  {
+   "name": "Building_Gift Shop",
+   "file": "Building_Gift Shop.fbx",
+   "children": [],
+   "size": [
+    11.219,
+    6.499,
+    10.572
+   ],
+   "min": [
+    -5.609,
+    -0.0,
+    -4.924
+   ],
+   "max": [
+    5.609,
+    6.499,
+    5.648
+   ],
+   "tris": 132,
+   "materials": [
+    "Building_Gift Shop"
+   ]
+  },
+  {
+   "name": "Building_House_01_color01",
+   "file": "Building_House_01_color01.fbx",
+   "children": [],
+   "size": [
+    17.892,
+    9.054,
+    12.603
+   ],
+   "min": [
+    -8.385,
+    -0.001,
+    -6.435
+   ],
+   "max": [
+    9.506,
+    9.053,
+    6.168
+   ],
+   "tris": 872,
+   "materials": [
+    "Building_House_01_color01"
+   ]
+  },
+  {
+   "name": "Building_House_02_color01",
+   "file": "Building_House_02_color01.fbx",
+   "children": [],
+   "size": [
+    17.583,
+    9.044,
+    13.007
+   ],
+   "min": [
+    -8.368,
+    -0.0,
+    -6.609
+   ],
+   "max": [
+    9.215,
+    9.044,
+    6.398
+   ],
+   "tris": 816,
+   "materials": [
+    "Building_House_02_color01"
+   ]
+  },
+  {
+   "name": "Building_House_03_color01",
+   "file": "Building_House_03_color01.fbx",
+   "children": [],
+   "size": [
+    17.255,
+    9.611,
+    14.408
+   ],
+   "min": [
+    -8.551,
+    -0.063,
+    -7.384
+   ],
+   "max": [
+    8.704,
+    9.548,
+    7.024
+   ],
+   "tris": 1568,
+   "materials": [
+    "Building_House_03_color01"
+   ]
+  },
+  {
+   "name": "Building_House_04_color01",
+   "file": "Building_House_04_color01.fbx",
+   "children": [],
+   "size": [
+    24.772,
+    7.87,
+    15.322
+   ],
+   "min": [
+    -13.185,
+    -0.22,
+    -7.546
+   ],
+   "max": [
+    11.587,
+    7.65,
+    7.777
+   ],
+   "tris": 378,
+   "materials": [
+    "Building_House_04_color01"
+   ]
+  },
+  {
+   "name": "Building_Music Store",
+   "file": "Building_Music Store.fbx",
+   "children": [],
+   "size": [
+    11.219,
+    9.758,
+    10.353
+   ],
+   "min": [
+    -5.644,
+    -0.001,
+    -5.372
+   ],
+   "max": [
+    5.575,
+    9.757,
+    4.981
+   ],
+   "tris": 208,
+   "materials": [
+    "Building_Music Store"
+   ]
+  },
+  {
+   "name": "Building_Pizza",
+   "file": "Building_Pizza.fbx",
+   "children": [],
+   "size": [
+    14.971,
+    7.795,
+    13.568
+   ],
+   "min": [
+    -6.795,
+    -0.0,
+    -6.705
+   ],
+   "max": [
+    8.176,
+    7.795,
+    6.862
+   ],
+   "tris": 276,
+   "materials": [
+    "Building_Pizza"
+   ]
+  },
+  {
+   "name": "Building_Residential_color01",
+   "file": "Building_Residential_color01.fbx",
+   "children": [],
+   "size": [
+    16.229,
+    19.24,
+    12.665
+   ],
+   "min": [
+    -8.115,
+    -0.0,
+    -6.275
+   ],
+   "max": [
+    8.115,
+    19.24,
+    6.39
+   ],
+   "tris": 1208,
+   "materials": [
+    "Building_Residential_color01"
+   ]
+  },
+  {
+   "name": "Building_Restaurant",
+   "file": "Building_Restaurant.fbx",
+   "children": [],
+   "size": [
+    7.358,
+    10.411,
+    7.407
+   ],
+   "min": [
+    -3.656,
+    -0.0,
+    -3.42
+   ],
+   "max": [
+    3.701,
+    10.411,
+    3.988
+   ],
+   "tris": 204,
+   "materials": [
+    "Building_Restaurant"
+   ]
+  },
+  {
+   "name": "Building_Shoes Shop",
+   "file": "Building_Shoes Shop.fbx",
+   "children": [],
+   "size": [
+    12.039,
+    8.357,
+    12.036
+   ],
+   "min": [
+    -6.522,
+    -0.0,
+    -5.511
+   ],
+   "max": [
+    5.517,
+    8.357,
+    6.524
+   ],
+   "tris": 338,
+   "materials": [
+    "Building_Shoes Shop"
+   ]
+  },
+  {
+   "name": "Building_Stadium",
+   "file": "Building_Stadium.fbx",
+   "children": [],
+   "size": [
+    35.46,
+    11.73,
+    44.755
+   ],
+   "min": [
+    -17.408,
+    -0.042,
+    -22.38
+   ],
+   "max": [
+    18.052,
+    11.688,
+    22.376
+   ],
+   "tris": 6700,
+   "materials": [
+    "Building_Stadium"
+   ]
+  },
+  {
+   "name": "Building_Super Market",
+   "file": "Building_Super Market.fbx",
+   "children": [],
+   "size": [
+    23.753,
+    7.578,
+    13.253
+   ],
+   "min": [
+    -11.403,
+    -0.001,
+    -5.8
+   ],
+   "max": [
+    12.35,
+    7.578,
+    7.453
+   ],
+   "tris": 464,
+   "materials": [
+    "Building_Super Market"
+   ]
+  },
+  {
+   "name": "Natures_Big Tree",
+   "file": "Natures_Big Tree.fbx",
+   "children": [],
+   "size": [
+    4.953,
+    6.118,
+    5.149
+   ],
+   "min": [
+    -2.345,
+    -0.0,
+    -2.603
+   ],
+   "max": [
+    2.607,
+    6.118,
+    2.546
+   ],
+   "tris": 444,
+   "materials": [
+    "Natures"
+   ]
+  },
+  {
+   "name": "Natures_Bush_01",
+   "file": "Natures_Bush_01.fbx",
+   "children": [],
+   "size": [
+    1.316,
+    3.071,
+    1.292
+   ],
+   "min": [
+    -0.687,
+    -0.0,
+    -0.651
+   ],
+   "max": [
+    0.629,
+    3.071,
+    0.641
+   ],
+   "tris": 54,
+   "materials": [
+    "Natures.001"
+   ]
+  },
+  {
+   "name": "Natures_Bush_02",
+   "file": "Natures_Bush_02.fbx",
+   "children": [],
+   "size": [
+    2.898,
+    1.003,
+    2.502
+   ],
+   "min": [
+    -1.45,
+    0.0,
+    -1.248
+   ],
+   "max": [
+    1.448,
+    1.003,
+    1.253
+   ],
+   "tris": 30,
+   "materials": [
+    "Natures.002"
+   ]
+  },
+  {
+   "name": "Natures_Bush_03",
+   "file": "Natures_Bush_03.fbx",
+   "children": [],
+   "size": [
+    1.355,
+    0.469,
+    1.17
+   ],
+   "min": [
+    -0.678,
+    -0.0,
+    -0.584
+   ],
+   "max": [
+    0.677,
+    0.469,
+    0.586
+   ],
+   "tris": 30,
+   "materials": [
+    "Natures.003"
+   ]
+  },
+  {
+   "name": "Natures_Cube Tree",
+   "file": "Natures_Cube Tree.fbx",
+   "children": [],
+   "size": [
+    3.393,
+    4.028,
+    3.194
+   ],
+   "min": [
+    -1.566,
+    0.001,
+    -1.577
+   ],
+   "max": [
+    1.827,
+    4.028,
+    1.617
+   ],
+   "tris": 244,
+   "materials": [
+    "Natures.004"
+   ]
+  },
+  {
+   "name": "Natures_Fir Tree",
+   "file": "Natures_Fir Tree.fbx",
+   "children": [],
+   "size": [
+    3.391,
+    7.349,
+    3.915
+   ],
+   "min": [
+    -1.695,
+    0.0,
+    -1.958
+   ],
+   "max": [
+    1.695,
+    7.349,
+    1.958
+   ],
+   "tris": 184,
+   "materials": [
+    "Natures.005"
+   ]
+  },
+  {
+   "name": "Natures_Grass Bar",
+   "file": "Natures_Grass Bar.fbx",
+   "children": [],
+   "size": [
+    1.0,
+    0.8,
+    7.0
+   ],
+   "min": [
+    -0.5,
+    -0.0,
+    -3.5
+   ],
+   "max": [
+    0.5,
+    0.8,
+    3.5
+   ],
+   "tris": 12,
+   "materials": [
+    "Natures.006"
+   ]
+  },
+  {
+   "name": "Natures_Grass Fence",
+   "file": "Natures_Grass Fence.fbx",
+   "children": [],
+   "size": [
+    1.0,
+    1.2,
+    7.0
+   ],
+   "min": [
+    -0.5,
+    -0.0,
+    -3.5
+   ],
+   "max": [
+    0.5,
+    1.2,
+    3.5
+   ],
+   "tris": 12,
+   "materials": [
+    "Natures.007"
+   ]
+  },
+  {
+   "name": "Natures_Grass Tile Small",
+   "file": "Natures_Grass Tile Small.fbx",
+   "children": [],
+   "size": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "min": [
+    -5.0,
+    -0.0,
+    -5.0
+   ],
+   "max": [
+    5.0,
+    0.0,
+    5.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Natures.008"
+   ]
+  },
+  {
+   "name": "Natures_Grass Tile",
+   "file": "Natures_Grass Tile.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.0,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Natures.009"
+   ]
+  },
+  {
+   "name": "Natures_House Floor",
+   "file": "Natures_House Floor.fbx",
+   "children": [],
+   "size": [
+    3.0,
+    0.2,
+    10.0
+   ],
+   "min": [
+    -1.5,
+    -0.0,
+    -5.0
+   ],
+   "max": [
+    1.5,
+    0.2,
+    5.0
+   ],
+   "tris": 12,
+   "materials": [
+    "Natures.010"
+   ]
+  },
+  {
+   "name": "Natures_Pot Bush_big",
+   "file": "Natures_Pot Bush_big.fbx",
+   "children": [],
+   "size": [
+    0.728,
+    1.317,
+    0.728
+   ],
+   "min": [
+    -0.364,
+    -0.0,
+    -0.364
+   ],
+   "max": [
+    0.364,
+    1.316,
+    0.364
+   ],
+   "tris": 66,
+   "materials": [
+    "Natures.011"
+   ]
+  },
+  {
+   "name": "Natures_Pot Bush_small",
+   "file": "Natures_Pot Bush_small.fbx",
+   "children": [],
+   "size": [
+    0.728,
+    0.931,
+    0.728
+   ],
+   "min": [
+    -0.364,
+    -0.0,
+    -0.364
+   ],
+   "max": [
+    0.364,
+    0.931,
+    0.364
+   ],
+   "tris": 48,
+   "materials": [
+    "Natures.012"
+   ]
+  },
+  {
+   "name": "Natures_Rock_Big",
+   "file": "Natures_Rock_Big.fbx",
+   "children": [],
+   "size": [
+    2.898,
+    1.003,
+    2.502
+   ],
+   "min": [
+    -1.45,
+    -0.0,
+    -1.248
+   ],
+   "max": [
+    1.448,
+    1.003,
+    1.253
+   ],
+   "tris": 30,
+   "materials": [
+    "Natures.013"
+   ]
+  },
+  {
+   "name": "Natures_Rock_small",
+   "file": "Natures_Rock_small.fbx",
+   "children": [],
+   "size": [
+    1.355,
+    0.469,
+    1.17
+   ],
+   "min": [
+    -0.678,
+    -0.0,
+    -0.584
+   ],
+   "max": [
+    0.677,
+    0.469,
+    0.586
+   ],
+   "tris": 30,
+   "materials": [
+    "Natures.014"
+   ]
+  },
+  {
+   "name": "Props_Bench_1",
+   "file": "Props_Bench_1.fbx",
+   "children": [],
+   "size": [
+    4.0,
+    0.926,
+    1.118
+   ],
+   "min": [
+    -2.002,
+    -0.001,
+    -0.561
+   ],
+   "max": [
+    1.998,
+    0.925,
+    0.557
+   ],
+   "tris": 60,
+   "materials": [
+    "Props_Props_01.002"
+   ]
+  },
+  {
+   "name": "Props_Bench_2",
+   "file": "Props_Bench_2.fbx",
+   "children": [],
+   "size": [
+    4.0,
+    1.78,
+    1.4
+   ],
+   "min": [
+    -2.0,
+    0.001,
+    -0.737
+   ],
+   "max": [
+    2.0,
+    1.782,
+    0.663
+   ],
+   "tris": 72,
+   "materials": [
+    "Props_Props_01.001"
+   ]
+  },
+  {
+   "name": "Props_BillBoard_large",
+   "file": "Props_BillBoard_large.fbx",
+   "children": [],
+   "size": [
+    8.643,
+    5.16,
+    1.584
+   ],
+   "min": [
+    -4.331,
+    -0.0,
+    -0.337
+   ],
+   "max": [
+    4.313,
+    5.16,
+    1.247
+   ],
+   "tris": 220,
+   "materials": [
+    "Props_BillBoard_large"
+   ]
+  },
+  {
+   "name": "Props_BillBoard_medium",
+   "file": "Props_BillBoard_medium.fbx",
+   "children": [],
+   "size": [
+    3.066,
+    5.381,
+    1.321
+   ],
+   "min": [
+    -1.527,
+    -0.001,
+    -0.328
+   ],
+   "max": [
+    1.539,
+    5.38,
+    0.992
+   ],
+   "tris": 180,
+   "materials": [
+    "Props_BillBoard_medium"
+   ]
+  },
+  {
+   "name": "Props_BillBoard_small",
+   "file": "Props_BillBoard_small.fbx",
+   "children": [],
+   "size": [
+    1.614,
+    2.624,
+    0.293
+   ],
+   "min": [
+    -0.807,
+    -0.001,
+    -0.144
+   ],
+   "max": [
+    0.807,
+    2.623,
+    0.15
+   ],
+   "tris": 60,
+   "materials": [
+    "Props_BillBoard_small"
+   ]
+  },
+  {
+   "name": "Props_Bus Stop",
+   "file": "Props_Bus Stop.fbx",
+   "children": [],
+   "size": [
+    6.0,
+    4.976,
+    4.0
+   ],
+   "min": [
+    -3.0,
+    -0.0,
+    -0.148
+   ],
+   "max": [
+    3.0,
+    4.975,
+    3.852
+   ],
+   "tris": 60,
+   "materials": [
+    "Props_Props_01.003"
+   ]
+  },
+  {
+   "name": "Props_Coffee shop chair",
+   "file": "Props_Coffee shop chair.fbx",
+   "children": [],
+   "size": [
+    2.653,
+    2.731,
+    2.79
+   ],
+   "min": [
+    -1.327,
+    -0.0,
+    -1.395
+   ],
+   "max": [
+    1.326,
+    2.731,
+    1.395
+   ],
+   "tris": 232,
+   "materials": [
+    "Building_Coffee Shop.001"
+   ]
+  },
+  {
+   "name": "Props_Dustbin",
+   "file": "Props_Dustbin.fbx",
+   "children": [],
+   "size": [
+    0.933,
+    1.113,
+    0.933
+   ],
+   "min": [
+    -0.467,
+    0.0,
+    -0.467
+   ],
+   "max": [
+    0.467,
+    1.113,
+    0.467
+   ],
+   "tris": 44,
+   "materials": [
+    "Props_Props_01.004"
+   ]
+  },
+  {
+   "name": "Props_Fence",
+   "file": "Props_Fence.fbx",
+   "children": [],
+   "size": [
+    1.8,
+    2.217,
+    0.16
+   ],
+   "min": [
+    -0.904,
+    -0.0,
+    -0.063
+   ],
+   "max": [
+    0.896,
+    2.217,
+    0.097
+   ],
+   "tris": 104,
+   "materials": [
+    "Props_Props_01.005"
+   ]
+  },
+  {
+   "name": "Props_Hydrant",
+   "file": "Props_Hydrant.fbx",
+   "children": [],
+   "size": [
+    0.435,
+    1.02,
+    0.435
+   ],
+   "min": [
+    -0.218,
+    0.0,
+    -0.218
+   ],
+   "max": [
+    0.217,
+    1.02,
+    0.218
+   ],
+   "tris": 228,
+   "materials": [
+    "Props_Props_01.006"
+   ]
+  },
+  {
+   "name": "Props_Roof Antenna",
+   "file": "Props_Roof Antenna.fbx",
+   "children": [],
+   "size": [
+    1.426,
+    8.108,
+    1.426
+   ],
+   "min": [
+    -0.714,
+    -0.008,
+    -0.734
+   ],
+   "max": [
+    0.712,
+    8.1,
+    0.692
+   ],
+   "tris": 298,
+   "materials": [
+    "Props_RoofProps"
+   ]
+  },
+  {
+   "name": "Props_Roof Helipad",
+   "file": "Props_Roof Helipad.fbx",
+   "children": [],
+   "size": [
+    7.658,
+    0.676,
+    7.776
+   ],
+   "min": [
+    -3.829,
+    -0.0,
+    -3.888
+   ],
+   "max": [
+    3.829,
+    0.676,
+    3.888
+   ],
+   "tris": 140,
+   "materials": [
+    "Props_RoofProps.001"
+   ]
+  },
+  {
+   "name": "Props_Roof Solar Panel",
+   "file": "Props_Roof Solar Panel.fbx",
+   "children": [],
+   "size": [
+    3.264,
+    0.628,
+    2.042
+   ],
+   "min": [
+    -1.632,
+    -0.0,
+    -0.976
+   ],
+   "max": [
+    1.632,
+    0.628,
+    1.066
+   ],
+   "tris": 28,
+   "materials": [
+    "Props_RoofProps.003"
+   ]
+  },
+  {
+   "name": "Props_Roof prop air",
+   "file": "Props_Roof prop air.fbx",
+   "children": [],
+   "size": [
+    2.823,
+    1.153,
+    1.413
+   ],
+   "min": [
+    -1.171,
+    -0.074,
+    -0.741
+   ],
+   "max": [
+    1.652,
+    1.079,
+    0.672
+   ],
+   "tris": 100,
+   "materials": [
+    "Props_RoofProps.002"
+   ]
+  },
+  {
+   "name": "Props_Roof_prop",
+   "file": "Props_Roof_prop.fbx",
+   "children": [],
+   "size": [
+    3.07,
+    1.02,
+    2.702
+   ],
+   "min": [
+    -1.537,
+    -0.021,
+    -1.228
+   ],
+   "max": [
+    1.533,
+    1.0,
+    1.474
+   ],
+   "tris": 204,
+   "materials": [
+    "Props_RoofProps.004"
+   ]
+  },
+  {
+   "name": "Props_Street Light",
+   "file": "Props_Street Light.fbx",
+   "children": [],
+   "size": [
+    2.529,
+    6.427,
+    0.6
+   ],
+   "min": [
+    -2.269,
+    -0.0,
+    -0.301
+   ],
+   "max": [
+    0.26,
+    6.427,
+    0.299
+   ],
+   "tris": 144,
+   "materials": [
+    "Props_TrafficProps"
+   ]
+  },
+  {
+   "name": "Props_Traffic Control Barrier Fence",
+   "file": "Props_Traffic Control Barrier Fence.fbx",
+   "children": [],
+   "size": [
+    3.6,
+    2.048,
+    0.2
+   ],
+   "min": [
+    -1.8,
+    -0.001,
+    -0.1
+   ],
+   "max": [
+    1.8,
+    2.047,
+    0.1
+   ],
+   "tris": 36,
+   "materials": [
+    "Props_TrafficProps.002"
+   ]
+  },
+  {
+   "name": "Props_Traffic Sign_speed limit",
+   "file": "Props_Traffic Sign_speed limit.fbx",
+   "children": [],
+   "size": [
+    0.685,
+    2.366,
+    0.067
+   ],
+   "min": [
+    -0.342,
+    0.0,
+    -0.033
+   ],
+   "max": [
+    0.342,
+    2.366,
+    0.034
+   ],
+   "tris": 24,
+   "materials": [
+    "Props_TrafficProps.003"
+   ]
+  },
+  {
+   "name": "Props_Traffic Sign_stop",
+   "file": "Props_Traffic Sign_stop.fbx",
+   "children": [],
+   "size": [
+    0.724,
+    2.433,
+    0.07
+   ],
+   "min": [
+    -0.362,
+    0.0,
+    -0.035
+   ],
+   "max": [
+    0.362,
+    2.433,
+    0.035
+   ],
+   "tris": 32,
+   "materials": [
+    "Props_TrafficProps.004"
+   ]
+  },
+  {
+   "name": "Props_Traffic Signal_big",
+   "file": "Props_Traffic Signal_big.fbx",
+   "children": [],
+   "size": [
+    2.747,
+    6.02,
+    0.6
+   ],
+   "min": [
+    -2.487,
+    0.0,
+    -0.32
+   ],
+   "max": [
+    0.26,
+    6.02,
+    0.28
+   ],
+   "tris": 532,
+   "materials": [
+    "Props_TrafficProps.005"
+   ]
+  },
+  {
+   "name": "Props_Traffic Signal_small",
+   "file": "Props_Traffic Signal_small.fbx",
+   "children": [],
+   "size": [
+    0.552,
+    5.629,
+    0.6
+   ],
+   "min": [
+    -0.277,
+    -0.0,
+    -0.325
+   ],
+   "max": [
+    0.275,
+    5.629,
+    0.275
+   ],
+   "tris": 488,
+   "materials": [
+    "Props_TrafficProps.006"
+   ]
+  },
+  {
+   "name": "Props_Traffic cone",
+   "file": "Props_Traffic cone.fbx",
+   "children": [],
+   "size": [
+    0.785,
+    0.921,
+    0.825
+   ],
+   "min": [
+    -0.392,
+    -0.0,
+    -0.413
+   ],
+   "max": [
+    0.392,
+    0.921,
+    0.413
+   ],
+   "tris": 76,
+   "materials": [
+    "Props_TrafficProps.001"
+   ]
+  },
+  {
+   "name": "Props_Windmill",
+   "file": "Props_Windmill.fbx",
+   "children": [
+    "Wings"
+   ],
+   "size": [
+    6.363,
+    13.595,
+    2.266
+   ],
+   "min": [
+    -3.292,
+    0.002,
+    -0.961
+   ],
+   "max": [
+    3.072,
+    13.596,
+    1.305
+   ],
+   "tris": 158,
+   "materials": [
+    "Props_Props_01.007"
+   ]
+  },
+  {
+   "name": "Road Concrete Tile Small",
+   "file": "Road Concrete Tile Small.fbx",
+   "children": [],
+   "size": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "min": [
+    -5.0,
+    -0.0,
+    -5.0
+   ],
+   "max": [
+    5.0,
+    0.0,
+    5.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Road"
+   ]
+  },
+  {
+   "name": "Road Concrete Tile",
+   "file": "Road Concrete Tile.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.0,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Road.001"
+   ]
+  },
+  {
+   "name": "Road Corner_01",
+   "file": "Road Corner_01.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 136,
+   "materials": [
+    "Road.002"
+   ]
+  },
+  {
+   "name": "Road Corner_02",
+   "file": "Road Corner_02.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 38,
+   "materials": [
+    "Road.003"
+   ]
+  },
+  {
+   "name": "Road Intersection_01",
+   "file": "Road Intersection_01.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 295,
+   "materials": [
+    "Road.004"
+   ]
+  },
+  {
+   "name": "Road Intersection_02",
+   "file": "Road Intersection_02.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 50,
+   "materials": [
+    "Road.005"
+   ]
+  },
+  {
+   "name": "Road Lane Bus Stop",
+   "file": "Road Lane Bus Stop.fbx",
+   "children": [],
+   "size": [
+    27.002,
+    0.2,
+    40.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -20.0
+   ],
+   "max": [
+    17.002,
+    0.2,
+    20.0
+   ],
+   "tris": 216,
+   "materials": [
+    "Road.006"
+   ]
+  },
+  {
+   "name": "Road Lane Half",
+   "file": "Road Lane Half.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    10.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -5.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    5.0
+   ],
+   "tris": 50,
+   "materials": [
+    "Road.007"
+   ]
+  },
+  {
+   "name": "Road Lane_01",
+   "file": "Road Lane_01.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 66,
+   "materials": [
+    "Road.008"
+   ]
+  },
+  {
+   "name": "Road Lane_02",
+   "file": "Road Lane_02.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 91,
+   "materials": [
+    "Road.009"
+   ]
+  },
+  {
+   "name": "Road Lane_03",
+   "file": "Road Lane_03.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 122,
+   "materials": [
+    "Road.010"
+   ]
+  },
+  {
+   "name": "Road Lane_04",
+   "file": "Road Lane_04.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 81,
+   "materials": [
+    "Road.011"
+   ]
+  },
+  {
+   "name": "Road Sidewalk",
+   "file": "Road Sidewalk.fbx",
+   "children": [],
+   "size": [
+    3.0,
+    0.2,
+    10.0
+   ],
+   "min": [
+    -1.5,
+    -0.1,
+    -5.0
+   ],
+   "max": [
+    1.5,
+    0.1,
+    5.0
+   ],
+   "tris": 12,
+   "materials": [
+    "Road.012"
+   ]
+  },
+  {
+   "name": "Road Split Line",
+   "file": "Road Split Line.fbx",
+   "children": [],
+   "size": [
+    0.36,
+    0.2,
+    4.0
+   ],
+   "min": [
+    -0.18,
+    -0.1,
+    -2.0
+   ],
+   "max": [
+    0.18,
+    0.1,
+    2.0
+   ],
+   "tris": 12,
+   "materials": [
+    "Road.013"
+   ]
+  },
+  {
+   "name": "Road T_Intersection_01",
+   "file": "Road T_Intersection_01.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 200,
+   "materials": [
+    "Road.014"
+   ]
+  },
+  {
+   "name": "Road T_Intersection_02",
+   "file": "Road T_Intersection_02.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.2,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.2,
+    10.0
+   ],
+   "tris": 38,
+   "materials": [
+    "Road.015"
+   ]
+  },
+  {
+   "name": "Road Tile Small",
+   "file": "Road Tile Small.fbx",
+   "children": [],
+   "size": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "min": [
+    -5.0,
+    -0.0,
+    -5.0
+   ],
+   "max": [
+    5.0,
+    0.0,
+    5.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Road.016"
+   ]
+  },
+  {
+   "name": "Road Tile",
+   "file": "Road Tile.fbx",
+   "children": [],
+   "size": [
+    20.0,
+    0.0,
+    20.0
+   ],
+   "min": [
+    -10.0,
+    -0.0,
+    -10.0
+   ],
+   "max": [
+    10.0,
+    0.0,
+    10.0
+   ],
+   "tris": 2,
+   "materials": [
+    "Road.017"
+   ]
+  },
+  {
+   "name": "Vehicle_Ambulance",
+   "file": "Vehicle_Ambulance.fbx",
+   "children": [],
+   "size": [
+    2.934,
+    2.949,
+    6.809
+   ],
+   "min": [
+    -1.466,
+    -0.0,
+    -3.352
+   ],
+   "max": [
+    1.468,
+    2.949,
+    3.457
+   ],
+   "tris": 628,
+   "materials": [
+    "Ambulance.002"
+   ]
+  },
+  {
+   "name": "Vehicle_Ambulance_separate",
+   "file": "Vehicle_Ambulance_separate.fbx",
+   "children": [
+    "Ambulance Body",
+    "Wheel_FL",
+    "Wheel_FR",
+    "Wheel_RL",
+    "Wheel_RR"
+   ],
+   "size": [
+    2.934,
+    2.949,
+    6.809
+   ],
+   "min": [
+    -1.465,
+    0.002,
+    -3.661
+   ],
+   "max": [
+    1.468,
+    2.951,
+    3.147
+   ],
+   "tris": 628,
+   "materials": [
+    "Ambulance"
+   ]
+  },
+  {
+   "name": "Vehicle_Bus",
+   "file": "Vehicle_Bus.fbx",
+   "children": [],
+   "size": [
+    3.695,
+    3.579,
+    9.302
+   ],
+   "min": [
+    -1.846,
+    -0.005,
+    -4.701
+   ],
+   "max": [
+    1.849,
+    3.574,
+    4.601
+   ],
+   "tris": 796,
+   "materials": [
+    "Bus"
+   ]
+  },
+  {
+   "name": "Vehicle_Bus_separate",
+   "file": "Vehicle_Bus_separate.fbx",
+   "children": [
+    "Body",
+    "Wheel_FL.001",
+    "Wheel_FR.001",
+    "Wheel_RL.001",
+    "Wheel_RR.001"
+   ],
+   "size": [
+    3.695,
+    3.579,
+    9.302
+   ],
+   "min": [
+    -1.845,
+    0.003,
+    -5.084
+   ],
+   "max": [
+    1.849,
+    3.581,
+    4.218
+   ],
+   "tris": 796,
+   "materials": [
+    "Bus.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Car",
+   "file": "Vehicle_Car.fbx",
+   "children": [],
+   "size": [
+    2.958,
+    2.195,
+    6.321
+   ],
+   "min": [
+    -1.476,
+    -0.004,
+    -3.354
+   ],
+   "max": [
+    1.482,
+    2.192,
+    2.966
+   ],
+   "tris": 754,
+   "materials": [
+    "Car"
+   ]
+  },
+  {
+   "name": "Vehicle_Car_separate",
+   "file": "Vehicle_Car_separate.fbx",
+   "children": [
+    "Body.001",
+    "Wheel_FL.002",
+    "Wheel_FR.002",
+    "Wheel_RL.002",
+    "Wheel_RR.002"
+   ],
+   "size": [
+    2.958,
+    2.195,
+    6.321
+   ],
+   "min": [
+    -1.478,
+    0.0,
+    -3.116
+   ],
+   "max": [
+    1.48,
+    2.195,
+    3.205
+   ],
+   "tris": 754,
+   "materials": [
+    "Car.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Container",
+   "file": "Vehicle_Container.fbx",
+   "children": [],
+   "size": [
+    3.627,
+    4.161,
+    9.088
+   ],
+   "min": [
+    -1.809,
+    -0.008,
+    -4.514
+   ],
+   "max": [
+    1.818,
+    4.153,
+    4.574
+   ],
+   "tris": 638,
+   "materials": [
+    "Truck1"
+   ]
+  },
+  {
+   "name": "Vehicle_Container_separate",
+   "file": "Vehicle_Container_separate.fbx",
+   "children": [
+    "Body.002",
+    "Wheel_FL.003",
+    "Wheel_FR.003",
+    "Wheel_RL1",
+    "Wheel_RL2",
+    "Wheel_RR1",
+    "Wheel_RR2"
+   ],
+   "size": [
+    3.627,
+    4.161,
+    9.088
+   ],
+   "min": [
+    -1.816,
+    -0.001,
+    -4.39
+   ],
+   "max": [
+    1.811,
+    4.16,
+    4.698
+   ],
+   "tris": 638,
+   "materials": [
+    "Truck1.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Pick up Truck",
+   "file": "Vehicle_Pick up Truck.fbx",
+   "children": [],
+   "size": [
+    3.101,
+    2.275,
+    5.966
+   ],
+   "min": [
+    -1.549,
+    -0.005,
+    -2.849
+   ],
+   "max": [
+    1.551,
+    2.27,
+    3.117
+   ],
+   "tris": 696,
+   "materials": [
+    "SUV2"
+   ]
+  },
+  {
+   "name": "Vehicle_Pick up Truck_separate",
+   "file": "Vehicle_Pick up Truck_separate.fbx",
+   "children": [
+    "Car Body",
+    "Wheel_FL.004",
+    "Wheel_FR.004",
+    "Wheel_RL.003",
+    "Wheel_RR.003"
+   ],
+   "size": [
+    3.101,
+    2.275,
+    5.966
+   ],
+   "min": [
+    -1.548,
+    -0.006,
+    -2.968
+   ],
+   "max": [
+    1.553,
+    2.269,
+    2.998
+   ],
+   "tris": 696,
+   "materials": [
+    "SUV2.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Police Car",
+   "file": "Vehicle_Police Car.fbx",
+   "children": [],
+   "size": [
+    2.958,
+    2.318,
+    6.321
+   ],
+   "min": [
+    -1.481,
+    -0.004,
+    -3.353
+   ],
+   "max": [
+    1.477,
+    2.314,
+    2.967
+   ],
+   "tris": 766,
+   "materials": [
+    "Police Car"
+   ]
+  },
+  {
+   "name": "Vehicle_Police Car_separate",
+   "file": "Vehicle_Police Car_separate.fbx",
+   "children": [
+    "Car Body.001",
+    "Wheel_FL.005",
+    "Wheel_FR.005",
+    "Wheel_RL.004",
+    "Wheel_RR.004"
+   ],
+   "size": [
+    2.958,
+    2.318,
+    6.321
+   ],
+   "min": [
+    -1.474,
+    -0.002,
+    -3.116
+   ],
+   "max": [
+    1.484,
+    2.316,
+    3.205
+   ],
+   "tris": 766,
+   "materials": [
+    "Police Car.001"
+   ]
+  },
+  {
+   "name": "Vehicle_SUV",
+   "file": "Vehicle_SUV.fbx",
+   "children": [],
+   "size": [
+    3.101,
+    2.275,
+    5.732
+   ],
+   "min": [
+    -1.46,
+    -0.009,
+    -2.774
+   ],
+   "max": [
+    1.641,
+    2.266,
+    2.958
+   ],
+   "tris": 624,
+   "materials": [
+    "SUV1"
+   ]
+  },
+  {
+   "name": "Vehicle_SUV_separate",
+   "file": "Vehicle_SUV_separate.fbx",
+   "children": [
+    "Car Body.002",
+    "Wheel_FL.006",
+    "Wheel_FR.006",
+    "Wheel_RL.005",
+    "Wheel_RR.005"
+   ],
+   "size": [
+    3.101,
+    2.275,
+    5.732
+   ],
+   "min": [
+    -1.55,
+    -0.003,
+    -2.819
+   ],
+   "max": [
+    1.551,
+    2.272,
+    2.913
+   ],
+   "tris": 624,
+   "materials": [
+    "SUV1.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Taxi",
+   "file": "Vehicle_Taxi.fbx",
+   "children": [],
+   "size": [
+    2.958,
+    2.434,
+    6.321
+   ],
+   "min": [
+    -1.473,
+    -0.001,
+    -3.353
+   ],
+   "max": [
+    1.485,
+    2.433,
+    2.967
+   ],
+   "tris": 766,
+   "materials": [
+    "Taxi"
+   ]
+  },
+  {
+   "name": "Vehicle_Taxi_separate",
+   "file": "Vehicle_Taxi_separate.fbx",
+   "children": [
+    "CarBody",
+    "Wheel_FL.007",
+    "Wheel_FR.007",
+    "Wheel_RL.006",
+    "Wheel_RR.006"
+   ],
+   "size": [
+    2.958,
+    2.434,
+    6.321
+   ],
+   "min": [
+    -1.478,
+    -0.003,
+    -3.116
+   ],
+   "max": [
+    1.48,
+    2.43,
+    3.205
+   ],
+   "tris": 766,
+   "materials": [
+    "Taxi.001"
+   ]
+  },
+  {
+   "name": "Vehicle_Truck",
+   "file": "Vehicle_Truck.fbx",
+   "children": [],
+   "size": [
+    3.627,
+    3.393,
+    9.1
+   ],
+   "min": [
+    -1.822,
+    -0.003,
+    -4.633
+   ],
+   "max": [
+    1.805,
+    3.39,
+    4.467
+   ],
+   "tris": 658,
+   "materials": [
+    "Truck2"
+   ]
+  },
+  {
+   "name": "Vehicle_Truck_separate",
+   "file": "Vehicle_Truck_separate.fbx",
+   "children": [
+    "Body.003",
+    "Wheel_FL.008",
+    "Wheel_FR.008",
+    "Wheel_RL1.001",
+    "Wheel_RL2.001",
+    "Wheel_RR1.001",
+    "Wheel_RR2.001"
+   ],
+   "size": [
+    3.627,
+    3.393,
+    9.1
+   ],
+   "min": [
+    -1.818,
+    -0.003,
+    -4.386
+   ],
+   "max": [
+    1.809,
+    3.39,
+    4.714
+   ],
+   "tris": 658,
+   "materials": [
+    "Truck2.001"
+   ]
+  }
+ ]
+}

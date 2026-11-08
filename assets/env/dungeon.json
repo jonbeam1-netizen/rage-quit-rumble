@@ -1,0 +1,414 @@
+{
+ "pack": "dungeon",
+ "pieces": [
+  {
+   "name": "Book_09",
+   "file": "Book_09.fbx",
+   "children": [],
+   "size": [
+    0.003,
+    0.001,
+    0.004
+   ],
+   "min": [
+    -0.001,
+    -0.0,
+    -0.002
+   ],
+   "max": [
+    0.001,
+    0.0,
+    0.002
+   ],
+   "tris": 188,
+   "materials": [
+    "Dungeon_Mat_01"
+   ]
+  },
+  {
+   "name": "Bottle_05",
+   "file": "Bottle_05.fbx",
+   "children": [],
+   "size": [
+    0.002,
+    0.003,
+    0.002
+   ],
+   "min": [
+    -0.001,
+    -0.0,
+    -0.001
+   ],
+   "max": [
+    0.001,
+    0.003,
+    0.001
+   ],
+   "tris": 224,
+   "materials": [
+    "Dungeon_Mat_01.001"
+   ]
+  },
+  {
+   "name": "Box_02",
+   "file": "Box_02.fbx",
+   "children": [],
+   "size": [
+    0.009,
+    0.009,
+    0.009
+   ],
+   "min": [
+    -0.005,
+    -0.005,
+    -0.005
+   ],
+   "max": [
+    0.005,
+    0.005,
+    0.005
+   ],
+   "tris": 558,
+   "materials": [
+    "Dungeon_Mat_01.002"
+   ]
+  },
+  {
+   "name": "Candle_01",
+   "file": "Candle_01.fbx",
+   "children": [],
+   "size": [
+    0.001,
+    0.002,
+    0.001
+   ],
+   "min": [
+    -0.0,
+    -0.0,
+    -0.001
+   ],
+   "max": [
+    0.0,
+    0.002,
+    0.001
+   ],
+   "tris": 58,
+   "materials": [
+    "Dungeon_Mat_01.003"
+   ]
+  },
+  {
+   "name": "Chair_05",
+   "file": "Chair_05.fbx",
+   "children": [],
+   "size": [
+    0.483,
+    0.879,
+    0.441
+   ],
+   "min": [
+    -0.237,
+    0.0,
+    -0.225
+   ],
+   "max": [
+    0.247,
+    0.879,
+    0.216
+   ],
+   "tris": 532,
+   "materials": [
+    "Dungeon_Mat_01.004"
+   ]
+  },
+  {
+   "name": "Column_01",
+   "file": "Column_01.fbx",
+   "children": [],
+   "size": [
+    0.008,
+    0.04,
+    0.008
+   ],
+   "min": [
+    -0.004,
+    -0.0,
+    -0.004
+   ],
+   "max": [
+    0.004,
+    0.04,
+    0.004
+   ],
+   "tris": 94,
+   "materials": [
+    "Dungeon_Mat_01.005"
+   ]
+  },
+  {
+   "name": "Ground_01",
+   "file": "Ground_01.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.0,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.0,
+    0.02
+   ],
+   "tris": 2,
+   "materials": [
+    "Dungeon_Mat_01.006"
+   ]
+  },
+  {
+   "name": "Ground_03",
+   "file": "Ground_03.fbx",
+   "children": [],
+   "size": [
+    0.02,
+    0.007,
+    0.02
+   ],
+   "min": [
+    -0.01,
+    -0.007,
+    -0.01
+   ],
+   "max": [
+    0.01,
+    0.0,
+    0.01
+   ],
+   "tris": 178,
+   "materials": [
+    "Dungeon_Mat_01.007"
+   ]
+  },
+  {
+   "name": "Jug_02",
+   "file": "Jug_02.fbx",
+   "children": [],
+   "size": [
+    0.004,
+    0.005,
+    0.004
+   ],
+   "min": [
+    -0.002,
+    -0.0,
+    -0.002
+   ],
+   "max": [
+    0.002,
+    0.005,
+    0.002
+   ],
+   "tris": 236,
+   "materials": [
+    "Dungeon_Mat_01.008"
+   ]
+  },
+  {
+   "name": "Light_08",
+   "file": "Light_08.fbx",
+   "children": [],
+   "size": [
+    0.212,
+    0.649,
+    0.255
+   ],
+   "min": [
+    -0.106,
+    -0.239,
+    0.0
+   ],
+   "max": [
+    0.106,
+    0.41,
+    0.255
+   ],
+   "tris": 212,
+   "materials": [
+    "Dungeon_Mat_01.009",
+    "Light_01"
+   ]
+  },
+  {
+   "name": "Mud_04",
+   "file": "Mud_04.fbx",
+   "children": [],
+   "size": [
+    0.02,
+    0.004,
+    0.021
+   ],
+   "min": [
+    -0.011,
+    -0.001,
+    -0.01
+   ],
+   "max": [
+    0.009,
+    0.003,
+    0.011
+   ],
+   "tris": 97,
+   "materials": [
+    "Dungeon_Mat_01.010"
+   ]
+  },
+  {
+   "name": "Pot_01",
+   "file": "Pot_01.fbx",
+   "children": [],
+   "size": [
+    0.013,
+    0.008,
+    0.013
+   ],
+   "min": [
+    -0.006,
+    -0.0,
+    -0.006
+   ],
+   "max": [
+    0.006,
+    0.008,
+    0.006
+   ],
+   "tris": 861,
+   "materials": [
+    "Dungeon_Mat_01.011"
+   ]
+  },
+  {
+   "name": "Rock_01",
+   "file": "Rock_01.fbx",
+   "children": [],
+   "size": [
+    0.013,
+    0.014,
+    0.012
+   ],
+   "min": [
+    -0.007,
+    -0.007,
+    -0.007
+   ],
+   "max": [
+    0.006,
+    0.007,
+    0.005
+   ],
+   "tris": 76,
+   "materials": [
+    "Dungeon_Mat_01.012"
+   ]
+  },
+  {
+   "name": "Table_01",
+   "file": "Table_01.fbx",
+   "children": [],
+   "size": [
+    0.02,
+    0.009,
+    0.012
+   ],
+   "min": [
+    -0.01,
+    -0.0,
+    -0.006
+   ],
+   "max": [
+    0.01,
+    0.009,
+    0.006
+   ],
+   "tris": 600,
+   "materials": [
+    "Dungeon_Mat_01.013"
+   ]
+  },
+  {
+   "name": "WallDecor_05",
+   "file": "WallDecor_05.fbx",
+   "children": [],
+   "size": [
+    0.008,
+    0.019,
+    0.002
+   ],
+   "min": [
+    -0.004,
+    -0.018,
+    -0.0
+   ],
+   "max": [
+    0.004,
+    0.001,
+    0.001
+   ],
+   "tris": 272,
+   "materials": [
+    "Dungeon_Mat_01.014"
+   ]
+  },
+  {
+   "name": "Wall_27",
+   "file": "Wall_27.fbx",
+   "children": [],
+   "size": [
+    4.0,
+    4.0,
+    0.194
+   ],
+   "min": [
+    -2.0,
+    -0.0,
+    -0.0
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.194
+   ],
+   "tris": 1295,
+   "materials": [
+    "Dungeon_Mat_01.015"
+   ]
+  },
+  {
+   "name": "Wood_02",
+   "file": "Wood_02.fbx",
+   "children": [],
+   "size": [
+    0.003,
+    0.0,
+    0.022
+   ],
+   "min": [
+    -0.002,
+    -0.0,
+    -0.011
+   ],
+   "max": [
+    0.002,
+    0.0,
+    0.011
+   ],
+   "tris": 50,
+   "materials": [
+    "Dungeon_Mat_01.016"
+   ]
+  }
+ ]
+}

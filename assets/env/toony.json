@@ -1,0 +1,236 @@
+{
+ "pack": "toony",
+ "pieces": [
+  {
+   "name": "Car_B1.001",
+   "file": "Car_B1.fbx",
+   "children": [
+    "Car2_Body",
+    "Car2_LF",
+    "Car2_LR",
+    "Car2_RF",
+    "Car2_RR"
+   ],
+   "size": [
+    2.061,
+    1.318,
+    4.039
+   ],
+   "min": [
+    -1.031,
+    -0.005,
+    -2.042
+   ],
+   "max": [
+    1.031,
+    1.312,
+    1.998
+   ],
+   "tris": 1214,
+   "materials": [
+    "M_Cars"
+   ]
+  },
+  {
+   "name": "Demo_Asphalt",
+   "file": "Demo_Asphalt.fbx",
+   "children": [],
+   "size": [
+    8.0,
+    0.5,
+    4.0
+   ],
+   "min": [
+    -4.0,
+    -0.5,
+    -2.0
+   ],
+   "max": [
+    4.0,
+    0.0,
+    2.0
+   ],
+   "tris": 20,
+   "materials": [
+    "Merge3:M_City_01"
+   ]
+  },
+  {
+   "name": "Demo_Block",
+   "file": "Demo_Block.fbx",
+   "children": [
+    "AirConditioning",
+    "AirConditioning_B1",
+    "Awning",
+    "Balcony_E2",
+    "Bock",
+    "Bock3",
+    "Bocks",
+    "Bottom_E3",
+    "Box",
+    "Dumpster_A1",
+    "RoofTop_D01",
+    "Sidewalk",
+    "Stairs_A1",
+    "WaterTank",
+    "Window",
+    "Window14",
+    "Window_E16"
+   ],
+   "size": [
+    25.828,
+    13.565,
+    27.592
+   ],
+   "min": [
+    -13.202,
+    -0.078,
+    -14.387
+   ],
+   "max": [
+    12.626,
+    13.487,
+    13.206
+   ],
+   "tris": 8312,
+   "materials": [
+    "M_City_01"
+   ]
+  },
+  {
+   "name": "Demo_Crossing",
+   "file": "Demo_Crossing.fbx",
+   "children": [],
+   "size": [
+    16.0,
+    0.5,
+    16.0
+   ],
+   "min": [
+    -8.0,
+    -0.5,
+    -8.0
+   ],
+   "max": [
+    8.0,
+    0.0,
+    8.0
+   ],
+   "tris": 168,
+   "materials": [
+    "M_City_01.001"
+   ]
+  },
+  {
+   "name": "TT_demo_female",
+   "file": "TT_demo_female.FBX",
+   "children": [
+    "f_body_18_black_dress",
+    "f_head_07",
+    "w_knife"
+   ],
+   "size": [
+    38.084,
+    40.075,
+    55.168
+   ],
+   "min": [
+    -14.531,
+    -17.692,
+    -27.226
+   ],
+   "max": [
+    23.553,
+    22.384,
+    27.941
+   ],
+   "tris": 478,
+   "materials": [
+    "TT_demo"
+   ]
+  },
+  {
+   "name": "TT_demo_male_A",
+   "file": "TT_demo_male_A.FBX",
+   "children": [
+    "Body_02_blackTshirt",
+    "head_28_cap_A",
+    "w_baseballbat"
+   ],
+   "size": [
+    46.436,
+    40.495,
+    63.573
+   ],
+   "min": [
+    -12.003,
+    -17.692,
+    -27.696
+   ],
+   "max": [
+    34.433,
+    22.803,
+    35.877
+   ],
+   "tris": 433,
+   "materials": [
+    "TT_demo.001"
+   ]
+  },
+  {
+   "name": "TT_demo_male_B",
+   "file": "TT_demo_male_B.FBX",
+   "children": [
+    "Body_09_jacket",
+    "head_00"
+   ],
+   "size": [
+    22.428,
+    40.495,
+    55.392
+   ],
+   "min": [
+    -10.654,
+    -17.692,
+    -27.696
+   ],
+   "max": [
+    11.774,
+    22.803,
+    27.696
+   ],
+   "tris": 334,
+   "materials": [
+    "TT_demo.002"
+   ]
+  },
+  {
+   "name": "TT_demo_police",
+   "file": "TT_demo_police.FBX",
+   "children": [
+    "Body_40_police_A",
+    "head_46_police_A",
+    "w_handgun"
+   ],
+   "size": [
+    31.879,
+    40.495,
+    60.784
+   ],
+   "min": [
+    -15.939,
+    -17.692,
+    -27.696
+   ],
+   "max": [
+    15.939,
+    22.803,
+    33.089
+   ],
+   "tris": 530,
+   "materials": [
+    "TT_demo.003"
+   ]
+  }
+ ]
+}

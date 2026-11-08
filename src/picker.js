@@ -275,6 +275,15 @@ function doSave() {
   $('name').oninput = () => { profile.name = $('name').value; setDirty(); drawTag(); };
   $('name').onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); doSave(); } };
   $('save').onclick = doSave;
+  const joinParam = new URLSearchParams(location.search).get('join');
+  if (joinParam) $('joincode').value = joinParam.toUpperCase();
+  $('host').onclick = () => { doSave(); location.href = 'lobby.html?host=1'; };
+  $('join').onclick = () => {
+    const code = $('joincode').value.trim().toUpperCase();
+    if (code.length !== 4) { $('joincode').focus(); $('saved').textContent = 'Enter the 4-letter room code.'; return; }
+    doSave(); location.href = 'lobby.html?room=' + code;
+  };
+  $('joincode').onkeydown = (e) => { if (e.key === 'Enter') $('join').click(); };
   $('tintreset').onclick = resetMaterialColors;
   $('random').onclick = () => {
     const chars = manifest.characters;

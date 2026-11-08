@@ -1,0 +1,265 @@
+{
+ "pack": "arcade02",
+ "pieces": [
+  {
+   "name": "CarWheel",
+   "file": "CarWheel.fbx",
+   "children": [],
+   "size": [
+    0.821,
+    0.826,
+    0.391
+   ],
+   "min": [
+    -0.404,
+    -0.426,
+    -0.384
+   ],
+   "max": [
+    0.417,
+    0.4,
+    0.007
+   ],
+   "tris": 302,
+   "materials": []
+  },
+  {
+   "name": "ChairTallfbx",
+   "file": "ChairTallfbx.fbx",
+   "children": [],
+   "size": [
+    1.014,
+    1.014,
+    1.77
+   ],
+   "min": [
+    -0.493,
+    -0.522,
+    -1.801
+   ],
+   "max": [
+    0.521,
+    0.492,
+    -0.031
+   ],
+   "tris": 256,
+   "materials": []
+  },
+  {
+   "name": "ControlButtonFbx",
+   "file": "ControlButtonFbx.fbx",
+   "children": [],
+   "size": [
+    0.096,
+    0.096,
+    0.023
+   ],
+   "min": [
+    -0.048,
+    -0.048,
+    -0.023
+   ],
+   "max": [
+    0.048,
+    0.048,
+    0.0
+   ],
+   "tris": 40,
+   "materials": [
+    "Material"
+   ]
+  },
+  {
+   "name": "ControlButtonHolder",
+   "file": "ControlButtonHolder.fbx",
+   "children": [],
+   "size": [
+    0.12,
+    0.121,
+    0.03
+   ],
+   "min": [
+    -1.48,
+    1.338,
+    1.029
+   ],
+   "max": [
+    -1.36,
+    1.459,
+    1.059
+   ],
+   "tris": 48,
+   "materials": [
+    "Material.001"
+   ]
+  },
+  {
+   "name": "ControlStickBasefbx",
+   "file": "ControlStickBasefbx.fbx",
+   "children": [],
+   "size": [
+    0.257,
+    0.257,
+    0.033
+   ],
+   "min": [
+    -0.129,
+    -0.129,
+    -0.033
+   ],
+   "max": [
+    0.129,
+    0.129,
+    -0.0
+   ],
+   "tris": 54,
+   "materials": [
+    "Material.002"
+   ]
+  },
+  {
+   "name": "ControlStickfbx",
+   "file": "ControlStickfbx.fbx",
+   "children": [],
+   "size": [
+    0.139,
+    0.133,
+    0.3
+   ],
+   "min": [
+    -0.07,
+    -0.066,
+    -0.3
+   ],
+   "max": [
+    0.07,
+    0.066,
+    0.0
+   ],
+   "tris": 200,
+   "materials": [
+    "Material.003"
+   ]
+  },
+  {
+   "name": "DriverFBX",
+   "file": "DriverFBX.fbx",
+   "children": [],
+   "size": [
+    3.28,
+    5.559,
+    4.0
+   ],
+   "min": [
+    -1.573,
+    -2.99,
+    -4.026
+   ],
+   "max": [
+    1.707,
+    2.568,
+    -0.026
+   ],
+   "tris": 220,
+   "materials": [
+    "Material.004"
+   ]
+  },
+  {
+   "name": "GunCadeFBX",
+   "file": "GunCadeFBX.fbx",
+   "children": [],
+   "size": [
+    2.0,
+    3.187,
+    4.089
+   ],
+   "min": [
+    -1.0,
+    -1.041,
+    -4.113
+   ],
+   "max": [
+    1.0,
+    2.147,
+    -0.024
+   ],
+   "tris": 102,
+   "materials": [
+    "Material.005"
+   ]
+  },
+  {
+   "name": "GunFBX",
+   "file": "GunFBX.fbx",
+   "children": [],
+   "size": [
+    0.177,
+    1.339,
+    0.831
+   ],
+   "min": [
+    -0.089,
+    -0.63,
+    -0.831
+   ],
+   "max": [
+    0.088,
+    0.708,
+    0.0
+   ],
+   "tris": 386,
+   "materials": [
+    "Material.006"
+   ]
+  },
+  {
+   "name": "HolderFBX",
+   "file": "HolderFBX.fbx",
+   "children": [],
+   "size": [
+    0.412,
+    0.412,
+    0.039
+   ],
+   "min": [
+    -1.871,
+    0.907,
+    1.019
+   ],
+   "max": [
+    -1.459,
+    1.319,
+    1.058
+   ],
+   "tris": 82,
+   "materials": [
+    "Material.007"
+   ]
+  },
+  {
+   "name": "WideStandardFBX",
+   "file": "WideStandardFBX.fbx",
+   "children": [],
+   "size": [
+    3.0,
+    2.68,
+    4.089
+   ],
+   "min": [
+    -1.5,
+    -1.041,
+    -4.106
+   ],
+   "max": [
+    1.5,
+    1.639,
+    -0.017
+   ],
+   "tris": 126,
+   "materials": [
+    "Material.008"
+   ]
+  }
+ ]
+}

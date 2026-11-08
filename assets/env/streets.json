@@ -1,0 +1,245 @@
+{
+ "pack": "streets",
+ "pieces": [
+  {
+   "name": "Bench",
+   "file": "Bench.fbx",
+   "children": [
+    "Bench_1",
+    "Bench_1_mc"
+   ],
+   "size": [
+    0.867,
+    0.293,
+    0.292
+   ],
+   "min": [
+    -0.434,
+    0.0,
+    2.053
+   ],
+   "max": [
+    0.434,
+    0.293,
+    2.345
+   ],
+   "tris": 330,
+   "materials": [
+    "Bench-1",
+    "Bench_mat"
+   ]
+  },
+  {
+   "name": "Cafe",
+   "file": "Cafe.fbx",
+   "children": [
+    "Cafe_chair_1",
+    "Cafe_chair_1_mc",
+    "Cafe_table_1",
+    "Cafe_table_1_mc"
+   ],
+   "size": [
+    1.193,
+    0.365,
+    0.666
+   ],
+   "min": [
+    -0.232,
+    -0.0,
+    0.398
+   ],
+   "max": [
+    0.961,
+    0.365,
+    1.063
+   ],
+   "tris": 270,
+   "materials": [
+    "Cafe-chair-1",
+    "Cafe-table-1",
+    "Cafe_mat",
+    "Cafe_mat.001"
+   ]
+  },
+  {
+   "name": "Nature",
+   "file": "Nature.fbx",
+   "children": [
+    "Tree_1",
+    "Tree_1_mc",
+    "Tree_area_1"
+   ],
+   "size": [
+    3.858,
+    1.435,
+    1.426
+   ],
+   "min": [
+    -3.321,
+    -0.004,
+    -0.699
+   ],
+   "max": [
+    0.537,
+    1.431,
+    0.727
+   ],
+   "tris": 302,
+   "materials": [
+    "Nature_mat",
+    "Tree-1",
+    "Tree-area-1"
+   ]
+  },
+  {
+   "name": "Other",
+   "file": "Other.fbx",
+   "children": [
+    "Hydrant",
+    "Sewer_grill",
+    "Sewer_hatch",
+    "Traffic_cone",
+    "Traffic_cone_mc",
+    "Trash_can_1",
+    "Trash_can_1_mc"
+   ],
+   "size": [
+    4.981,
+    0.457,
+    1.567
+   ],
+   "min": [
+    -1.749,
+    -0.106,
+    -1.478
+   ],
+   "max": [
+    3.232,
+    0.351,
+    0.088
+   ],
+   "tris": 702,
+   "materials": [
+    "Hydrant",
+    "Other_mat",
+    "Other_mat.001",
+    "Sewer-grill",
+    "Sewer-hatch",
+    "Traffic-cone",
+    "Trash_can_1"
+   ]
+  },
+  {
+   "name": "Poles",
+   "file": "Poles.fbx",
+   "children": [
+    "Pole_1",
+    "Pole_base",
+    "Pole_light",
+    "Pole_light_mc"
+   ],
+   "size": [
+    0.15,
+    1.202,
+    0.5
+   ],
+   "min": [
+    3.118,
+    -0.0,
+    -0.526
+   ],
+   "max": [
+    3.268,
+    1.202,
+    -0.026
+   ],
+   "tris": 398,
+   "materials": [
+    "Pole-base",
+    "Pole-light",
+    "Pole1",
+    "Poles_mat"
+   ]
+  },
+  {
+   "name": "Roads",
+   "file": "Roads.fbx",
+   "children": [
+    "Crossroads_1_lines_2_walk",
+    "Crossroads_1_lines_2_walk_mc",
+    "Crossroads_1_lines_circ",
+    "Crossroads_1_lines_circ_mc",
+    "Crossroads_1_lines_walk",
+    "Crossroads_1_lines_walk_mc",
+    "Pavement",
+    "Road_1_line",
+    "Road_1_line_mc",
+    "Road_1_line_turn",
+    "Road_1_line_turn_mc"
+   ],
+   "size": [
+    23.284,
+    0.194,
+    42.368
+   ],
+   "min": [
+    -13.284,
+    -0.194,
+    -36.0
+   ],
+   "max": [
+    10.0,
+    0.0,
+    6.368
+   ],
+   "tris": 1037,
+   "materials": [
+    "Border",
+    "Crossroads-1-lines-circ",
+    "Crossroads-1-lines-walk",
+    "Crossroads-1-lines-walk-2",
+    "Pavement",
+    "Road-1-line",
+    "Road-1-line-turn-1",
+    "Road-1-line-turn-2",
+    "Roads_mat",
+    "Roads_mat.001",
+    "Roads_mat.002",
+    "Roads_mat.003",
+    "Roads_mat.004"
+   ]
+  },
+  {
+   "name": "TrafficLights",
+   "file": "TrafficLights.fbx",
+   "children": [
+    "Traffic_light_EU",
+    "Traffic_light_EU_green",
+    "Traffic_light_EU_red",
+    "Traffic_light_EU_yellow",
+    "Traffic_ligth_EU_holder",
+    "Traffic_ligth_EU_small_holder"
+   ],
+   "size": [
+    0.117,
+    0.185,
+    0.124
+   ],
+   "min": [
+    2.553,
+    0.667,
+    -0.439
+   ],
+   "max": [
+    2.67,
+    0.852,
+    -0.315
+   ],
+   "tris": 348,
+   "materials": [
+    "Traffic-light-EU",
+    "Traffic-light-EU-light"
+   ]
+  }
+ ]
+}

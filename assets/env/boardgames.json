@@ -1,0 +1,5526 @@
+{
+ "pack": "boardgames",
+ "pieces": [
+  {
+   "name": "SM_uno_card",
+   "file": "SM_uno_card.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_1",
+   "file": "SM_uno_card_1.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_1_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_10",
+   "file": "SM_uno_card_10.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_10_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_11",
+   "file": "SM_uno_card_11.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_11_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_12",
+   "file": "SM_uno_card_12.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_12_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_13",
+   "file": "SM_uno_card_13.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_13_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_14",
+   "file": "SM_uno_card_14.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_14_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_15",
+   "file": "SM_uno_card_15.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_15_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_16",
+   "file": "SM_uno_card_16.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_16_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_17",
+   "file": "SM_uno_card_17.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_17_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_18",
+   "file": "SM_uno_card_18.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_18_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_19",
+   "file": "SM_uno_card_19.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_19_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_2",
+   "file": "SM_uno_card_2.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_2_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_20",
+   "file": "SM_uno_card_20.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_20_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_21",
+   "file": "SM_uno_card_21.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_21_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_22",
+   "file": "SM_uno_card_22.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_22_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_23",
+   "file": "SM_uno_card_23.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_23_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_24",
+   "file": "SM_uno_card_24.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_24_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_25",
+   "file": "SM_uno_card_25.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_25_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_26",
+   "file": "SM_uno_card_26.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_26_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_27",
+   "file": "SM_uno_card_27.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_27_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_28",
+   "file": "SM_uno_card_28.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_28_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_29",
+   "file": "SM_uno_card_29.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_29_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_3",
+   "file": "SM_uno_card_3.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_3_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_30",
+   "file": "SM_uno_card_30.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_30_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_31",
+   "file": "SM_uno_card_31.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_31_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_32",
+   "file": "SM_uno_card_32.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_32_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_33",
+   "file": "SM_uno_card_33.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_33_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_34",
+   "file": "SM_uno_card_34.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_34_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_35",
+   "file": "SM_uno_card_35.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_35_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_36",
+   "file": "SM_uno_card_36.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_36_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_37",
+   "file": "SM_uno_card_37.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_37_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_38",
+   "file": "SM_uno_card_38.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_38_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_39",
+   "file": "SM_uno_card_39.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_39_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_4",
+   "file": "SM_uno_card_4.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_4_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_40",
+   "file": "SM_uno_card_40.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_40_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_41",
+   "file": "SM_uno_card_41.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_41_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_42",
+   "file": "SM_uno_card_42.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_42_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_43",
+   "file": "SM_uno_card_43.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_43_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_44",
+   "file": "SM_uno_card_44.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_44_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_45",
+   "file": "SM_uno_card_45.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_45_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_46",
+   "file": "SM_uno_card_46.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_46_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_47",
+   "file": "SM_uno_card_47.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_47_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_48",
+   "file": "SM_uno_card_48.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_48_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_49",
+   "file": "SM_uno_card_49.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_49_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_5",
+   "file": "SM_uno_card_5.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_5_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_50",
+   "file": "SM_uno_card_50.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_50_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_51",
+   "file": "SM_uno_card_51.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_51_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_52",
+   "file": "SM_uno_card_52.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_52_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_53",
+   "file": "SM_uno_card_53.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_53_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_54",
+   "file": "SM_uno_card_54.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_54_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_55",
+   "file": "SM_uno_card_55.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_55_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_56",
+   "file": "SM_uno_card_56.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_56_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_57",
+   "file": "SM_uno_card_57.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_57_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_58",
+   "file": "SM_uno_card_58.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_58_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_59",
+   "file": "SM_uno_card_59.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_59_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_6",
+   "file": "SM_uno_card_6.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_6_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_60",
+   "file": "SM_uno_card_60.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_60_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_61",
+   "file": "SM_uno_card_61.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_61_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_62",
+   "file": "SM_uno_card_62.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_62_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_7",
+   "file": "SM_uno_card_7.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_7_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_8",
+   "file": "SM_uno_card_8.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_8_mat"
+   ]
+  },
+  {
+   "name": "SM_uno_card_9",
+   "file": "SM_uno_card_9.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.092
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.046
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.046
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_uno_card_9_mat"
+   ]
+  },
+  {
+   "name": "SM_chip",
+   "file": "SM_chip.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.007,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.007,
+    0.02
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_chip_mat"
+   ]
+  },
+  {
+   "name": "SM_chip_1",
+   "file": "SM_chip_1.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.007,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.007,
+    0.02
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_chip_1_mat"
+   ]
+  },
+  {
+   "name": "SM_chip_2",
+   "file": "SM_chip_2.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.007,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.007,
+    0.02
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_chip_2_mat"
+   ]
+  },
+  {
+   "name": "SM_chip_3",
+   "file": "SM_chip_3.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.007,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.007,
+    0.02
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_chip_3_mat"
+   ]
+  },
+  {
+   "name": "SM_chip_4",
+   "file": "SM_chip_4.fbx",
+   "children": [],
+   "size": [
+    0.04,
+    0.007,
+    0.04
+   ],
+   "min": [
+    -0.02,
+    -0.0,
+    1.202
+   ],
+   "max": [
+    0.02,
+    0.007,
+    1.242
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_chip_4_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card",
+   "file": "SM_playing_card.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_1",
+   "file": "SM_playing_card_1.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_1_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_10",
+   "file": "SM_playing_card_10.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_10_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_11",
+   "file": "SM_playing_card_11.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_11_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_12",
+   "file": "SM_playing_card_12.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_12_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_13",
+   "file": "SM_playing_card_13.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_13_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_14",
+   "file": "SM_playing_card_14.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_14_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_15",
+   "file": "SM_playing_card_15.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_15_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_16",
+   "file": "SM_playing_card_16.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_16_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_17",
+   "file": "SM_playing_card_17.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_17_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_18",
+   "file": "SM_playing_card_18.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_18_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_19",
+   "file": "SM_playing_card_19.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_19_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_2",
+   "file": "SM_playing_card_2.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_2_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_20",
+   "file": "SM_playing_card_20.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_20_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_21",
+   "file": "SM_playing_card_21.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_21_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_22",
+   "file": "SM_playing_card_22.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_22_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_23",
+   "file": "SM_playing_card_23.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_23_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_24",
+   "file": "SM_playing_card_24.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_24_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_25",
+   "file": "SM_playing_card_25.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_25_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_26",
+   "file": "SM_playing_card_26.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_26_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_27",
+   "file": "SM_playing_card_27.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_27_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_28",
+   "file": "SM_playing_card_28.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_28_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_29",
+   "file": "SM_playing_card_29.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_29_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_3",
+   "file": "SM_playing_card_3.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_3_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_30",
+   "file": "SM_playing_card_30.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_30_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_31",
+   "file": "SM_playing_card_31.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_31_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_32",
+   "file": "SM_playing_card_32.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_32_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_33",
+   "file": "SM_playing_card_33.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_33_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_34",
+   "file": "SM_playing_card_34.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_34_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_35",
+   "file": "SM_playing_card_35.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_35_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_36",
+   "file": "SM_playing_card_36.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_36_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_37",
+   "file": "SM_playing_card_37.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_37_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_38",
+   "file": "SM_playing_card_38.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_38_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_39",
+   "file": "SM_playing_card_39.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_39_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_4",
+   "file": "SM_playing_card_4.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_4_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_40",
+   "file": "SM_playing_card_40.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_40_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_41",
+   "file": "SM_playing_card_41.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_41_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_42",
+   "file": "SM_playing_card_42.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_42_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_43",
+   "file": "SM_playing_card_43.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_43_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_44",
+   "file": "SM_playing_card_44.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_44_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_45",
+   "file": "SM_playing_card_45.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_45_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_46",
+   "file": "SM_playing_card_46.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_46_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_47",
+   "file": "SM_playing_card_47.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_47_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_48",
+   "file": "SM_playing_card_48.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_48_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_49",
+   "file": "SM_playing_card_49.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_49_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_5",
+   "file": "SM_playing_card_5.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_5_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_50",
+   "file": "SM_playing_card_50.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_50_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_51",
+   "file": "SM_playing_card_51.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_51_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_6",
+   "file": "SM_playing_card_6.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_6_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_7",
+   "file": "SM_playing_card_7.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_7_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_8",
+   "file": "SM_playing_card_8.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_8_mat"
+   ]
+  },
+  {
+   "name": "SM_playing_card_9",
+   "file": "SM_playing_card_9.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.087
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.044
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.044
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_playing_card_9_mat"
+   ]
+  },
+  {
+   "name": "SM_backgammon",
+   "file": "SM_backgammon.fbx",
+   "children": [],
+   "size": [
+    0.5,
+    0.027,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.0,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.027,
+    0.25
+   ],
+   "tris": 44,
+   "materials": [
+    "SM_backgammon_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece",
+   "file": "SM_black_chess_piece.fbx",
+   "children": [],
+   "size": [
+    0.032,
+    0.06,
+    0.028
+   ],
+   "min": [
+    -0.016,
+    -0.0,
+    -0.014
+   ],
+   "max": [
+    0.016,
+    0.06,
+    0.014
+   ],
+   "tris": 128,
+   "materials": [
+    "SM_black_chess_piece_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece_1",
+   "file": "SM_black_chess_piece_1.fbx",
+   "children": [],
+   "size": [
+    0.037,
+    0.073,
+    0.032
+   ],
+   "min": [
+    -0.019,
+    -0.0,
+    -0.016
+   ],
+   "max": [
+    0.019,
+    0.073,
+    0.016
+   ],
+   "tris": 104,
+   "materials": [
+    "SM_black_chess_piece_1_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece_2",
+   "file": "SM_black_chess_piece_2.fbx",
+   "children": [],
+   "size": [
+    0.034,
+    0.061,
+    0.029
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.015
+   ],
+   "max": [
+    0.017,
+    0.061,
+    0.015
+   ],
+   "tris": 118,
+   "materials": [
+    "SM_black_chess_piece_2_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece_3",
+   "file": "SM_black_chess_piece_3.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.047,
+    0.029
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.014
+   ],
+   "max": [
+    0.017,
+    0.047,
+    0.014
+   ],
+   "tris": 92,
+   "materials": [
+    "SM_black_chess_piece_3_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece_4",
+   "file": "SM_black_chess_piece_4.fbx",
+   "children": [],
+   "size": [
+    0.032,
+    0.056,
+    0.029
+   ],
+   "min": [
+    -0.016,
+    -0.0,
+    -0.015
+   ],
+   "max": [
+    0.016,
+    0.056,
+    0.014
+   ],
+   "tris": 148,
+   "materials": [
+    "SM_black_chess_piece_4_mat"
+   ]
+  },
+  {
+   "name": "SM_black_chess_piece_5",
+   "file": "SM_black_chess_piece_5.fbx",
+   "children": [],
+   "size": [
+    0.025,
+    0.037,
+    0.022
+   ],
+   "min": [
+    -0.012,
+    -0.0,
+    -0.011
+   ],
+   "max": [
+    0.012,
+    0.037,
+    0.011
+   ],
+   "tris": 128,
+   "materials": [
+    "SM_black_chess_piece_5_mat"
+   ]
+  },
+  {
+   "name": "SM_chessboard",
+   "file": "SM_chessboard.fbx",
+   "children": [],
+   "size": [
+    0.5,
+    0.027,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.0,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.027,
+    0.25
+   ],
+   "tris": 20,
+   "materials": [
+    "SM_chessboard_mat"
+   ]
+  },
+  {
+   "name": "SM_dice",
+   "file": "SM_dice.fbx",
+   "children": [],
+   "size": [
+    0.02,
+    0.02,
+    0.02
+   ],
+   "min": [
+    -0.01,
+    -0.0,
+    -0.01
+   ],
+   "max": [
+    0.01,
+    0.02,
+    0.01
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_dice_mat"
+   ]
+  },
+  {
+   "name": "SM_pawn",
+   "file": "SM_pawn.fbx",
+   "children": [],
+   "size": [
+    0.036,
+    0.008,
+    0.032
+   ],
+   "min": [
+    -0.018,
+    -0.004,
+    -0.016
+   ],
+   "max": [
+    0.018,
+    0.004,
+    0.016
+   ],
+   "tris": 44,
+   "materials": [
+    "SM_pawn_mat"
+   ]
+  },
+  {
+   "name": "SM_pawn_1",
+   "file": "SM_pawn_1.fbx",
+   "children": [],
+   "size": [
+    0.036,
+    0.008,
+    0.032
+   ],
+   "min": [
+    -0.018,
+    -0.004,
+    -0.016
+   ],
+   "max": [
+    0.018,
+    0.004,
+    0.016
+   ],
+   "tris": 44,
+   "materials": [
+    "SM_pawn_1_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece",
+   "file": "SM_white_chess_piece.fbx",
+   "children": [],
+   "size": [
+    0.032,
+    0.06,
+    0.028
+   ],
+   "min": [
+    -0.016,
+    -0.0,
+    -0.014
+   ],
+   "max": [
+    0.016,
+    0.06,
+    0.014
+   ],
+   "tris": 128,
+   "materials": [
+    "SM_white_chess_piece_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece_1",
+   "file": "SM_white_chess_piece_1.fbx",
+   "children": [],
+   "size": [
+    0.037,
+    0.073,
+    0.032
+   ],
+   "min": [
+    -0.019,
+    -0.0,
+    -0.016
+   ],
+   "max": [
+    0.019,
+    0.073,
+    0.016
+   ],
+   "tris": 104,
+   "materials": [
+    "SM_white_chess_piece_1_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece_2",
+   "file": "SM_white_chess_piece_2.fbx",
+   "children": [],
+   "size": [
+    0.034,
+    0.061,
+    0.029
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.015
+   ],
+   "max": [
+    0.017,
+    0.061,
+    0.015
+   ],
+   "tris": 118,
+   "materials": [
+    "SM_white_chess_piece_2_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece_3",
+   "file": "SM_white_chess_piece_3.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.047,
+    0.029
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.014
+   ],
+   "max": [
+    0.017,
+    0.047,
+    0.014
+   ],
+   "tris": 92,
+   "materials": [
+    "SM_white_chess_piece_3_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece_4",
+   "file": "SM_white_chess_piece_4.fbx",
+   "children": [],
+   "size": [
+    0.032,
+    0.056,
+    0.029
+   ],
+   "min": [
+    -0.016,
+    -0.0,
+    -0.015
+   ],
+   "max": [
+    0.016,
+    0.056,
+    0.014
+   ],
+   "tris": 148,
+   "materials": [
+    "SM_white_chess_piece_4_mat"
+   ]
+  },
+  {
+   "name": "SM_white_chess_piece_5",
+   "file": "SM_white_chess_piece_5.fbx",
+   "children": [],
+   "size": [
+    0.025,
+    0.037,
+    0.022
+   ],
+   "min": [
+    -0.012,
+    -0.0,
+    -0.011
+   ],
+   "max": [
+    0.012,
+    0.037,
+    0.011
+   ],
+   "tris": 128,
+   "materials": [
+    "SM_white_chess_piece_5_mat"
+   ]
+  },
+  {
+   "name": "SM_domino",
+   "file": "SM_domino.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_1",
+   "file": "SM_domino_1.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_1_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_10",
+   "file": "SM_domino_10.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_10_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_11",
+   "file": "SM_domino_11.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_11_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_12",
+   "file": "SM_domino_12.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_12_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_13",
+   "file": "SM_domino_13.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_13_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_14",
+   "file": "SM_domino_14.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_14_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_15",
+   "file": "SM_domino_15.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_15_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_16",
+   "file": "SM_domino_16.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_16_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_17",
+   "file": "SM_domino_17.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_17_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_18",
+   "file": "SM_domino_18.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_18_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_19",
+   "file": "SM_domino_19.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_19_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_2",
+   "file": "SM_domino_2.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_2_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_20",
+   "file": "SM_domino_20.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_20_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_21",
+   "file": "SM_domino_21.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_21_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_22",
+   "file": "SM_domino_22.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_22_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_23",
+   "file": "SM_domino_23.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_23_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_24",
+   "file": "SM_domino_24.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_24_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_25",
+   "file": "SM_domino_25.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_25_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_26",
+   "file": "SM_domino_26.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_26_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_27",
+   "file": "SM_domino_27.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_27_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_3",
+   "file": "SM_domino_3.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_3_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_4",
+   "file": "SM_domino_4.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_4_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_5",
+   "file": "SM_domino_5.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_5_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_6",
+   "file": "SM_domino_6.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_6_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_7",
+   "file": "SM_domino_7.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_7_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_8",
+   "file": "SM_domino_8.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_8_mat"
+   ]
+  },
+  {
+   "name": "SM_domino_9",
+   "file": "SM_domino_9.fbx",
+   "children": [],
+   "size": [
+    0.033,
+    0.012,
+    0.071
+   ],
+   "min": [
+    -0.017,
+    -0.0,
+    -0.035
+   ],
+   "max": [
+    0.017,
+    0.012,
+    0.035
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_domino_9_mat"
+   ]
+  },
+  {
+   "name": "SM_Jenga",
+   "file": "SM_Jenga.fbx",
+   "children": [],
+   "size": [
+    0.022,
+    0.016,
+    0.108
+   ],
+   "min": [
+    -0.011,
+    -0.0,
+    -0.054
+   ],
+   "max": [
+    0.011,
+    0.016,
+    0.054
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_Jenga_mat"
+   ]
+  },
+  {
+   "name": "SM_Jenga_1",
+   "file": "SM_Jenga_1.fbx",
+   "children": [],
+   "size": [
+    0.022,
+    0.016,
+    0.108
+   ],
+   "min": [
+    -0.011,
+    -0.0,
+    -0.054
+   ],
+   "max": [
+    0.011,
+    0.016,
+    0.054
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_Jenga_1_mat"
+   ]
+  },
+  {
+   "name": "SM_Jenga_2",
+   "file": "SM_Jenga_2.fbx",
+   "children": [],
+   "size": [
+    0.022,
+    0.016,
+    0.108
+   ],
+   "min": [
+    -0.011,
+    -0.0,
+    -0.054
+   ],
+   "max": [
+    0.011,
+    0.016,
+    0.054
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_Jenga_2_mat"
+   ]
+  },
+  {
+   "name": "SM_air_hockey_table",
+   "file": "SM_air_hockey_table.fbx",
+   "children": [],
+   "size": [
+    1.919,
+    0.704,
+    1.04
+   ],
+   "min": [
+    -0.959,
+    -0.0,
+    -0.52
+   ],
+   "max": [
+    0.959,
+    0.704,
+    0.52
+   ],
+   "tris": 644,
+   "materials": [
+    "SM_air_hockey_table_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball",
+   "file": "SM_billiard_ball.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_1",
+   "file": "SM_billiard_ball_1.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_1_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_10",
+   "file": "SM_billiard_ball_10.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_10_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_11",
+   "file": "SM_billiard_ball_11.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_11_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_12",
+   "file": "SM_billiard_ball_12.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_12_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_13",
+   "file": "SM_billiard_ball_13.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_13_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_14",
+   "file": "SM_billiard_ball_14.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_14_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_15",
+   "file": "SM_billiard_ball_15.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_15_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_2",
+   "file": "SM_billiard_ball_2.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_2_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_3",
+   "file": "SM_billiard_ball_3.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_3_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_4",
+   "file": "SM_billiard_ball_4.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_4_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_5",
+   "file": "SM_billiard_ball_5.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_5_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_6",
+   "file": "SM_billiard_ball_6.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_6_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_7",
+   "file": "SM_billiard_ball_7.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_7_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_8",
+   "file": "SM_billiard_ball_8.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_8_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_ball_9",
+   "file": "SM_billiard_ball_9.fbx",
+   "children": [],
+   "size": [
+    0.055,
+    0.055,
+    0.055
+   ],
+   "min": [
+    -0.028,
+    -0.028,
+    -0.028
+   ],
+   "max": [
+    0.028,
+    0.028,
+    0.028
+   ],
+   "tris": 80,
+   "materials": [
+    "SM_billiard_ball_9_mat"
+   ]
+  },
+  {
+   "name": "SM_billiard_table",
+   "file": "SM_billiard_table.fbx",
+   "children": [
+    "Cylinder_1"
+   ],
+   "size": [
+    2.989,
+    3.314,
+    1.65
+   ],
+   "min": [
+    -1.489,
+    -0.002,
+    -0.834
+   ],
+   "max": [
+    1.499,
+    3.312,
+    0.816
+   ],
+   "tris": 6640,
+   "materials": [
+    "SM_billiard_table_mat",
+    "SM_billiard_table_mat.001"
+   ]
+  },
+  {
+   "name": "SM_cue",
+   "file": "SM_cue.fbx",
+   "children": [],
+   "size": [
+    1.447,
+    0.025,
+    0.022
+   ],
+   "min": [
+    -1.398,
+    -0.013,
+    -0.011
+   ],
+   "max": [
+    0.049,
+    0.013,
+    0.011
+   ],
+   "tris": 34,
+   "materials": [
+    "SM_cue_mat"
+   ]
+  },
+  {
+   "name": "SM_cue_stand",
+   "file": "SM_cue_stand.fbx",
+   "children": [],
+   "size": [
+    0.825,
+    1.16,
+    0.125
+   ],
+   "min": [
+    -0.412,
+    -0.0,
+    -0.0
+   ],
+   "max": [
+    0.412,
+    1.16,
+    0.125
+   ],
+   "tris": 384,
+   "materials": [
+    "SM_cue_stand_mat"
+   ]
+  },
+  {
+   "name": "SM_frame_for_balls",
+   "file": "SM_frame_for_balls.fbx",
+   "children": [],
+   "size": [
+    0.294,
+    0.028,
+    0.35
+   ],
+   "min": [
+    -0.21,
+    -0.0,
+    -0.175
+   ],
+   "max": [
+    0.084,
+    0.028,
+    0.175
+   ],
+   "tris": 72,
+   "materials": [
+    "SM_frame_for_balls_mat"
+   ]
+  },
+  {
+   "name": "SM_hockey_stick",
+   "file": "SM_hockey_stick.fbx",
+   "children": [],
+   "size": [
+    0.108,
+    0.05,
+    0.108
+   ],
+   "min": [
+    -0.054,
+    -0.0,
+    -0.054
+   ],
+   "max": [
+    0.054,
+    0.05,
+    0.054
+   ],
+   "tris": 92,
+   "materials": [
+    "SM_hockey_stick_mat"
+   ]
+  },
+  {
+   "name": "SM_hockey_stick_1",
+   "file": "SM_hockey_stick_1.fbx",
+   "children": [],
+   "size": [
+    0.108,
+    0.05,
+    0.108
+   ],
+   "min": [
+    -0.054,
+    -0.0,
+    -0.054
+   ],
+   "max": [
+    0.054,
+    0.05,
+    0.054
+   ],
+   "tris": 92,
+   "materials": [
+    "SM_hockey_stick_1_mat"
+   ]
+  },
+  {
+   "name": "SM_lottery",
+   "file": "SM_lottery.fbx",
+   "children": [
+    "Cube_178",
+    "Cube_178_2"
+   ],
+   "size": [
+    0.136,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.049
+   ],
+   "tris": 16,
+   "materials": [
+    "SM_lottery_mat",
+    "SM_lottery_mat.001",
+    "SM_lottery_mat.002"
+   ]
+  },
+  {
+   "name": "SM_ping_pong_ball",
+   "file": "SM_ping_pong_ball.fbx",
+   "children": [],
+   "size": [
+    0.032,
+    0.032,
+    0.032
+   ],
+   "min": [
+    -0.016,
+    -0.0,
+    -0.016
+   ],
+   "max": [
+    0.016,
+    0.032,
+    0.016
+   ],
+   "tris": 32,
+   "materials": [
+    "SM_ping_pong_ball_mat"
+   ]
+  },
+  {
+   "name": "SM_ping_pong_table",
+   "file": "SM_ping_pong_table.fbx",
+   "children": [],
+   "size": [
+    1.65,
+    0.888,
+    2.706
+   ],
+   "min": [
+    -0.825,
+    -0.001,
+    -1.353
+   ],
+   "max": [
+    0.825,
+    0.887,
+    1.353
+   ],
+   "tris": 968,
+   "materials": [
+    "SM_ping_pong_table_mat"
+   ]
+  },
+  {
+   "name": "SM_puck",
+   "file": "SM_puck.fbx",
+   "children": [],
+   "size": [
+    0.08,
+    0.006,
+    0.08
+   ],
+   "min": [
+    -0.04,
+    -0.0,
+    -0.04
+   ],
+   "max": [
+    0.04,
+    0.006,
+    0.04
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_puck_mat"
+   ]
+  },
+  {
+   "name": "SM_punching_bag",
+   "file": "SM_punching_bag.fbx",
+   "children": [],
+   "size": [
+    2.5,
+    2.821,
+    2.03
+   ],
+   "min": [
+    -1.25,
+    -0.0,
+    -0.514
+   ],
+   "max": [
+    1.25,
+    2.821,
+    1.516
+   ],
+   "tris": 2598,
+   "materials": [
+    "SM_punching_bag_mat"
+   ]
+  },
+  {
+   "name": "SM_table_football",
+   "file": "SM_table_football.fbx",
+   "children": [
+    "Cube_10",
+    "Cube_11",
+    "Cube_2",
+    "Cube_5",
+    "Cube_6",
+    "Cube_7",
+    "Cube_8",
+    "Cube_9"
+   ],
+   "size": [
+    1.467,
+    0.878,
+    1.166
+   ],
+   "min": [
+    -0.734,
+    -0.0,
+    -0.582
+   ],
+   "max": [
+    0.734,
+    0.878,
+    0.585
+   ],
+   "tris": 3620,
+   "materials": [
+    "SM_table_football_mat",
+    "SM_table_football_mat.001",
+    "SM_table_football_mat.002",
+    "SM_table_football_mat.003",
+    "SM_table_football_mat.004",
+    "SM_table_football_mat.005",
+    "SM_table_football_mat.006",
+    "SM_table_football_mat.007",
+    "SM_table_football_mat.008"
+   ]
+  },
+  {
+   "name": "SM_tennis_racket",
+   "file": "SM_tennis_racket.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.011,
+    0.231
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.182
+   ],
+   "max": [
+    0.068,
+    0.011,
+    0.049
+   ],
+   "tris": 96,
+   "materials": [
+    "SM_tennis_racket_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map",
+   "file": "SM_mafia_map.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map_1",
+   "file": "SM_mafia_map_1.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_1_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map_2",
+   "file": "SM_mafia_map_2.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_2_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map_3",
+   "file": "SM_mafia_map_3.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_3_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map_4",
+   "file": "SM_mafia_map_4.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_4_mat"
+   ]
+  },
+  {
+   "name": "SM_mafia_map_5",
+   "file": "SM_mafia_map_5.fbx",
+   "children": [],
+   "size": [
+    0.061,
+    0.002,
+    0.098
+   ],
+   "min": [
+    -0.031,
+    -0.0,
+    -0.049
+   ],
+   "max": [
+    0.031,
+    0.002,
+    0.049
+   ],
+   "tris": 28,
+   "materials": [
+    "SM_mafia_map_5_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money",
+   "file": "SM_counterfeit_money.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_1",
+   "file": "SM_counterfeit_money_1.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_1_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_2",
+   "file": "SM_counterfeit_money_2.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_2_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_3",
+   "file": "SM_counterfeit_money_3.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_3_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_4",
+   "file": "SM_counterfeit_money_4.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_4_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_5",
+   "file": "SM_counterfeit_money_5.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_5_mat"
+   ]
+  },
+  {
+   "name": "SM_counterfeit_money_6",
+   "file": "SM_counterfeit_money_6.fbx",
+   "children": [],
+   "size": [
+    0.136,
+    0.002,
+    0.066
+   ],
+   "min": [
+    -0.068,
+    -0.0,
+    -0.033
+   ],
+   "max": [
+    0.068,
+    0.002,
+    0.033
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_counterfeit_money_6_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_card",
+   "file": "SM_monopoly_card.fbx",
+   "children": [],
+   "size": [
+    0.594,
+    0.002,
+    0.594
+   ],
+   "min": [
+    -0.297,
+    -0.0,
+    -0.297
+   ],
+   "max": [
+    0.297,
+    0.002,
+    0.297
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_card_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card",
+   "file": "SM_monopoly_playing_card.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.037
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.018
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.018
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_1",
+   "file": "SM_monopoly_playing_card_1.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.075
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.038
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.038
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_1_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_10",
+   "file": "SM_monopoly_playing_card_10.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_10_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_11",
+   "file": "SM_monopoly_playing_card_11.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_11_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_12",
+   "file": "SM_monopoly_playing_card_12.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_12_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_2",
+   "file": "SM_monopoly_playing_card_2.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.075
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.038
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.038
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_2_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_3",
+   "file": "SM_monopoly_playing_card_3.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_3_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_4",
+   "file": "SM_monopoly_playing_card_4.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_4_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_5",
+   "file": "SM_monopoly_playing_card_5.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_5_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_6",
+   "file": "SM_monopoly_playing_card_6.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_6_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_7",
+   "file": "SM_monopoly_playing_card_7.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_7_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_8",
+   "file": "SM_monopoly_playing_card_8.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_8_mat"
+   ]
+  },
+  {
+   "name": "SM_monopoly_playing_card_9",
+   "file": "SM_monopoly_playing_card_9.fbx",
+   "children": [],
+   "size": [
+    0.058,
+    0.001,
+    0.1
+   ],
+   "min": [
+    -0.029,
+    -0.0,
+    -0.05
+   ],
+   "max": [
+    0.029,
+    0.001,
+    0.05
+   ],
+   "tris": 12,
+   "materials": [
+    "SM_monopoly_playing_card_9_mat"
+   ]
+  },
+  {
+   "name": "SM_pawn.001",
+   "file": "SM_pawn.fbx",
+   "children": [],
+   "size": [
+    0.028,
+    0.037,
+    0.024
+   ],
+   "min": [
+    -0.014,
+    -0.0,
+    -0.012
+   ],
+   "max": [
+    0.014,
+    0.037,
+    0.012
+   ],
+   "tris": 56,
+   "materials": [
+    "SM_pawn_mat.001"
+   ]
+  },
+  {
+   "name": "SM_pawn_1.001",
+   "file": "SM_pawn_1.fbx",
+   "children": [],
+   "size": [
+    0.028,
+    0.037,
+    0.024
+   ],
+   "min": [
+    -0.014,
+    -0.0,
+    -0.012
+   ],
+   "max": [
+    0.014,
+    0.037,
+    0.012
+   ],
+   "tris": 56,
+   "materials": [
+    "SM_pawn_1_mat.001"
+   ]
+  },
+  {
+   "name": "SM_pawn_2",
+   "file": "SM_pawn_2.fbx",
+   "children": [],
+   "size": [
+    0.028,
+    0.037,
+    0.024
+   ],
+   "min": [
+    -0.014,
+    -0.0,
+    -0.012
+   ],
+   "max": [
+    0.014,
+    0.037,
+    0.012
+   ],
+   "tris": 56,
+   "materials": [
+    "SM_pawn_2_mat"
+   ]
+  },
+  {
+   "name": "SM_pawn_3",
+   "file": "SM_pawn_3.fbx",
+   "children": [],
+   "size": [
+    0.028,
+    0.037,
+    0.024
+   ],
+   "min": [
+    -0.014,
+    -0.0,
+    -0.012
+   ],
+   "max": [
+    0.014,
+    0.037,
+    0.012
+   ],
+   "tris": 56,
+   "materials": [
+    "SM_pawn_3_mat"
+   ]
+  }
+ ]
+}
