@@ -45,12 +45,27 @@ export async function loadCharacter(info) {
       o.receiveShadow = true;
       o.frustumCulled = false; // skinned meshes move far from their rest bounds
       if (!partNames.size) parts[o.name] = o;
-      const mats = Array.isArray(o.material) ? o.material : [o.material];
-      for (const m of mats) materials.set(m.name, m);
+      // Give this instance its own materials so recoloring one player never
+      // affects another player wearing the same outfit.
+      const own = (m) => {
+        if (!materials.has(m.name)) materials.set(m.name, m.clone());
+        return materials.get(m.name);
+      };
+      o.material = Array.isArray(o.material) ? o.material.map(own) : own(o.material);
     }
   });
+  const originalColors = {};
+  for (const [name, m] of materials) if (m.color) originalColors[name] = '#' + m.color.getHexString();
   const mixer = new THREE.AnimationMixer(root);
-  return { info, root, clips: gltf.animations.slice(), parts, materials, mixer };
+  return { info, root, clips: gltf.animations.slice(), parts, materials, originalColors, mixer };
+}
+
+/** Applies { materialName: '#rrggbb' } overrides; missing names revert to the original. */
+export function applyColors(character, colors = {}) {
+  for (const [name, m] of character.materials) {
+    if (!m.color) continue;
+    m.color.set(colors[name] || character.originalColors[name]);
+  }
 }
 
 /** Loads extra animation packs listed in manifest.animationPacks: [{ name, file }]. */

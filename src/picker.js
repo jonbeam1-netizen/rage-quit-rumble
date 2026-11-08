@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { loadManifest, loadCharacter, play } from './characters.js';
+import { loadManifest, loadCharacter, play, applyColors } from './characters.js';
 import { TEAM_COLORS, NAME_MAX, defaultProfile, loadProfile, saveProfile, sanitizeName, colorHex } from './profile.js';
 
 const $ = (id) => document.getElementById(id);
@@ -138,6 +138,8 @@ async function showCharacter(id) {
   if (character) pivot.remove(character.root);
   character = next;
   pivot.add(character.root);
+  applyColors(character, profile.colors[character.info.id]);
+  buildMaterialColors();
   const box = new THREE.Box3().setFromObject(character.root);
   const top = box.max.y + 0.12;            // podium height included
   tag.position.set(0, top + 0.2, 0);
@@ -210,6 +212,42 @@ function markColor() {
   document.querySelectorAll('.swatch').forEach((s) => s.classList.toggle('selected', s.dataset.id === profile.color));
 }
 
+// --- character material colors ------------------------------------------------
+const prettyName = (n) => n.replace(/[_.]/g, ' ').replace(/([a-z])([A-Z0-9])/g, '$1 $2').trim();
+
+function buildMaterialColors() {
+  const el = $('tints');
+  el.innerHTML = '';
+  const id = character.info.id;
+  for (const [name, mat] of character.materials) {
+    if (!mat.color) continue;
+    const l = document.createElement('label');
+    l.className = 'tint';
+    const c = document.createElement('input');
+    c.type = 'color';
+    c.value = '#' + mat.color.getHexString();
+    c.oninput = () => {
+      profile.colors[id] = profile.colors[id] || {};
+      profile.colors[id][name] = c.value;
+      mat.color.set(c.value);
+      $('tintreset').disabled = false;
+      setDirty();
+    };
+    const span = document.createElement('span');
+    span.textContent = prettyName(name);
+    l.append(c, span);
+    el.appendChild(l);
+  }
+  $('tintreset').disabled = !profile.colors[id];
+}
+
+function resetMaterialColors() {
+  delete profile.colors[character.info.id];
+  applyColors(character, {});
+  buildMaterialColors();
+  setDirty();
+}
+
 function setDirty() {
   dirty = true;
   $('save').textContent = 'Save';
@@ -237,6 +275,7 @@ function doSave() {
   $('name').oninput = () => { profile.name = $('name').value; setDirty(); drawTag(); };
   $('name').onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); doSave(); } };
   $('save').onclick = doSave;
+  $('tintreset').onclick = resetMaterialColors;
   $('random').onclick = () => {
     const chars = manifest.characters;
     showCharacter(chars[Math.floor(Math.random() * chars.length)].id);

@@ -21,6 +21,7 @@ export function defaultProfile() {
     name: 'Player' + String(Math.floor(Math.random() * 90) + 10),
     characterId: 'men/Casual_Hoodie',
     color: TEAM_COLORS[Math.floor(Math.random() * TEAM_COLORS.length)].id,
+    colors: {},   // { characterId: { materialName: '#rrggbb' } }
     unlocks: [],
   };
 }
@@ -43,10 +44,23 @@ export function saveProfile(profile) {
     name: sanitizeName(profile.name),
     characterId: profile.characterId,
     color: TEAM_COLORS.some((c) => c.id === profile.color) ? profile.color : TEAM_COLORS[0].id,
+    colors: cleanColors(profile.colors),
     unlocks: Array.isArray(profile.unlocks) ? profile.unlocks : [],
   };
   try { localStorage.setItem(KEY, JSON.stringify(clean)); } catch { /* private mode etc. */ }
   return clean;
+}
+
+function cleanColors(colors) {
+  const out = {};
+  if (!colors || typeof colors !== 'object') return out;
+  for (const [charId, mats] of Object.entries(colors)) {
+    if (!mats || typeof mats !== 'object') continue;
+    const m = {};
+    for (const [name, hex] of Object.entries(mats)) if (/^#[0-9a-f]{6}$/i.test(hex)) m[name] = hex.toLowerCase();
+    if (Object.keys(m).length) out[charId] = m;
+  }
+  return out;
 }
 
 export function sanitizeName(name) {
