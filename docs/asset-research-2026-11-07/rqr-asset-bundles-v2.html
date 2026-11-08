@@ -1,0 +1,389 @@
+<title>RQR Asset Bundles v2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: brief + reference strip, then the 4 bundles (the decision), then every pack as a rated card by category, then cuts, licensing, gaps, decisions.
+   Single dark look by choice: painted leather and oak with the Toon RTS blue and gold. */
+:root{
+  --bg:#1a1511; --panel:#241d17; --panel2:#2d251d; --line:#3e3328;
+  --ink:#f3eadb; --muted:#b8a890; --gold:#e6a63a; --blue:#4f8fd6; --rage:#ff5a68;
+  --use:#8ad6a4; --use-bg:#1f3a2a; --maybe:#f0bb5c; --maybe-bg:#3d2d12; --skip:#a89c8c; --skip-bg:#2e2820;
+  --display:"Alfa Slab One","Rockwell","Arial Black",serif;
+  --body:"Nunito Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px}
+a{color:var(--gold);font-weight:600}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header{display:flex;flex-direction:column;gap:12px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(30px,5vw,50px);line-height:1.05;margin:0;text-wrap:balance}
+h1 span{color:var(--rage)}
+.lede{max-width:72ch;color:var(--muted);margin:0;font-size:17px}
+h2{font-family:var(--display);font-weight:400;font-size:22px;margin:0;text-wrap:balance}
+h3{margin:0}
+.sec{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:4px;border-bottom:2px solid var(--gold);padding-bottom:8px}
+.sec-head p{margin:0;color:var(--muted);max-width:80ch}
+.ref{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.ref figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.ref img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--line)}
+.ref figcaption{padding:10px 14px;font-size:14.5px;color:var(--muted)}
+.ref figcaption b{color:var(--ink)}
+.bundles{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.bundle{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.bundle.pick{border:2px solid var(--gold);background:var(--panel2)}
+.bh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.bh h3{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.2}
+.price{font-family:var(--display);font-size:24px;color:var(--gold);line-height:1;white-space:nowrap;text-align:right}
+.price small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted);margin-top:4px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#1a1209;padding:3px 8px;border-radius:4px;align-self:flex-start}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.thumbs img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block;background:var(--line)}
+.items{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.items li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dotted var(--line);padding-bottom:4px}
+.items li span:last-child{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap}
+.bundle p{margin:0;font-size:15px}
+.bundle .bad{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line)}
+.card.noimg .ph{aspect-ratio:16/10;background:repeating-linear-gradient(135deg,var(--panel2) 0 12px,var(--panel) 12px 24px);display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.cb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cb h3{font-size:17.5px;line-height:1.25}
+.cb h3 a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.cb h3 a:hover{text-decoration-color:var(--gold)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.chip.cost{color:var(--gold);border-color:var(--gold)}
+.chip.free{color:var(--use);border-color:var(--use)}
+.v{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:4px}
+.v.use{background:var(--use-bg);color:var(--use)} .v.maybe{background:var(--maybe-bg);color:var(--maybe)} .v.skip{background:var(--skip-bg);color:var(--skip)}
+.rates{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.rates div{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:5px 6px;text-align:center;line-height:1.3}
+.rates b{display:block;color:var(--gold);font-size:15px;font-family:var(--display);font-weight:400}
+.got{margin:0;font-size:14.5px;color:var(--muted)}
+.take{margin:0;font-size:15px}
+.note{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--muted);margin:0}
+.note b{color:var(--ink)}
+.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.list li{min-width:0}
+ol.list li::marker{color:var(--gold);font-weight:700}
+footer{font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.card,.bundle{transition:transform .15s ease}.card:hover,.bundle:hover{transform:translateY(-2px)}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Character creator · round 2 · realistic proportions · prices checked Nov 7 2026</div>
+  <h1>Rage Quit <span>Rumble</span> asset bundles</h1>
+  <p class="lede">New brief: a normal adult human body on a standard humanoid skeleton, so any Mixamo-style animation pack drops straight on, wearing the dark hand-painted texture look of your Toon RTS units. Four research agents swept the Unity Asset Store, Fab, itch.io, Sketchfab, CGTrader and the free CC0 world, then I checked every preview image here myself. Every single item is $20 or less.</p>
+</header>
+
+<section class="sec">
+  <div class="sec-head"><h2>The target, in two pictures</h2><p>What we keep from each reference and what we drop.</p></div>
+  <div class="ref">
+    <figure><img src="img/wk_tex.jpg" alt="Toon RTS Units texture atlas: painted leather, blue cloth, gold trim"><figcaption><b>Keep this:</b> your Toon RTS atlas. Painted shading baked into one diffuse, warm leathers against saturated blue and gold, no PBR. Drop the stubby body underneath it.</figcaption></figure>
+    <figure><img src="img/synty.jpg" alt="Synty POLYGON City Characters"><figcaption><b>Keep this body, drop this look:</b> Synty City Characters. Normal human proportions on a Unity Humanoid rig, but flat colors and dot faces. You said the faces annoy you; faces get repainted in Blender anyway.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Bundles</h2><p>Each bundle is a complete creator kit: body, animations, outfits, props. Items inside bundles fit together on one skeleton or are easy to refit onto it.</p></div>
+  <div class="bundles">
+
+    <div class="bundle">
+      <div class="bh"><h3>Blank Canvas</h3><div class="price">$0<small>all CC0 / CC-BY</small></div></div>
+      <div class="thumbs"><img src="img/quat.jpg" alt=""><img src="img/quat_outfits.jpg" alt=""><img src="img/cattleya.jpg" alt=""><img src="img/warrior.jpg" alt=""></div>
+      <ul class="items">
+        <li><span>Quaternius Universal Base Characters (6 bodies, 20 hairstyles)</span><span>$0</span></li>
+        <li><span>Quaternius Modular Outfits: Fantasy (62 parts)</span><span>$0</span></li>
+        <li><span>Universal Animation Library 1 + 2 (250+ clips)</span><span>$0</span></li>
+        <li><span>Kevin Iglesias free packs: Soldier, Dance, Melee, Basic</span><span>$0</span></li>
+        <li><span>cattleya Girl + TonesomJa Warrior as paint targets</span><span>$0</span></li>
+        <li><span>rudolfs painted gun pack (SMG, pistol, shotgun)</span><span>$0</span></li>
+      </ul>
+      <p>Everything on one humanoid rig, nothing to retarget, no license worries. The one job it leaves us is the paint: Quaternius textures are clean and modern, so we hand-paint a Toon RTS style skin, cloth and face set in Blender, about a day per body type.</p>
+      <p class="bad">Weak spot: the only free clothing made for this body is fantasy. Modern clothes would be painted onto the body as color regions, or modeled.</p>
+    </div>
+
+    <div class="bundle pick">
+      <span class="tag">My pick</span>
+      <div class="bh"><h3>Painted Rec Room</h3><div class="price">$28.98<small>3 purchases, max $18</small></div></div>
+      <div class="thumbs"><img src="img/quat.jpg" alt=""><img src="img/furniture.jpg" alt=""><img src="img/dungeon.jpg" alt=""><img src="img/skav.jpg" alt=""></div>
+      <ul class="items">
+        <li><span>Everything in Blank Canvas</span><span>$0</span></li>
+        <li><span>Kevin Iglesias Human Basic Motions (404 clips)</span><span>$18</span></li>
+        <li><span>Hand Painted Fantasy Furniture Vol. 1 (26 items)</span><span>$4.99</span></li>
+        <li><span>waaachow Stylized Fantasy Dungeon Props (17 items)</span><span>$5.99</span></li>
+        <li><span>rancidmilk CMU mocap library (golf, basketball, boxing)</span><span>$0</span></li>
+        <li><span>Ser Skav skeleton highwayman as the first unlock skin</span><span>$0</span></li>
+      </ul>
+      <p>Blank Canvas plus the three cheap things that make the lobby feel finished: polished emotes, sitting and knockdowns from Kevin, and two prop packs that match your Toon RTS palette almost exactly. The furniture pack alone furnishes the rec room.</p>
+      <p class="bad">Kevin's packs are Asset Store EULA, so they must ship baked into our character files, never as raw downloads. That pushes us to a private repo on Cloudflare Pages.</p>
+    </div>
+
+    <div class="bundle">
+      <div class="bh"><h3>Skins and Trophies</h3><div class="price">$79.87<small>buy one at a time, later</small></div></div>
+      <div class="thumbs"><img src="img/stego.jpg" alt=""><img src="img/angelic.jpg" alt=""><img src="img/archer.jpg" alt=""><img src="img/helmets.jpg" alt=""></div>
+      <ul class="items">
+        <li><span>Stegobubbles Humans Pack (4 Warcraft-style humans)</span><span>$19.90</span></li>
+        <li><span>BitGem Elven Archer Male</span><span>$19.99</span></li>
+        <li><span>BitGem Angelic Warrior Female</span><span>$14.99</span></li>
+        <li><span>Artcitizen Hand Painted Wizard</span><span>$10</span></li>
+        <li><span>Goe Realms Armor &amp; Helmets Vol. 1 (50 helmets)</span><span>$14.99</span></li>
+      </ul>
+      <p>Not a creator base. These are finished painted characters on Humanoid rigs, perfect as achievement unlocks: win the 1v1 streak, unlock the Angelic Warrior skin. The helmet pack is 50 hats for the unlock tree in one purchase. None of this is needed for the first build.</p>
+      <p class="bad">Each skin is a separate mesh and texture that we refit to the master skeleton. Stegobubbles leans heroic (big shoulders); BitGem faces are stylized.</p>
+    </div>
+
+    <div class="bundle">
+      <div class="bh"><h3>Modern Crew</h3><div class="price">$32.98<small>alternative base</small></div></div>
+      <div class="thumbs"><img src="img/core.jpg" alt=""><img src="img/beka.jpg" alt=""><img src="img/terry.jpg" alt=""><img src="img/paintpoly.jpg" alt=""></div>
+      <ul class="items">
+        <li><span>CoreCharacters Stylized Modular Starter Kit (Fab)</span><span>$0</span></li>
+        <li><span>CoreCharacters techwear outfit add-on</span><span>$14.99</span></li>
+        <li><span>Kevin Iglesias Human Basic Motions</span><span>$18</span></li>
+        <li><span>Beka and 70's Terry as modern-look references</span><span>$0</span></li>
+      </ul>
+      <p>The only ready-made path to hoodies and jackets on a realistic body. Male and female bases, swappable outfits, color tinting, painted comic-style shading.</p>
+      <p class="bad">Two real catches: it ships only as an Unreal Engine project, so we'd install Unreal just to export FBX, and it is about 18k vertices with 4K textures, so it needs decimating for 8 players in a browser. The style is semi-realistic rather than the thick painted look. I'd test it only if modern clothes matter more than the painted look.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Base bodies</h2><p>Ratings out of 5: Style = how close to the Toon RTS paint, Body = how close to normal adult proportions, Quality, Custom = how much it helps a creator. Rig says whether it is a standard humanoid skeleton.</p></div>
+  <div class="grid">
+
+    <div class="card"><img src="img/quat.jpg" alt="Quaternius Universal Base Characters">
+      <div class="cb"><h3><a href="https://quaternius.itch.io/universal-base-characters">Quaternius Universal Base Characters</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC0</span><span class="chip">Humanoid rig</span><span class="v use">Use as master body</span></div>
+      <div class="rates"><div>Style<b>2</b></div><div>Body<b>5</b></div><div>Quality<b>5</b></div><div>Custom<b>5</b></div></div>
+      <p class="got">6 rigged bodies: superhero, regular and teen proportions, male and female, about 13k tris each. 20 hairstyles. Built for the 250-clip Universal Animation Library. glTF, FBX, Blend.</p>
+      <p class="take">The best body I found at any price. The textures are the only mismatch: clean, modern, Overwatch-ish. We repaint them in your palette with painted eyes and brows, which you've already said you're fine doing in Blender. The $20 Source tier only adds eye and skin shaders we can write ourselves.</p></div></div>
+
+    <div class="card"><img src="img/quat_outfits.jpg" alt="Quaternius Modular Character Outfits Fantasy">
+      <div class="cb"><h3><a href="https://quaternius.itch.io/modular-character-outfits-fantasy">Quaternius Modular Outfits: Fantasy</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC0</span><span class="chip">Fits UBC</span><span class="v use">Use for outfits and unlocks</span></div>
+      <div class="rates"><div>Style<b>3</b></div><div>Body<b>5</b></div><div>Quality<b>5</b></div><div>Custom<b>4</b></div></div>
+      <p class="got">12 outfits from 62 swappable parts, made for the Universal Base Characters. Already has painted-style shading on the cloth and leather.</p>
+      <p class="take">Closer to the painted look than the bodies are, so a light paint-over gets it there. Armor, robes, hoods and peasant clothes: a ready-made unlock tree, and a decent default look if you're OK with fantasy clothes at launch.</p></div></div>
+
+    <div class="card"><img src="img/cattleya.jpg" alt="cattleya Girl with clothes, Worker set">
+      <div class="cb"><h3><a href="https://sketchfab.com/3d-models/girl-with-clothes-worker-set-4cf10e2dde6d4b12b6dccd25a4cf3b77">cattleya: Girl with clothes, Worker set</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="chip">Mixamo-tested rig</span><span class="v use">Use as paint target</span></div>
+      <div class="rates"><div>Style<b>4</b></div><div>Body<b>4</b></div><div>Quality<b>3</b></div><div>Custom<b>3</b></div></div>
+      <p class="got">2,469 tris. Separate body, hair, chest, pants and boots meshes. Diffuse-only painted textures: body 2048, clothes and hair 1024. The author tested the rig with Mixamo clips.</p>
+      <p class="take">The one free asset that already has the right architecture: a painted base with swappable clothes on a standard rig. Female only, and the paid outfit sets died with the Sketchfab store. Use it as the paint reference for the Quaternius repaint, or as a second body type.</p></div></div>
+
+    <div class="card"><img src="img/warrior.jpg" alt="TonesomJa Low Poly Warrior">
+      <div class="cb"><h3><a href="https://sketchfab.com/3d-models/none-ab16de5892974fe28deb6e9b69f798e1">TonesomJa: Low Poly Warrior</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="chip">Blender rig</span><span class="v maybe">Preset or reference</span></div>
+      <div class="rates"><div>Style<b>4</b></div><div>Body<b>5</b></div><div>Quality<b>3</b></div><div>Custom<b>2</b></div></div>
+      <p class="got">4,164 tris, rigged in Blender, painted in Krita. Red shirt, one pauldron, normal human build and a real painted face.</p>
+      <p class="take">This is almost exactly the proportions and paint handling you asked for, on a male body. Rig type unverified, so it may need retargeting. Good as a preset character or as the male paint reference.</p></div></div>
+
+    <div class="card"><img src="img/core.jpg" alt="CoreCharacters Stylized Modular Starter Kit">
+      <div class="cb"><h3><a href="https://www.fab.com/listings/37eceaec-46df-4b44-8cb5-5e7ca92c7de8">CoreCharacters Stylized Modular Starter Kit</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">Fab Standard</span><span class="chip">UE5 skeleton</span><span class="v maybe">Only if modern clothes win</span></div>
+      <div class="rates"><div>Style<b>3</b></div><div>Body<b>5</b></div><div>Quality<b>4</b></div><div>Custom<b>3</b></div></div>
+      <p class="got">Rigged male and female bases, a modular jacket outfit, one hairstyle each, color tinting, cel-shade materials. Techwear add-ons on the same rig at $14.99. Unreal project only, about 18k verts per character.</p>
+      <p class="take">The only modular modern-clothes base with real proportions. The cost is an Unreal install just to export, a decimation pass, and a semi-realistic style that sits between Synty and the painted look.</p></div></div>
+
+    <div class="card"><img src="img/paintpoly.jpg" alt="Silver Delivery Paint Poly base female">
+      <div class="cb"><h3><a href="https://silver-delivery.itch.io/paint-poly-base-female-body-rigged">Silver Delivery: Paint Poly Base Female</a></h3>
+      <div class="meta"><span class="chip cost">$12.99</span><span class="chip">No license stated</span><span class="chip">Rigify rig</span><span class="v maybe">Ask seller first</span></div>
+      <div class="rates"><div>Style<b>4</b></div><div>Body<b>5</b></div><div>Quality<b>4</b></div><div>Custom<b>2</b></div></div>
+      <p class="got">Painted base female with hair, about 9k faces, 2K albedo. The <a href="https://silver-delivery.itch.io/adventurous-base-female-character-rigged">Adventurous</a> variant is $7.99 and more cartoony. Same seller has matching painted weapons and animated guns.</p>
+      <p class="take">The most painterly bodies anyone found, and well proportioned. Two problems: female only, and no license text anywhere, so we'd need written permission before shipping it in a browser game.</p></div></div>
+
+    <div class="card"><img src="img/hodaart.jpg" alt="Hodaart Stylized Character Collection 1">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/characters/humanoids/stylized-character-collection-1-393976">Hodaart: Stylized Character Collection 1</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">Asset Store EULA</span><span class="chip">Humanoid (tagged)</span><span class="v use">Grab and test</span></div>
+      <div class="rates"><div>Style<b>3</b></div><div>Body<b>4</b></div><div>Quality<b>4</b></div><div>Custom<b>2</b></div></div>
+      <p class="got">Five textured villagers: two women, two men, a kid. New in July 2026, tagged hand painted and animated. Contents beyond the cover image unverified.</p>
+      <p class="take">Free, realistic proportions, slightly caricatured faces in the direction you don't love. Worth a download to see the rig and textures. Likely lobby NPCs or presets rather than the base.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Painted presets and unlock skins</h2><p>Finished characters, each on its own rig. They become achievement rewards, refit to the master skeleton one at a time.</p></div>
+  <div class="grid">
+
+    <div class="card"><img src="img/stego.jpg" alt="Stegobubbles Humans Pack">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/humans-pack-mobile-characters-161634">Stegobubbles: Humans Pack</a></h3>
+      <div class="meta"><span class="chip cost">$19.90</span><span class="chip">Asset Store EULA</span><span class="chip">Mecanim Humanoid</span><span class="v maybe">Best style match, buy later</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>3</b></div><div>Quality<b>4</b></div><div>Custom<b>2</b></div></div>
+      <p class="got">Four hand-painted humans: knight, mage, dwarf-ish warrior and a slim woman, 3 to 5k verts each. No animations included.</p>
+      <p class="take">Dead-on Warcraft paint, closest of anything to your Toon RTS palette. The men are heroic with huge shoulders, which is why it isn't the base. Four strong unlock skins for $20.</p></div></div>
+
+    <div class="card"><img src="img/archer.jpg" alt="BitGem Elven Archer Male">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/characters/elven-archer-male-hand-painted-series-176880">BitGem: Elven Archer Male</a></h3>
+      <div class="meta"><span class="chip cost">$19.99</span><span class="chip">Asset Store EULA</span><span class="chip">Mixamo compatible</span><span class="v maybe">Unlock skin</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>4</b></div><div>Quality<b>5</b></div><div>Custom<b>1</b></div></div>
+      <p class="got">11.9k tris, Unreal skeleton that is also Mecanim and Mixamo compatible. Highest paint quality on this page.</p>
+      <p class="take">Gorgeous, and the rig is exactly ours. Single character though, and heavy for a browser with 8 players. One premium unlock.</p></div></div>
+
+    <div class="card"><img src="img/angelic.jpg" alt="BitGem Angelic Warrior Female">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/angelic-warrior-female-31650">BitGem: Angelic Warrior Female</a></h3>
+      <div class="meta"><span class="chip cost">$14.99</span><span class="chip">Asset Store EULA</span><span class="chip">Rig unverified</span><span class="v maybe">Unlock skin</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>4</b></div><div>Quality<b>4</b></div><div>Custom<b>1</b></div></div>
+      <p class="got">About 5.5k polys, painted armor and wings, no animations.</p>
+      <p class="take">Realistic proportions, strong paint. An older listing so the rig needs checking before buying.</p></div></div>
+
+    <div class="card"><img src="img/wizard.jpg" alt="Artcitizen Hand Painted Wizard">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/hand-painted-wizard-94781">Artcitizen: Hand Painted Wizard</a></h3>
+      <div class="meta"><span class="chip cost">$10</span><span class="chip">Asset Store EULA</span><span class="chip">Mecanim Humanoid</span><span class="v maybe">Unlock skin</span></div>
+      <div class="rates"><div>Style<b>4</b></div><div>Body<b>4</b></div><div>Quality<b>4</b></div><div>Custom<b>1</b></div></div>
+      <p class="got">3,664 tris, one 2048 diffuse, 7 animations. Old man proportions, big hat, painted face with a real nose and beard.</p>
+      <p class="take">Cheap, light and the face is painted the way you want. Good "old wizard" unlock, and the hat and beard could be cut off as separate accessories.</p></div></div>
+
+    <div class="card"><img src="img/skav.jpg" alt="Ser Skav the eerie highwayman">
+      <div class="cb"><h3><a href="https://sketchfab.com/3d-models/none-850d8e4818b746698ae58db0bccaadca">emrikkaljo: Ser Skav the eerie highwayman</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="chip">Rig unverified</span><span class="v use">First unlock skin</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>4</b></div><div>Quality<b>5</b></div><div>Custom<b>1</b></div></div>
+      <p class="got">9k tris, Warcraft-style painted undead bandit with a lantern. No animations, rig not stated.</p>
+      <p class="take">Portfolio-quality paint for free. Needs a credit line in the game. Perfect secret unlock.</p></div></div>
+
+    <div class="card"><img src="img/terry.jpg" alt="70's Terry by vappex">
+      <div class="cb"><h3><a href="https://sketchfab.com/3d-models/none-d6664d2b52dc43368484d2fcce67d59b">vappex: 70's Terry</a> and <a href="https://sketchfab.com/3d-models/none-41f153b386524655998996966d5f68eb">Beka</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="chip">Blender metarig</span><span class="v maybe">Lobby presets</span></div>
+      <div class="rates"><div>Style<b>3</b></div><div>Body<b>4</b></div><div>Quality<b>3</b></div><div>Custom<b>1</b></div></div>
+      <p class="got">Terry: 1.6k tris, afro and patterned suit. Beka: 5.8k tris, hoodie and jeans with clown makeup. Both painted, both on Blender's metarig, so they need retargeting.</p>
+      <p class="take">The two best free references for modern clothes in a painted style. Terry fits the 30s-nostalgia humor of the game as a joke preset.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Hats, helmets, hair</h2><p>Still the thin spot. No painted hat or hair pack under $20 fits a realistic head, so this is a helmet pack plus free one-offs plus Blender.</p></div>
+  <div class="grid">
+
+    <div class="card"><img src="img/helmets.jpg" alt="Goe Realms Armor and Helmets Collection">
+      <div class="cb"><h3><a href="https://www.fab.com/listings/f3982d98-9c5e-4ad0-bd7d-7a6c62cf7d62">Goe Realms: Armor &amp; Helmets Vol. 1</a></h3>
+      <div class="meta"><span class="chip cost">$14.99</span><span class="chip">Fab Standard</span><span class="chip">Static props</span><span class="v maybe">50 unlock hats</span></div>
+      <div class="rates"><div>Style<b>4</b></div><div>Body<b>-</b></div><div>Quality<b>4</b></div><div>Custom<b>5</b></div></div>
+      <p class="got">50 helmets, about 3k tris each, 1K painted textures, Blend, FBX and GLB. The listing is flagged as AI-assisted.</p>
+      <p class="take">Muted steel palette matches your Toon RTS metals. Fifty hats for the unlock tree in one go. All medieval, so it covers the fantasy side, not caps and beanies.</p></div></div>
+
+    <div class="card"><img src="img/dwarf.jpg" alt="Handpainted Dwarven Head">
+      <div class="cb"><h3><a href="https://sketchfab.com/3d-models/none-99b0fb74e899497995bf82cf1a7dd99a">TugayL: Handpainted Dwarven Head</a></h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="v maybe">Beard and face reference</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>-</b></div><div>Quality<b>4</b></div><div>Custom<b>3</b></div></div>
+      <p class="got">3,786 tris, a painted dwarf head with beard, brows and hair on brush-stroke planes.</p>
+      <p class="take">Cut the beard and brows off as refittable parts, and keep it open on a second monitor as the reference for how to paint eyes and brows on the Quaternius faces.</p></div></div>
+
+    <div class="card noimg"><div class="ph">12 free one-offs</div>
+      <div class="cb"><h3>Free CC-BY hats and helmets on Sketchfab</h3>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">CC-BY 4.0</span><span class="v maybe">Pick and refit</span></div>
+      <p class="got"><a href="https://sketchfab.com/3d-models/7e013bb79645433da9bfaffe08f6921a">Cowboy hat</a> (928 tris), <a href="https://sketchfab.com/3d-models/262d03d11e1044ff9102bebfb914ca79">top hat</a>, <a href="https://sketchfab.com/3d-models/1fceba490cc14bbdb7231acb0272f07c">baseball cap pack</a>, two witch hats, and painted gladiator, fantasy, templar, viking, horned, eagle and morion helmets.</p>
+      <p class="take">Enough for a starter hat rack. Each needs scaling to a realistic head and a unifying paint pass so they read as one set. Glasses, beanies and modern hair don't exist free in this style; those get modeled in Blender.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Props for the lobby and minigames</h2></div>
+  <div class="grid">
+
+    <div class="card"><img src="img/furniture.jpg" alt="Hand Painted Fantasy Furniture Pack">
+      <div class="cb"><h3><a href="https://assetstore.unity.com/packages/3d/props/interior/hand-painted-fantasy-furniture-pack-vol-1-184501">Hand Painted Fantasy Furniture Vol. 1</a></h3>
+      <div class="meta"><span class="chip cost">$4.99</span><span class="chip">Asset Store EULA</span><span class="v use">Lobby furniture</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>-</b></div><div>Quality<b>4</b></div><div>Custom<b>-</b></div></div>
+      <p class="got">26 items, 1,610 tris total, three 1024 atlases. Tables, chairs, benches, barrels, crates, bottles, candles.</p>
+      <p class="take">The palette is your Toon RTS atlas to a tee. Seats for every board game table in the venue for five dollars.</p></div></div>
+
+    <div class="card"><img src="img/dungeon.jpg" alt="waaachow Stylized Fantasy Dungeon Props">
+      <div class="cb"><h3><a href="https://waaachow.itch.io/stylized-fantasy-dungeon-props">waaachow: Stylized Fantasy Dungeon Props</a></h3>
+      <div class="meta"><span class="chip cost">$5.99</span><span class="chip">itch.io, check license</span><span class="v use">Set dressing</span></div>
+      <div class="rates"><div>Style<b>5</b></div><div>Body<b>-</b></div><div>Quality<b>4</b></div><div>Custom<b>-</b></div></div>
+      <p class="got">17 models in FBX, GLB and OBJ: chests, barrels, cauldron, crystals, gold piles.</p>
+      <p class="take">Same painted wood and iron language as the furniture pack. Loot chests double as the achievement reward visual.</p></div></div>
+
+    <div class="card"><img src="img/arcade.jpg" alt="Hand painted arcade machine">
+      <div class="cb"><h3><a href="https://superhivemarket.com/products/arcade-machine-lowpoly-handpainted-3d-model">Arcade Machine, low poly hand painted</a></h3>
+      <div class="meta"><span class="chip cost">$6</span><span class="chip">Superhive</span><span class="v maybe">Game-select cabinet</span></div>
+      <div class="rates"><div>Style<b>3</b></div><div>Body<b>-</b></div><div>Quality<b>3</b></div><div>Custom<b>-</b></div></div>
+      <p class="got">About 2.2k tris, five color variants, grungy painted finish.</p>
+      <p class="take">Fits the "host picks the game at an arcade cabinet" idea. Buy the Superhive copy, not the CGTrader one, because CGTrader's license forbids exposed files.</p></div></div>
+
+    <div class="card"><img src="img/pool.jpg" alt="Stylized billiard pool table">
+      <div class="cb"><h3><a href="https://www.fab.com/listings/a5104155-fe1b-4546-ac54-d0d67d7b52d2">LarkArt: Stylized Billiard / Pool Table</a></h3>
+      <div class="meta"><span class="chip cost">$6.99</span><span class="chip">Fab Standard</span><span class="v maybe">Fallback, repaint</span></div>
+      <div class="rates"><div>Style<b>2</b></div><div>Body<b>-</b></div><div>Quality<b>4</b></div><div>Custom<b>-</b></div></div>
+      <p class="got">Two tables, cue, rack, 16 balls, 2K and 4K PBR textures.</p>
+      <p class="take">Nothing painted exists for pool, mini golf cues or putters anywhere. This has the geometry; we'd flatten its textures into a painted look. Honestly a table and a cue are quick to model ourselves.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Animations</h2><p>All built for standard humanoid rigs. Kevin Iglesias's license is now confirmed: Asset Store EULA, commercial use OK, no credit needed, must ship embedded in the game.</p></div>
+  <div class="tablewrap"><table>
+    <tr><th>Pack</th><th>Price</th><th>License</th><th>Covers</th><th>Verdict</th></tr>
+    <tr><td><a href="https://quaternius.com/packs/universalanimationlibrary.html">Quaternius Universal Animation Library 1 + 2</a></td><td>$0</td><td>CC0</td><td>8-way locomotion, jog, sprint, combat basics, guns, sitting, swimming, deaths, melee combos, parkour. 250+ clips on the Quaternius rig, so zero retargeting for the master body.</td><td>Use</td></tr>
+    <tr><td><a href="https://kevdev.itch.io/basic-motions">Kevin Iglesias Human Basic Motions</a></td><td>$18</td><td>Asset Store EULA</td><td>404 files: 8-direction walk, run, strafe, crouch, jump, roll; cheer, clap, wave, laugh, cry, angry, bow, talk; sitting at four heights; knockdown and stand up; stun. The lobby in one pack.</td><td>Use, first purchase</td></tr>
+    <tr><td><a href="https://kevdev.itch.io/human-soldier-animations-free">Kevin Iglesias Soldier FREE</a></td><td>$0</td><td>Asset Store EULA</td><td>128 files: aim, shoot, reload for rifle, assault rifle, handgun, bazooka; hits and deaths. Enough for the shooter's third-person view. Full pack is $30, over budget unless on sale.</td><td>Use</td></tr>
+    <tr><td><a href="https://kevdev.itch.io/human-dance-animations">Kevin Iglesias Human Dance</a></td><td>$0 free tier, $18 full</td><td>Asset Store EULA</td><td>Dances for taunts and the podium. Try the free sampler first.</td><td>Maybe</td></tr>
+    <tr><td><a href="https://rancidmilk.itch.io/free-character-animations">rancidmilk: Massive Library of Free Character Animations</a></td><td>$0</td><td>CMU terms: ship in products, don't resell clips</td><td>2,000+ Carnegie Mellon mocap clips retargeted to a Quaternius rig, FBX and glTF. The only free source of a golf swing, basketball shot and boxing. Raw mocap, needs cleanup.</td><td>Use for sports</td></tr>
+    <tr><td><a href="https://kinemiq.app/free-game-animations/">KinemIQ</a></td><td>$0</td><td>CC0 + CC-BY (credit)</td><td>460 clips on the Quaternius skeleton, GLB export. 175 overlap with the Quaternius library; the rest need credits.</td><td>Maybe</td></tr>
+    <tr><td><a href="https://github.com/Rokoko/rokoko-studio-live-blender">Rokoko Studio Live Blender add-on</a></td><td>$0</td><td>Free, needs account</td><td>The retargeting tool for anything not already on the Quaternius rig: Kevin, Mixamo-named, UE skeletons. <a href="https://extensions.blender.org/add-ons/retarget/">Retarget</a> is the no-login alternative.</td><td>Tool</td></tr>
+  </table></div>
+  <p class="note"><b>Still hand-made in Blender:</b> fighting-game movesets at Street Fighter and Smash quality (15 to 25 clips), golf putt, pool cue, air hockey, seated driving, snowboarding poses, podium poses and rude taunts. Nothing under $20 covers these. Toon Soldiers and Toon RTS animations don't help: Toon RTS is a 3ds Max Biped and Toon Soldiers has a one-bone spine with no fingers.</p>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Cut, and why</h2><p>Things that looked right on paper until I saw the pictures or read the license.</p></div>
+  <div class="two">
+    <div class="ref">
+      <figure><img src="img/dm.jpg" alt="Dungeon Mason Modular RPG Hero"><figcaption><b>Dungeon Mason Modular RPG Hero ($25):</b> the only modular painted kit found, and it's a big-head chibi pack. Out on proportions and price.</figcaption></figure>
+      <figure><img src="img/lpw.jpg" alt="LOW POLY WARRIORS Fab"><figcaption><b>LOW POLY WARRIORS ($19.99, Fab):</b> 62 armor parts and 49 animations, but flat Synty-style colors. Out on style.</figcaption></figure>
+      <figure><img src="img/overaction.jpg" alt="Overaction cartoon character pack"><figcaption><b>Overaction cartoon townsfolk (CC0):</b> stubby cartoon proportions. Out.</figcaption></figure>
+    </div>
+    <div class="tablewrap"><table>
+      <tr><th>Item</th><th>Reason</th></tr>
+      <tr><td>Polygon Blacksmith Toon RTS Units</td><td>Now $25, and the Biped rig and stubby body don't fit the new brief. Stays as our paint reference, which you already own.</td></tr>
+      <tr><td>Polygon Blacksmith Toon Soldiers ($20)</td><td>One-bone spine, no fingers, publisher confirmed. Animations won't transfer cleanly.</td></tr>
+      <tr><td>Mixamo</td><td>License forbids redistributing raw files, which a browser game does by nature.</td></tr>
+      <tr><td>Anything on CGTrader or TurboSquid</td><td>CGTrader requires measures to stop users reaching the files; TurboSquid bans WebGL outside Unity or Unreal exports. Buy the same artists on Fab or Superhive instead.</td></tr>
+      <tr><td>Synty, Kenney, Polytope, LowPolyPros, PolySquid</td><td>Flat-color or blocky. Right bodies, wrong surface.</td></tr>
+      <tr><td>0 A.D. and Ryzom characters</td><td>Realistic and painted, but CC BY-SA. Painting their textures onto our body would make our body share-alike too.</td></tr>
+      <tr><td>Bandai Namco and Ubisoft mocap datasets</td><td>Non-commercial licenses.</td></tr>
+      <tr><td>Explosive, Frank, GameDev Hero fighting packs</td><td>$40 to $120. Over budget; this is why fighters get hand-keyed.</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Licensing and hosting</h2></div>
+  <div class="two">
+    <p class="note"><b>Unity Asset Store assets can be used in three.js.</b> Unity's EULA never restricts the engine, and their support article says so directly. The condition is that assets ship "embedded" in the product and users can't extract raw files. A browser game can't literally prevent that, so the plan is: pack models into compressed game bundles, never offer downloads, and keep the repo private. This is my reading, not legal advice; a one-line email to Unity support would settle it.</p>
+    <p class="note"><b>Hosting follows from that.</b> If any Asset Store or Fab purchase goes in, the GitHub repo must be private and the site hosts on Cloudflare Pages or Netlify, free. Friends still just click a link. If you want a public GitHub Pages repo, stick to the Blank Canvas bundle: everything in it is CC0 or CC-BY.</p>
+    <p class="note"><b>Fab is the friendliest paid store.</b> Its Standard License allows shipping assets inside a project with no file-protection clause. Sketchfab's paid store closed; only its free CC downloads remain. Credit CC-BY authors in a credits screen.</p>
+    <p class="note"><b>Faces are on us.</b> Agreed that faces get repainted in Blender. That removes the one thing that made most candidates fail, and it is why a clean free body beats a painted paid one here.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Decisions for you</h2><p>Nothing gets downloaded or built until you say so.</p></div>
+  <ol class="list">
+    <li><b>Master body:</b> approve Quaternius Universal Base Characters as the one skeleton everything else is built on? This decision locks the rig for every minigame.</li>
+    <li><b>Default look at launch:</b> the free fantasy outfits, repainted, or modern clothes that we paint and model ourselves? Fantasy is ready now; modern is a few days of Blender.</li>
+    <li><b>First purchase:</b> Kevin Iglesias Basic Motions at $18, plus the two prop packs at about $11 total? That is the whole Painted Rec Room bundle.</li>
+    <li><b>Hosting:</b> OK with a private repo on Cloudflare Pages if paid assets are used?</li>
+    <li><b>Skins budget later:</b> the Skins and Trophies bundle is for when achievements exist. I'd start with the free Ser Skav and buy the rest one at a time.</li>
+  </ol>
+</section>
+
+<footer>Prices are regular USD on Nov 7 2026 and change with sales. Preview images come from each creator's store page and are shown here only to help you choose. Full research notes for each source are saved in the session.</footer>
+</div>

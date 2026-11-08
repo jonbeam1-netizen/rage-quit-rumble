@@ -1,0 +1,204 @@
+<title>RQR Base Character</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: the decision first (three paths), then the comparison table, the animation stack, license realities, what's out, decisions.
+   Dark studio look: charcoal with the RQR red and a cool blue, since the painted-wood theme belonged to the old brief. */
+:root{
+  --bg:#141518; --panel:#1d1f24; --panel2:#24272e; --line:#343841;
+  --ink:#eef0f4; --muted:#a3a9b5; --rage:#ff5a68; --blue:#5aa2ff; --gold:#f0b74a;
+  --use:#86d8a2; --use-bg:#1d3a2a; --maybe:#f0bb5c; --maybe-bg:#3c2f14; --skip:#9aa0ab; --skip-bg:#2a2d33;
+  --display:"Alfa Slab One","Rockwell","Arial Black",serif;
+  --body:"Nunito Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px}
+a{color:var(--blue);font-weight:600}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+header{display:flex;flex-direction:column;gap:12px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(30px,5vw,50px);line-height:1.05;margin:0;text-wrap:balance}
+h1 span{color:var(--rage)}
+.lede{max-width:72ch;color:var(--muted);margin:0;font-size:17px}
+h2{font-family:var(--display);font-weight:400;font-size:22px;margin:0;text-wrap:balance}
+h3{margin:0}
+.sec{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:4px;border-bottom:2px solid var(--rage);padding-bottom:8px}
+.sec-head p{margin:0;color:var(--muted);max-width:80ch}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.path{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.path.pick{border:2px solid var(--gold);background:var(--panel2)}
+.path img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover;background:var(--line)}
+.pb{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.ph{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.ph h3{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.2}
+.price{font-family:var(--display);font-size:22px;color:var(--gold);line-height:1;white-space:nowrap;text-align:right}
+.price small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted);margin-top:4px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#1a1209;padding:3px 8px;border-radius:4px;align-self:flex-start}
+.meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.chip.free{color:var(--use);border-color:var(--use)}
+.chip.warn{color:var(--maybe);border-color:var(--maybe)}
+.rates{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.rates div{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:5px 6px;text-align:center;line-height:1.3}
+.rates b{display:block;color:var(--gold);font-size:15px;font-family:var(--display);font-weight:400}
+.path p{margin:0;font-size:15px}
+.path ul{margin:0;padding-left:18px;font-size:15px;display:flex;flex-direction:column;gap:4px}
+.path .bad{color:var(--muted)}
+.note{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--muted);margin:0}
+.note b{color:var(--ink)}
+.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:15px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:700}
+td.ok{color:var(--use)} td.part{color:var(--maybe)} td.no{color:var(--skip)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+ol.list li::marker{color:var(--gold);font-weight:700}
+footer{font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.path{transition:transform .15s ease}.path:hover{transform:translateY(-2px)}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Character creator · base character system · any price · checked Nov 7 2026</div>
+  <h1>Rage Quit <span>Rumble</span> base character</h1>
+  <p class="lede">The brief is now simple: one excellent male and female base, lots of faces and hair, clothes that fit, a standard skeleton with a huge animation ecosystem behind it, and no price cap. Two agents swept character systems and animation libraries; I checked the key claims. Three paths are realistic. One platform that would have been the obvious answer, Ready Player Me, no longer exists.</p>
+</header>
+
+<section class="sec">
+  <div class="sec-head"><h2>Three realistic paths</h2><p>Ratings out of 5: Faces (variety), Hair, Clothes, Web (polycount and export to GLB). Every path uses a Mixamo-compatible or Mixamo-retargetable skeleton, so the same animation stack applies.</p></div>
+  <div class="paths">
+
+    <div class="path pick"><img src="img/cc5.jpg" alt="Reallusion Character Creator 5">
+      <div class="pb"><span class="tag">My pick, with two conditions</span>
+      <div class="ph"><h3>A. Character Creator 5</h3><div class="price">$299<small>+ $199 Headshot, + content</small></div></div>
+      <div class="meta"><span class="chip">Reallusion</span><span class="chip">Own skeleton, Mixamo + Unity + UE presets</span><span class="chip warn">EULA fine print</span></div>
+      <div class="rates"><div>Faces<b>5</b></div><div>Hair<b>5</b></div><div>Clothes<b>5</b></div><div>Web<b>4</b></div></div>
+      <p>The most complete system that exists. Morph-based faces with thousands of sliders, Headshot builds a head from a photo, a deep store of hair and modern casual clothes that already fit the body, a game-ready body of about 11k triangles with automatic LODs, FBX out and GLB through Blender. ActorCore animations play on it with no retargeting and Mixamo clips retarget in one click.</p>
+      <ul>
+        <li><b>Condition 1:</b> the in-game creator must be preset-based: players pick from heads, hair, outfits and colors we export. Face sliders inside the game would need Reallusion's Enterprise license. For a party game, presets are honestly the better design anyway: cheaper to sync across 8 players and no ugly slider faces.</li>
+        <li><b>Condition 2:</b> Reallusion's EULA (Nov 2026) requires shipped content to be packaged or encrypted, not a plain downloadable GLB. We'd pack meshes into an obfuscated bundle decoded in the page, and I'd email them for a written OK before buying content at scale.</li>
+      </ul>
+      <p class="bad">Realistic spend: $299 for CC5, $199 for Headshot if you want faces from photos, then roughly $20 to $60 per hair or outfit pack. Budget $600 to $900 for a strong starter wardrobe.</p></div></div>
+
+    <div class="path"><img src="img/mpfb.jpg" alt="MPFB 2 in Blender">
+      <div class="pb">
+      <div class="ph"><h3>B. MPFB 2 for Blender</h3><div class="price">$0<small>CC0 core, some CC-BY packs</small></div></div>
+      <div class="meta"><span class="chip free">Free</span><span class="chip">Game rig or Mixamo rig</span><span class="chip">Direct GLB export</span></div>
+      <div class="rates"><div>Faces<b>4</b></div><div>Hair<b>2</b></div><div>Clothes<b>2</b></div><div>Web<b>4</b></div></div>
+      <p>The MakeHuman successor, living inside Blender. Realistic face and body sliders with no legal limits, so an in-game slider creator is allowed here. Exports GLB directly with a Mixamo-compatible rig. Everything you ship is yours, so a public GitHub repo stays possible.</p>
+      <ul>
+        <li>Only 3 official hair packs and 28 clothing packs, mostly dated. Hair and a modern wardrobe would be built in Blender or commissioned.</li>
+        <li>The default look is plain realism. It needs a stylized shader and better textures to not look like a 2010 tech demo.</li>
+      </ul>
+      <p class="bad">Zero license risk, most Blender hours. Pick this if you'd rather spend time than money, or if you want the public repo.</p></div></div>
+
+    <div class="path"><img src="img/humgen.jpg" alt="Human Generator Ultimate">
+      <div class="pb">
+      <div class="ph"><h3>C. Human Generator Ultimate</h3><div class="price">$128<small>commercial tier, one-time</small></div></div>
+      <div class="meta"><span class="chip">Blender add-on</span><span class="chip">Game-ready process step</span><span class="chip warn">Extraction clause</span></div>
+      <div class="rates"><div>Faces<b>5</b></div><div>Hair<b>4</b></div><div>Clothes<b>2</b></div><div>Web<b>3</b></div></div>
+      <p>Best faces per dollar, with a one-click process that converts hair to game cards, bakes textures, builds LODs and renames bones for engines. Lives in Blender, so it fits a GLB pipeline well.</p>
+      <ul>
+        <li>Thin clothing library, so the wardrobe is still on us.</li>
+        <li>Its license bans sharing assets in easily extractable formats such as FBX, which a GLB in a browser arguably is. Needs a written waiver, same as path A.</li>
+        <li>The $68 personal tier excludes games, so it's the $128 tier or nothing.</li>
+      </ul>
+      <p class="bad">A good middle path if the Reallusion fine print scares you off but you still want photoreal faces.</p></div></div>
+  </div>
+
+  <p class="note"><b>Fallback:</b> Quaternius Universal Base Characters (free, CC0, about 13k tris, 20 hairstyles, humanoid rig, GLB native) still works as a prototype body to get the creator and netcode running this month while the real system is chosen. It fails the brief on faces: six fixed heads and no modern wardrobe.</p>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Side by side</h2></div>
+  <div class="tablewrap"><table>
+    <tr><th>System</th><th>Price</th><th>Faces</th><th>Hair</th><th>Modern clothes</th><th>Skeleton</th><th>Dressed polycount</th><th>In-game sliders allowed</th><th>Ship as plain GLB</th></tr>
+    <tr><td>Character Creator 5</td><td>$299 + content</td><td class="ok">Morphs, photo heads</td><td class="ok">Large store</td><td class="ok">Large store</td><td>Reallusion, Mixamo/Unity/UE presets</td><td>15k to 25k est.</td><td class="no">No, presets only</td><td class="no">No, must pack</td></tr>
+    <tr><td>MPFB 2</td><td>$0</td><td class="ok">Morphs</td><td class="no">3 packs</td><td class="no">28 packs, dated</td><td>Game rig or Mixamo</td><td>10k to 20k</td><td class="ok">Yes</td><td class="ok">Yes</td></tr>
+    <tr><td>Human Generator Ultimate</td><td>$128</td><td class="ok">Morphs, photoreal</td><td class="part">Good, needs card conversion</td><td class="no">Thin</td><td>Own, engine-renamed</td><td>under 20k after LOD</td><td class="part">Unclear</td><td class="no">No, needs waiver</td></tr>
+    <tr><td>Quaternius UBC</td><td>$0</td><td class="no">6 fixed</td><td class="part">20 styles</td><td class="no">None, fantasy only</td><td>Humanoid, own library</td><td>13k</td><td class="ok">Yes</td><td class="ok">Yes</td></tr>
+    <tr><td>Daz Genesis 9</td><td>per product + game license</td><td class="ok">Morphs</td><td class="ok">Huge</td><td class="ok">Huge</td><td>Daz</td><td>25k verts base, heavy</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Avaturn / MetaPerson</td><td>$800 per month</td><td class="ok">Selfie</td><td class="part">Some</td><td class="part">Some</td><td>Mixamo</td><td>7k to 36k</td><td class="part">Hosted</td><td class="part">Hosted</td></tr>
+  </table></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Animation stack for a Mixamo-compatible skeleton</h2><p>All three paths land on a Mixamo-compatible rig, so this stack is the same whichever body wins. Every link and price below was checked against the live store page on Nov 8 2026. The paid packs total about $364, plus about $46 a month for Move AI while recording the missing moves.</p></div>
+  <div class="tablewrap"><table>
+    <tr><th>Source</th><th>Price</th><th>Clips</th><th>Covers</th><th>License</th></tr>
+    <tr><td><a href="https://www.mixamo.com/">Mixamo</a></td><td>$0</td><td>about 2,450</td><td>Locomotion, emotes, dances, idles, basic fighting, guns, deaths, sitting. The backbone.</td><td>Adobe General Terms: embed in your product, never distribute standalone. See the license note below. The service is in maintenance mode; archive the library now.</td></tr>
+    <tr><td><a href="https://quaternius.com/packs/universalanimationlibrary.html">Quaternius Universal Animation Library 1 + 2</a></td><td>$0</td><td>250+</td><td>8-way locomotion, combat basics, parkour, swimming, guns.</td><td>CC0</td></tr>
+    <tr><td><a href="https://assetstore.unity.com/packages/3d/animations/human-mega-animations-pack-162341">Kevin Iglesias Human Mega Animations Pack</a></td><td>$130</td><td>all his packs</td><td>Polished locomotion, emotes, sitting, dances, melee, throwing, soldier guns.</td><td>Asset Store EULA, ship embedded</td></tr>
+    <tr><td><a href="https://www.fab.com/listings/e1fcc484-9ddf-493d-badc-91852970c585">GameDevHero Unarmed Fighting Animation Bundle</a> (Fab, UE5 and Mixamo versions)</td><td>$52.99</td><td>373</td><td>Street Fighter style: punches, kicks, specials, grabs, throws, knockdowns.</td><td>Fab Standard, buy on Fab not itch</td></tr>
+    <tr><td>Raise Creation <a href="https://www.fab.com/listings/23c75ad8-7c73-4e5d-bb62-18d0e01e5585">Grab &amp; Throw Takedown Pack</a> ($22.99) + <a href="https://www.fab.com/listings/17ffa308-76fe-4b5a-918e-32012ad8a580">Knockdown &amp; Get-Up Pack</a> ($10.99), both on Fab</td><td>$33.98</td><td>96+</td><td>Paired attacker and victim throws, knockdowns, get-ups.</td><td>Fab Standard</td></tr>
+    <tr><td><a href="https://assetstore.unity.com/packages/3d/animations/fighting-animset-pro-64666">Kubold Fighting Animset Pro</a> (optional; also <a href="https://www.fab.com/listings/950a94a9-b25d-4bad-a108-ba190ac91387">on Fab</a> for $79.99)</td><td>$80</td><td>230+</td><td>Deeper unarmed fighting set, hit reactions.</td><td>Asset Store EULA</td></tr>
+    <tr><td><a href="https://superhivemarket.com/products/golf-animations---motion-cast05-vol">Motion Cast Golf Animations Vol. 1</a> ($45, Superhive) + <a href="https://www.fab.com/listings/3ebc99f8-06f4-4de1-83d7-7f1bdead8345">Ailive Golf Animation Pack</a> ($1.99, Fab)</td><td>$46.99</td><td>56 + 6</td><td>Putter, wedge, iron, hybrid and driver swings by a pro golfer, ball reactions, 16 joke swings; plus 6 mocap swings with finger motion.</td><td>Superhive royalty-free; Fab Standard</td></tr>
+    <tr><td>rancidmilk CMU library</td><td>$0</td><td>2,000+</td><td>Raw mocap: basketball shot, boxing, golf swing, falls.</td><td>CMU: ship in products, don't resell</td></tr>
+    <tr><td><a href="https://www.fab.com/listings/55c80a94-955e-468b-904f-9df6155be5dd">Car Interaction Animset Vol 01</a> (Fab, UE5 Manny skeleton)</td><td>$19.99</td><td>109</td><td>31 driving clips, enter and exit car.</td><td>Fab Standard</td></tr>
+    <tr><td><a href="https://move.ai/">Move AI</a> or <a href="https://www.rokoko.com/products/vision">Rokoko Vision</a></td><td>about $46 per month, or Rokoko's free tier</td><td>yours</td><td>Record the moves nobody sells: pool cue, air hockey, snowboarding, podium poses, rude taunts. Two months while making them.</td><td>Paid tier for commercial use</td></tr>
+  </table></div>
+
+  <div class="two">
+    <div class="tablewrap"><table>
+      <tr><th>Need</th><th>Covered by</th><th>Status</th></tr>
+      <tr><td>Lobby locomotion, emotes, dances, sitting</td><td>Mixamo + Kevin Mega</td><td class="ok">Covered</td></tr>
+      <tr><td>Fighting (Smash and Street Fighter style)</td><td>GameDev Hero + Raise Creation + Kubold</td><td class="ok">Covered</td></tr>
+      <tr><td>Third-person guns</td><td>Mixamo + Kevin Soldier</td><td class="ok">Covered</td></tr>
+      <tr><td>Golf</td><td>Motion Cast + Ailive</td><td class="ok">Covered</td></tr>
+      <tr><td>Basketball</td><td>CMU raw clips</td><td class="part">Raw, needs cleanup</td></tr>
+      <tr><td>Pool cue, air hockey</td><td>Nothing exists</td><td class="no">Record with Move AI</td></tr>
+      <tr><td>Driving</td><td>Car Interaction Animset</td><td class="ok">Covered</td></tr>
+      <tr><td>Snowboarding</td><td>Nothing reliable</td><td class="no">Record or hand-key poses</td></tr>
+      <tr><td>Podium, lose poses, taunts</td><td>Mixamo partly</td><td class="part">Record the rude ones</td></tr>
+    </table></div>
+    <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+      <p class="note"><b>Mixamo license, read fairly.</b> The Mixamo terms themselves only ban AI training. Adobe's general terms let you embed the files in your product and distribute them only as part of it, never standalone. The anti-extraction rule exists for Adobe's sample files but not for Mixamo clips. Strict reading: a public GLB is extractable. Practical reading: clips baked into our character files are embedded in the product. My judgement is that it's realistically fine as long as the clips are never offered as a pack and never sit in a public repo.</p>
+      <p class="note"><b>Skip MoCap Online</b> even though it has the best gun mocap. Its license requires binary-only distribution with files that can't be extracted, and buying it through Unity or Unreal doesn't change that.</p>
+      <p class="note"><b>ActorCore</b> is the native match for Character Creator and the quality is excellent, but its license text bans embedding in online services, so it needs Reallusion's written OK. With Mixamo retargeting in one click on CC5, we can live without it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Licensing and hosting, the one-paragraph version</h2></div>
+  <p class="note"><b>Every paid character system and most paid animation packs require that players can't pull the raw files out.</b> A browser game serves files to the browser, so plain GLBs break that rule. The fix is the same for all of them: pack meshes, textures and clips into a compressed, obfuscated bundle that the page decodes at load, keep the repo private, and host on Cloudflare Pages or Netlify. That's a normal game-dev practice and it's what Unity's own web builds do. Only path B, MPFB with CC0 content, avoids the whole question. This is my reading, not legal advice; for the Reallusion route a short email asking for written confirmation is worth sending before spending.</p>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Out, and why</h2></div>
+  <div class="tablewrap"><table>
+    <tr><th>Item</th><th>Reason</th></tr>
+    <tr><td>Ready Player Me</td><td>Bought by Netflix in December 2025, all public services shut down January 31, 2026. Verified.</td></tr>
+    <tr><td>MetaHuman</td><td>Unreal Engine only by license.</td></tr>
+    <tr><td>Daz Genesis 9</td><td>Heavy meshes, a separate game-use license per product, and the same anti-extraction clause.</td></tr>
+    <tr><td>Avaturn, MetaPerson</td><td>$800 per month hosted services. Overkill for a friends game.</td></tr>
+    <tr><td>UMA 2, Genies, Synty Sidekick</td><td>Unity-only runtimes with no export path, or the Synty look.</td></tr>
+    <tr><td>VRoid / VRM</td><td>Anime style.</td></tr>
+    <tr><td>Mixamo's own characters</td><td>Small, dated set. Use Mixamo for animations only.</td></tr>
+    <tr><td>Microsoft Rocketbox</td><td>115 fixed realistic avatars, MIT. Fine for NPCs, not a creator.</td></tr>
+    <tr><td>Bandai Namco and Ubisoft mocap datasets</td><td>Non-commercial licenses.</td></tr>
+  </table></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Decisions for you</h2><p>Nothing gets bought, downloaded or built until you say so.</p></div>
+  <ol class="list">
+    <li><b>Path:</b> A (Character Creator 5, best result, about $600 to $900 all in), B (MPFB, free, more Blender), or C (Human Generator, $128, photoreal faces, thin wardrobe)?</li>
+    <li><b>Creator style:</b> OK with preset-based customization (pick a head, hair, outfit, colors) instead of face sliders? Path A requires it, and I'd recommend it for all paths.</li>
+    <li><b>Mixamo archive:</b> OK for me to download the full Mixamo library (about 2,450 clips, several GB) to your machine before the service degrades further? It needs your Adobe login in the browser.</li>
+    <li><b>Hosting:</b> private repo on Cloudflare Pages or Netlify, with packed asset bundles?</li>
+    <li><b>Prototype now:</b> start the creator and netcode on the free Quaternius body while the real system is chosen, or wait?</li>
+  </ol>
+</section>
+
+<footer>Prices are USD. Character systems were checked Nov 7 2026; every animation link and price was re-checked against the live store page on Nov 8 2026. Two source pages (Adobe's official Mixamo FAQ and ActorCore's store) blocked automated reading, so those license notes come from the published terms documents and vendor forums. Full research notes are saved in the project's docs folder.</footer>
+</div>
