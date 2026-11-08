@@ -345,7 +345,7 @@ export class World {
       this.place(skin(get('arcade01', 'ChairTallfbx', { fitHeight: 0.75, rotX: -Math.PI / 2 }), T('ChairTallTexture')), tx + 1.1, tz, 0, { collide: false });
     }
     // air hockey x2 near the entrance
-    for (let i = 0; i < 2; i++) this.place(get('airhockey', 'AirHockeyTable', { fitHeight: 0.85 }), x + 6.5, z - 1.6 + i * 3.4, Math.PI / 2, { pad: 0.1 });
+    for (let i = 0; i < 2; i++) this.place(get('airhockey', 'AirHockeyTable', { fitWidth: 2.2 }) /* model is 2.2 m tall incl. scoreboard arch; fit the 2.2 m table length */, x + 6.5, z - 1.6 + i * 3.4, Math.PI / 2, { pad: 0.1 });
     this.pointLight(0xffffff, 6, x + 6.5, 2.6, z, 6);
   }
 
