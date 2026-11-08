@@ -39,9 +39,13 @@ export function get(kit, piece, opts = {}) {
   // GLTFLoader sanitizes node names (spaces -> _, [].:/ removed); catalog names are the originals.
   const src = k.byName.get(piece) || k.byName.get(piece.replace(/\s/g, '_').replace(/[\[\]\.:\/]/g, ''));
   if (!src) { console.warn(`piece ${kit}/${piece} missing`); return new THREE.Group(); }
-  const obj = src.clone(true);
-  // Reset transform the source had inside its kit scene.
-  obj.position.set(0, 0, 0); obj.rotation.set(0, 0, 0); obj.scale.set(1, 1, 1);
+  // Wrap the clone so the source node keeps its own rotation/scale: the FBX import leaves
+  // Unity's axis fix (90deg X, often 0.01 scale) on the root node, and wiping it lays props on
+  // their side. Only the position inside the kit scene is dropped.
+  const inner = src.clone(true);
+  inner.position.set(0, 0, 0);
+  const obj = new THREE.Group();
+  obj.add(inner);
   if (opts.rotX) obj.rotation.x = opts.rotX;
   obj.updateMatrixWorld(true);
   const box = new THREE.Box3().setFromObject(obj);

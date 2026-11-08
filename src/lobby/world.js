@@ -211,7 +211,7 @@ export class World {
     nsw.rotation.x = -Math.PI / 2; nsw.position.set(0, 0.0, -34); nsw.receiveShadow = true; this.scene.add(nsw);
 
     // Bus stop + bus (north-east of plaza, on the south kerb)
-    this.place(get('city', 'Props_Bus Stop', { scale: CITY }), 16, -17.6, Math.PI, { pad: 0.2 });
+    this.place(get('city', 'Props_Bus Stop', { scale: CITY }), 16, -17.6, 0, { pad: 0.2 }); // open side to the road
     this.place(get('city', 'Vehicle_Bus', { scale: CITY }), 17, -22.6, Math.PI / 2);
     this.neon('MINIGAMES', '#ffb347', 7, 16, 4.2, -17.4, 0, { size: 0.95 });
     // parked cars along the north kerb
@@ -257,7 +257,7 @@ export class World {
       const a = (i / 8) * Math.PI * 2 + Math.PI / 8;
       if (i === 1 || i === 2) continue; // leave the screen side open
       const x = Math.cos(a) * (R - 1.6), z = Math.sin(a) * (R - 1.6);
-      this.place(get('city', 'Props_Bench_2', { scale: CITY * 0.8 }), x, z, -a + Math.PI / 2);
+      this.place(get('city', 'Props_Bench_2', { scale: CITY * 0.8 }), x, z, -a - Math.PI / 2); // seat faces the plaza
     }
     // trees ringed around the plaza edge
     const trees = ['Tree_01', 'Tree_03', 'Tree_04', 'Tree_02', 'Tree_05'];
