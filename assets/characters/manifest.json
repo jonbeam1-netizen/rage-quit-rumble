@@ -251,7 +251,7 @@
         "Farmer_Body",
         "Farmer_Feet",
         "Farmer_Head",
-        "Farmer_Pants"
+        "Farmer_Legs"
       ]
     },
     {
@@ -700,7 +700,7 @@
         "Wave"
       ],
       "meshNodes": [
-        "Formad_Head",
+        "Formal_Head",
         "Formal_Body",
         "Formal_Feet",
         "Formal_Legs"
